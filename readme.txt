@@ -1,16 +1,16 @@
-=== Alcatraz Child ===
-Contributors: carrieforde, braad, jgonzo127
+=== Alcatraz Clayton ===
+Contributors: carrieforde
 Requires at least: 4.0
 Tested up to: 4.4
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A demo child theme for Alcatraz.
+A custom child theme for Clayton Gerard, built on Alcatraz.
 
 == Description ==
 
-This theme is a demo child theme for Alcatraz, a developer-friendly parent theme with just the right amount of features.
+
 
 == Installation ==
 
