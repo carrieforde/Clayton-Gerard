@@ -441,7 +441,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.625em 0;
-  font-family: "Source Serif Pro", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   clear: both;
@@ -1527,7 +1527,7 @@ input[type="submit"].search-submit {
   margin: 0 0 10px;
   font-size: 36px;
   font-size: 2.25em;
-  font: 600 2em / 1.2 "Source Serif Pro", serif;
+  font: 600 2em / 1.2 Arial, Helvetica, sans-serif;
 }
 
 .has-logo .site-header .site-title,
@@ -1764,6 +1764,140 @@ input[type="submit"].search-submit {
 
 .alcatraz-social-icons .alcatraz-social-icon {
   font-size: 24px;
+}
+
+/**
+ * Alcatraz Clayton Styles
+ */
+/**
+ * Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/**
+ * Navigation
+ */
+#primary-menu {
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+#primary-menu a,
+#primary-menu a:visited {
+  color: #1a1a1a;
+}
+
+#primary-menu a:hover,
+#primary-menu a:visited:hover {
+  color: #A27A2C;
+}
+
+/**
+ * Widgets
+ */
+.widget_nav_menu .menu {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.widget_nav_menu .menu a,
+.widget_nav_menu .menu a:visited {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+
+.widget_nav_menu .menu a:hover,
+.widget_nav_menu .menu a:visited:hover {
+  color: #c99838;
+}
+
+/**
+ * Header
+ */
+/* Header */
+.header-inner {
+  margin: 10px 0 20px;
+}
+
+/* Logo */
+
+/**
+ * Content
+ */
+.entry-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.entry-title a {
+  color: #333;
+}
+
+.entry-title a:hover {
+  color: #A27A2C;
+  text-decoration: underline;
+}
+
+.byline {
+  display: inline;
+}
+
+.posted-on,
+.byline {
+  color: #666;
+}
+
+.posted-on a,
+.posted-on a:visited,
+.byline a,
+.byline a:visited {
+  color: #666;
+}
+
+.posted-on a:hover,
+.byline a:hover {
+  color: #A27A2C;
+}
+
+/**
+ * Footer
+ */
+.site-footer {
+  background-color: #1a1a1a;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.footer-bottom {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #A27A2C;
+  transition: color 0.2s ease-in;
+}
+
+.footer-bottom a:visited {
+  color: #A27A2C;
+}
+
+.footer-bottom a:hover {
+  color: #c99838;
 }
 
 @media (min-width: 48em) {
@@ -2454,6 +2588,9 @@ input[type="submit"].search-submit {
   }
   .footer-widget-areas-4 .footer-widget-area:last-child {
     margin-right: 0;
+  }
+  .logo-regular {
+    max-width: 480px;
   }
 }
 

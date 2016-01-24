@@ -37,3 +37,145 @@ Tags:
 @import "layout/content";
 @import "layout/sidebars";
 @import "layout/footer";
+
+/**
+ * Alcatraz Clayton Styles
+ */
+
+/**
+ * Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__headings;
+}
+
+/**
+ * Navigation
+ */
+#primary-menu {
+	border-top: $border__navigation-primary;
+	border-bottom: $border__navigation-primary;
+	font-family: $font__navigation;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+
+	a,
+	a:visited {
+		color: $color__link-navigation;
+
+		&:hover {
+			color: $color__link-navigation-hover;
+		}
+	}
+}
+
+/**
+ * Widgets
+ */
+
+.widget_nav_menu {
+
+	.menu {
+		margin: 0;
+		font-weight: 700;
+		letter-spacing: 0.75px;
+		list-style: none;
+		text-align: center;
+		text-transform: uppercase;
+
+		a,
+		a:visited {
+			color: $color__link-footer-menu;
+			transition: color 0.2s ease-in;
+
+			&:hover {
+				color: $color__link-footer-hover;
+			}
+		}
+	}
+}
+
+/**
+ * Header
+ */
+
+/* Header */
+.header-inner {
+	margin: 10px 0 20px;
+}
+
+/* Logo */
+
+@media (min-width: em(768)) {
+	.logo-regular {
+		max-width: 480px;
+	}
+}
+
+/**
+ * Content
+ */
+.entry-title {
+	font-family: $font__headings;
+	text-transform: uppercase;
+
+	a {
+		color: $color__text-headings;
+
+		&:hover {
+			color: $color__link-titles;
+			text-decoration: underline;
+		}
+	}
+}
+
+.byline {
+	display: inline;
+}
+
+.posted-on,
+.byline {
+	color: $color__text-post-meta;
+
+	a,
+	a:visited {
+		color: $color__text-post-meta;
+	}
+
+	a:hover {
+		color: $color__link-post-meta-hover;
+	}
+}
+
+/**
+ * Footer
+ */
+
+.site-footer {
+	background-color: $background__footer;
+	font-family: $font__footer;
+}
+
+.footer-bottom {
+	color: $color__text-footer;
+	font-size: 12px;
+
+	a {
+		color: $color__link-footer;
+		transition: color 0.2s ease-in;
+
+		&:visited {
+			color: $color__link-footer;
+		}
+
+		&:hover {
+			color: $color__link-footer-hover;
+		}
+	}
+}

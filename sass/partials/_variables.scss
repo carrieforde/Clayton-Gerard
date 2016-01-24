@@ -1,3 +1,37 @@
 /**
  * Alcatraz Child Sass Variables
  */
+
+// Color Palette
+$noir: #1a1a1a;
+$slate: #333;
+$storm-clouds: #666;
+$gold-standard: #A27A2C;
+
+// Backgrounds
+$background__footer: $noir;
+
+// Text colors
+$color__link-footer: $gold-standard;
+$color__link-footer-hover: lighten($color__link-footer, 10%);
+$color__link-footer-menu: $true-white;
+$color__link-navigation: $noir;
+$color__link-navigation-hover: $gold-standard;
+$color__link-post-meta-hover: $gold-standard;
+$color__link-titles: $gold-standard;
+$color__text-footer: $true-white;
+$color__text-headings: $slate;
+$color__text-post-meta: $storm-clouds;
+
+// Fonts
+$georgia: Georgia, serif;
+$trebuchet: "Trebuchet MS", Helvetica, sans-serif;
+$arial: Arial, Helvetica, sans-serif;
+
+$font__navigation: $trebuchet;
+$font__footer: $trebuchet;
+$font__headings: $arial;
+
+
+// Borders
+$border__navigation-primary: 2px solid $noir;
