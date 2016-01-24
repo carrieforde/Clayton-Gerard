@@ -430,7 +430,7 @@ input,
 select,
 textarea {
   color: #040a04;
-  font: 300 18px / 1.5 "Source Sans Pro", sans-serif;
+  font: 300 18px / 1.5 Georgia, serif;
 }
 
 /* Headings */
@@ -878,11 +878,11 @@ a:hover, a:active {
 .alcatraz-sub-page-nav li a {
   padding: 10px 15px;
   display: block;
-  color: #5D85A2;
+  color: #1a1a1a;
 }
 
 .alcatraz-sub-page-nav li a:hover {
-  color: #385061;
+  color: black;
 }
 
 .alcatraz-sub-page-nav .page_item_has_children > a {
@@ -929,11 +929,11 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-  color: #5D85A2;
+  color: #1a1a1a;
 }
 
 .main-navigation a:hover {
-  color: #385061;
+  color: black;
 }
 
 .main-navigation .menu-overlay {
@@ -1621,7 +1621,7 @@ input[type="submit"].search-submit {
 }
 
 .boxed-content .site-content {
-  max-width: 1100px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1798,9 +1798,8 @@ h6 {
   color: #1a1a1a;
 }
 
-#primary-menu a:hover,
-#primary-menu a:visited:hover {
-  color: #A27A2C;
+#primary-menu a:hover {
+  color: black;
 }
 
 /**
@@ -1821,9 +1820,8 @@ h6 {
   transition: color 0.2s ease-in;
 }
 
-.widget_nav_menu .menu a:hover,
-.widget_nav_menu .menu a:visited:hover {
-  color: #c99838;
+.widget_nav_menu .menu a:hover {
+  color: #A27A2C;
 }
 
 /**
@@ -1859,14 +1857,14 @@ h6 {
 
 .posted-on,
 .byline {
-  color: #666;
+  color: #333;
 }
 
 .posted-on a,
 .posted-on a:visited,
 .byline a,
 .byline a:visited {
-  color: #666;
+  color: #333;
 }
 
 .posted-on a:hover,
@@ -1887,13 +1885,10 @@ h6 {
   font-size: 12px;
 }
 
-.footer-bottom a {
-  color: #A27A2C;
-  transition: color 0.2s ease-in;
-}
-
+.footer-bottom a,
 .footer-bottom a:visited {
   color: #A27A2C;
+  transition: color 0.2s ease-in;
 }
 
 .footer-bottom a:hover {
@@ -2750,7 +2745,7 @@ h6 {
   }
   .header-style-side.boxed-content .site-content {
     left: 160px;
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
   }
   .header-style-side .content-area {
@@ -2765,7 +2760,7 @@ h6 {
   }
   .header-style-side.boxed-content .site-footer {
     left: 160px;
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
   }
 }

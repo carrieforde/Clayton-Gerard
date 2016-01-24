@@ -58,8 +58,8 @@ h6 {
  * Navigation
  */
 #primary-menu {
-	border-top: $border__navigation-primary;
-	border-bottom: $border__navigation-primary;
+	border-top: $border__nav-primary;
+	border-bottom: $border__nav-primary;
 	font-family: $font__navigation;
 	font-weight: 700;
 	letter-spacing: 1.5px;
@@ -67,11 +67,11 @@ h6 {
 
 	a,
 	a:visited {
-		color: $color__link-navigation;
+		color: $color__link-nav;
+	}
 
-		&:hover {
-			color: $color__link-navigation-hover;
-		}
+	a:hover {
+		color: $color__link-nav-hover;
 	}
 }
 
@@ -91,12 +91,12 @@ h6 {
 
 		a,
 		a:visited {
-			color: $color__link-footer-menu;
+			color: $color__link-nav-footer;
 			transition: color 0.2s ease-in;
+		}
 
-			&:hover {
-				color: $color__link-footer-hover;
-			}
+		a:hover {
+			color: $color__link-nav-footer-hover;
 		}
 	}
 }
@@ -126,10 +126,10 @@ h6 {
 	text-transform: uppercase;
 
 	a {
-		color: $color__text-headings;
+		color: $color__link-titles;
 
 		&:hover {
-			color: $color__link-titles;
+			color: $color__link-titles-hover;
 			text-decoration: underline;
 		}
 	}
@@ -158,7 +158,7 @@ h6 {
  */
 
 .site-footer {
-	background-color: $background__footer;
+	background-color: $color__background-footer;
 	font-family: $font__footer;
 }
 
@@ -166,16 +166,13 @@ h6 {
 	color: $color__text-footer;
 	font-size: 12px;
 
-	a {
+	a,
+	a:visited{
 		color: $color__link-footer;
 		transition: color 0.2s ease-in;
+	}
 
-		&:visited {
-			color: $color__link-footer;
-		}
-
-		&:hover {
-			color: $color__link-footer-hover;
-		}
+	a:hover {
+		color: $color__link-footer-hover;
 	}
 }

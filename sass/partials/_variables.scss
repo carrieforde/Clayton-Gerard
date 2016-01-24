@@ -8,30 +8,102 @@ $slate: #333;
 $storm-clouds: #666;
 $gold-standard: #A27A2C;
 
-// Backgrounds
-$background__footer: $noir;
+// Borders
+$border__navigation-primary: 2px solid $noir;
 
-// Text colors
+// Background Colors
+$color__background-blockquote: $bright-light;
+$color__background-body: $true-white;
+$color__background-body-boxed: $mist;
+$color__background-boxed-site: $true-white;
+$color__background-button: $alcatraz-blue;
+$color__background-button-hover: $the-coast-is-clear;
+$color__background-featured-image: $bright-light;
+$color__background-footer: $noir;
+$color__background-hr: $mist;
+$color__background-ins: $hope;
+$color__background-menu-toggle: $alcatraz-blue;
+$color__background-menu-toggle-hover: darken($color__background-menu-toggle, 10%);
+$color__background-mobile-nav: $true-white;
+$color__background-pre: $bright-light;
+$color__background-screen: #f1f1f1;
+$color__background-sub-menu: $true-white;
+$color__background-sub-menu-toggle: $prision-cell-gray;
+$color__background-sub-menu-toggle-hover: lighten($color__background-sub-menu-toggle, 15%);
+$color__background-table-row: $bright-light;
+$color__background-table-thead: darken($color__background-table-row, 30%);
+
+// Overlay Colors
+$color__overlay-transparent: rgba(0,0,0,0.4);
+
+// Text Colors
+$color__text-body: $black-as-night;
+$color__text-button: $true-white;
+$color__text-button-hover: $alcatraz-blue;
+$color__text-footer: $true-white;
+$color__text-headings: $storm-clouds;
+$color__text-input: $prision-cell-gray;
+$color__text-input-focus: $prision-cell-gray;
+$color__text-menu-toggle: $true-white;
+$color__text-menu-toggle-hover: $true-white;
+$color__text-post-meta: $slate;
+$color__text-screen: #21759b;
+$color__text-table-thead: $true-white;
+$color__link: $alcatraz-blue;
+$color__link-visited: darken($color__link, 30%);
+$color__link-hover: darken($color__link, 20%);
 $color__link-footer: $gold-standard;
 $color__link-footer-hover: lighten($color__link-footer, 10%);
-$color__link-footer-menu: $true-white;
-$color__link-navigation: $noir;
-$color__link-navigation-hover: $gold-standard;
+$color__link-mobile-nav: $alcatraz-blue;
+$color__link-nav: $noir;
+$color__link-nav-hover: darken($color__link-nav, 20%);
+$color__link-nav-footer: $true-white;
+$color__link-nav-footer-hover: $gold-standard;
+$color__link-nav-sub-menu: $prision-cell-gray;
+$color__link-nav-sub-menu-hover: darken($color__link-nav-sub-menu, 10%);
+$color__link-post-meta: $slate;
 $color__link-post-meta-hover: $gold-standard;
-$color__link-titles: $gold-standard;
-$color__text-footer: $true-white;
-$color__text-headings: $slate;
-$color__text-post-meta: $storm-clouds;
+$color__link-titles: $slate;
+$color__link-titles-hover: $gold-standard;
 
-// Fonts
+// Box Shadow
+$color__box-shadow-mobile-primary-menu: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+$color__box-shadow-screen: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+$color__box-shadow-sub-menu: 0 3px 10px -3px rgba(0, 0, 0, 0.5);
+
+// 2.2.2 Typography
+
+// Font Palette
 $georgia: Georgia, serif;
 $trebuchet: "Trebuchet MS", Helvetica, sans-serif;
 $arial: Arial, Helvetica, sans-serif;
 
-$font__navigation: $trebuchet;
+$font__body: $georgia;
 $font__footer: $trebuchet;
 $font__headings: $arial;
+$font__navigation: $trebuchet;
+$font__line-height-body: 1.5;
+$font__line-height-headings: 1.2;
+$font__line-height-pre: 1.6;
+$font__margin-headings: 0 0 em(10) 0;
 
 
-// Borders
-$border__navigation-primary: 2px solid $noir;
+// 2.2.3 Borders
+$border__abbr: 1px dotted #666;
+$border__blockquote: em(5) solid darken($color__background-blockquote, 80%);
+$border__button: 2px solid $alcatraz-blue;
+$border__button-hover: 2px solid $alcatraz-blue;
+$border__input: 1px solid $sf-fog;
+$border__input-focus: 1px solid $prision-cell-gray;
+$border__nav-primary: 2px solid $noir;
+$border__nav-sub-menu: 3px solid $prision-cell-gray;
+$border__sub-page-nav-item: 1px dotted $mist;
+$border__table: 1px solid $bright-light;
+
+
+// 2.2.4 Structure
+$size__padding-default: 20px;
+$size__padding-default-half: $size__padding-default / 2;
+$size__padding-default-double: $size__padding-default * 2;
+$size__width-site: 100%;
+$size__width-boxed-content: 960px;
