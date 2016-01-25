@@ -29,3 +29,5 @@ function alcatraz_child_enqueue_scripts() {
 		ALCATRAZ_CHILD_VERSION
 	);
 }
+
+require_once ALCATRAZ_CHILD_PATH . '/inc/template-tags.php';
