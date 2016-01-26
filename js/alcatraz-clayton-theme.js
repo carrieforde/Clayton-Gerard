@@ -17,6 +17,9 @@
 				$this.remove();
 		});
 
+		// Force full-width on The Studio
+		$( '.the-studio' ).removeClass( 'boxed-content' ).addClass( 'full-width' );
+
 	});
 
 })( jQuery );
