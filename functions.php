@@ -31,3 +31,24 @@ function alcatraz_child_enqueue_scripts() {
 }
 
 require_once ALCATRAZ_CHILD_PATH . '/inc/template-tags.php';
+
+add_filter( 'mm_social_networks', 'clayton_social_networks' );
+/**
+ * Filter the list of social networks for Alcatraz Clayton.
+ *
+ * @param   string  $context  The context to pass to our filter.
+ *
+ * @return  array             The array of social networks.
+ */
+function clayton_social_networks() {
+
+	$social_networks = array(
+		'facebook'  => __( 'Facebook', 'alcatraz-clayton' ),
+		'twitter'   => __( 'Twitter', 'alcatraz-clayton' ),
+		'instagram' => __( 'Instagram', 'alcatraz-clayton' ),
+		'pinterest' => __( 'Pinterest', 'alcatraz-clayton' ),
+		'bloglovin' => __( 'Bloglovin', 'alcatraz-clayton' ),
+	);
+
+	return $social_networks;
+}
