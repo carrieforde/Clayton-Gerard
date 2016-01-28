@@ -22,3 +22,40 @@ function clayton_entry_footer() {
 		echo '</span>';
 	}
 }
+
+/**
+ * Flexible Content
+ */
+function clayton_flexible_content() {
+
+	$rows = get_post_meta( get_the_id(), 'flexible_content', true );
+
+	foreach ( (array) $rows as $count => $row ) {
+
+		switch( $row ) {
+
+			// Full width white row.
+			case 'fullwidth_row_white':
+
+			$content = get_post_meta( get_the_id(), 'flexible_content_' . $count . '_row_white_content', true );
+
+			echo '<div class="clay_fullwidth_white">';
+			echo $content;
+			echo '</div>';
+
+			break;
+
+			// Full width black row.
+			case 'fullwidth_row_black':
+
+			$content = get_post_meta( get_the_id(), 'flexible_content_' . $count . '_row_black_content', true );
+
+			echo '<div class="clay_fullwidth_black">';
+			echo $content;
+			echo '<div class="block"></div>';
+			echo '</div>';
+
+			break;
+		}
+	}
+}

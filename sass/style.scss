@@ -319,3 +319,22 @@ a {
 .grayscale-filter {
 	filter: grayscale(100%);
 }
+
+.clay_fullwidth_black {
+	position: relative;
+	min-height: 300px;
+	background-color: $color__background-flex-full-black;
+	color: $true-white;
+
+	.block {
+		width: 125px;
+		height: 125px;
+		position: absolute;
+		bottom: -62.5px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		transform: rotate(45deg);
+		background-color: $color__background-flex-full-black;
+	}
+}
