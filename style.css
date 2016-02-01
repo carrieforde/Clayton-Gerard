@@ -1902,8 +1902,54 @@ a {
 
 .widget_categories ul,
 .widget_archive ul {
+  display: none;
   margin-left: 0;
   list-style: square;
+}
+
+.widget_categories .widget-toggle,
+.widget_archive .widget-toggle {
+  display: block;
+  float: right;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  line-height: 1.65;
+  transition: all 0.2s ease;
+}
+
+.widget_categories .widget-toggle:hover,
+.widget_archive .widget-toggle:hover {
+  cursor: pointer;
+}
+
+.widget_categories .widget-toggle:hover .widget-toggle-span,
+.widget_archive .widget-toggle:hover .widget-toggle-span {
+  background-color: #A27A2C;
+}
+
+.widget_categories .widget-toggle-span,
+.widget_archive .widget-toggle-span {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.widget_categories .widget-toggle-span.span-2,
+.widget_archive .widget-toggle-span.span-2 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.widget_categories .toggled .span-2,
+.widget_archive .toggled .span-2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /**

@@ -177,8 +177,46 @@ a {
 .widget_archive {
 
 	ul {
+		display: none;
 		margin-left: 0;
 		list-style: square;
+	}
+
+	.widget-toggle {
+		display: block;
+		float: right;
+		width: 15px;
+		height: 15px;
+		position: relative;
+		line-height: $font__line-height-body;
+		transition: all 0.2s ease;
+
+		&:hover {
+			cursor: pointer;
+
+			.widget-toggle-span {
+				background-color: $color__background-menu-toggle-hover;
+			}
+		}
+	}
+
+	.widget-toggle-span {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		display: block;
+		width: 10px;
+		height: 2px;
+		background-color: $color__background-menu-toggle;
+		transition: all 0.2s ease;
+
+		&.span-2 {
+			transform: rotate(90deg);
+		}
+	}
+
+	.toggled .span-2 {
+		transform: rotate(180deg);
 	}
 }
 

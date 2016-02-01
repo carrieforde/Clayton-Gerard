@@ -20,6 +20,21 @@
 		// Force full-width on The Studio
 		$( '.the-studio' ).removeClass( 'boxed-content' ).addClass( 'full-width' );
 
+		// Add slide toggle for the categories
+		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+
+		$( '.widget_categories .widget-toggle' ).click(function() {
+			$( this ).toggleClass( 'toggled' );
+			$( '.widget_categories ul' ).slideToggle( 'slow' );
+		});
+
+		$( '.widget_archive .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+
+		$( '.widget_archive .widget-toggle' ).click(function() {
+			$( this ).toggleClass( 'toggled' );
+			$( '.widget_archive ul' ).slideToggle( 'slow' );
+		});
+
 	});
 
 })( jQuery );
