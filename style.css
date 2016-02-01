@@ -1777,7 +1777,7 @@ input[type="submit"].search-submit {
  */
 body {
   font-size: 15px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 /**
