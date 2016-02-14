@@ -52,3 +52,6 @@ function clayton_social_networks() {
 
 	return $social_networks;
 }
+
+// Add new image sizes.
+add_image_size( 'full-screen-image', 2560, 986, true );

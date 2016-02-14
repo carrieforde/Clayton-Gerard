@@ -379,24 +379,131 @@ a {
 	filter: grayscale(100%);
 }
 
-.clay_fullwidth_black {
-	position: relative;
-	min-height: 300px;
-	background-color: $color__background-flex-full-black;
-	color: $true-white;
+/**
+ * Page-Specific Styles
+ */
+.the-studio {
 
-	.block {
-		width: 125px;
-		height: 125px;
-		position: absolute;
-		bottom: -62.5px;
-		right: 0;
-		left: 0;
-		margin: 0 auto;
-		transform: rotate(45deg);
-		background-color: $color__background-flex-full-black;
+	// Temporary fix.
+	.entry-title {
+		display: none;
+	}
+
+	.content-area {
+		padding: 0;
+	}
+
+	.entry-content {
+		margin-top: 0;
 	}
 }
+
+/**
+ * Page Templates
+ */
+
+/**
+ * Flexible Content
+ */
+.full-width-row {
+	padding: 100px $size__padding-default;
+	font-size: 21px;
+	@include clearfix;
+
+	&.black {
+		position: relative;
+		background-color: #333;
+		color: #f2f2f2;
+	}
+
+	&.white {
+		color: #666;
+	}
+
+	.studio-services {
+		margin: 0 auto;
+		font-family: $trebuchet;
+
+		@media (min-width: em(768)) {
+			margin-bottom: 0;
+		}
+
+		@media (min-width: em(960)) {
+			max-width: 900px;
+		}
+	}
+
+	.services {
+		max-width: 300px;
+		width: 100%;
+		padding: em(15);
+		border: $border__services;
+		margin: 0 auto 30px;
+		font-size: 18px;
+
+		@media (min-width: em(768)) {
+			float: left;
+			width: 31.1111113%;
+			width: calc(34% - 30px);
+			margin-right: 3.333333%;
+			margin-right: calc(30px);
+
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.services-heading {
+		font: 700 21px $trebuchet;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.services-offerings ul {
+		margin-left: 0;
+	}
+
+	.full-width-row-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.georgia p {
+		font-family: $georgia;
+	}
+
+	.trebuchet p {
+		font-family: $trebuchet;
+	}
+
+	.full-width-row-accent {
+		position: absolute;
+		right: 0;
+		bottom: -25px;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		background-color: #333;
+		transform: rotate(45deg);
+	}
+
+	blockquote,
+	.blockquote {
+		padding: 0;
+		border: none;
+		margin-right: 0;
+		margin-left: 0;
+		text-align: center;
+
+		&::before,
+		&::after {
+			content: none;
+		}
+	}
+}
+
 
 /**
  * Plugins
