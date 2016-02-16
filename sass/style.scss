@@ -398,6 +398,13 @@ a {
 	}
 }
 
+.single-portfolio {
+
+	.content-area {
+		max-width: 960px;
+	}
+}
+
 /**
  * Page Templates
  */
@@ -523,4 +530,11 @@ a {
 	@media (min-width: em(945)) {
 		width: 40px;
 	}
+}
+
+/* Clayton Gerard Custom Functionality */
+.cgcf-project-website a {
+	font-family: $arial;
+	font-weight: 700;
+	text-transform: uppercase;
 }
