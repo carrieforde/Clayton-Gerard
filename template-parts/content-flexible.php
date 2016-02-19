@@ -16,6 +16,7 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php echo clayton_flexible_content(); ?>
+		<?php echo clayton_gerard_studio_portfolio_loop(); ?>
 	</div>
 
 	<footer class="entry-footer">

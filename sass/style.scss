@@ -129,6 +129,31 @@ a {
 }
 
 /**
+ * Components
+ */
+.clayton-gerard-button-wrapper {
+	clear: both;
+	@include clearfix;
+}
+
+.clayton-gerard-button {
+	padding: em(10) em(15);
+	border: $border__button;
+	background-color: $color__background-button;
+	color: $color__text-button;
+	font-family: $font__button;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		border: $border__button-hover;
+		background-color: $color__background-button-hover;
+		color: $color__text-button-hover;
+	}
+}
+/**
  * Widgets
  */
 
@@ -376,7 +401,7 @@ a {
  * Fun Stuff
  */
 .grayscale-filter {
-	filter: grayscale(100%);
+	@include grayscale;
 }
 
 /**
@@ -390,6 +415,52 @@ a {
 
 	.entry-content {
 		margin-top: 0;
+	}
+
+	.clayton-gerard-latest-projects {
+		max-width: 900px;
+		margin: 0 auto;
+		@include clearfix;
+
+		.clayton-gerard-button-wrapper {
+			text-align: center;
+		}
+	}
+
+	.clayton-gerard-project-loop-heading {
+		padding: 0 15px;
+		text-align: center;
+	}
+
+	.clayton-gerard-project {
+		max-width: 300px;
+		width: 100%;
+		padding: em(15);
+		margin: 0 auto 30px;
+
+		.post-thumbnail {
+			@include grayscale;
+		}
+
+		@media (min-width: em(768)) {
+			float: left;
+			width: 31.1111113%;
+			width: calc(34% - 30px);
+			margin-right: 3.333333%;
+			margin-right: calc(30px);
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.clayton-gerard-project-heading a {
+		color: $color__text-headings;
+
+		&:hover {
+			color: $color__link-hover;
+		}
 	}
 }
 
@@ -450,7 +521,7 @@ a {
 			margin-right: 3.333333%;
 			margin-right: calc(30px);
 
-			&:nth-child(3) {
+			&:nth-child(3n) {
 				margin-right: 0;
 			}
 		}

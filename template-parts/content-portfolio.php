@@ -15,7 +15,13 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php echo cgcf_single_portfolio_output(); ?>
+		<?php
+			if ( is_archive() ) {
+				return;
+			} else {
+				echo cgcf_single_portfolio_output();
+			}
+		?>
 	</div>
 
 	<footer class="entry-footer">

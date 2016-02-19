@@ -110,3 +110,50 @@ function clayton_flexible_content() {
 		}
 	}
 }
+
+/**
+ * The Studio portfolio loop.
+ */
+function clayton_gerard_studio_portfolio_loop() {
+
+	// Query the last six projects.
+	$clayton_gerard_projects = array(
+		'post_type' => 'portfolio',
+		'posts_per_page' => 6,
+		//'nopaging' => true,
+	);
+
+	$clayton_gerard_latest_projects = new WP_Query( $clayton_gerard_projects );
+
+	if( $clayton_gerard_latest_projects->have_posts() ) : ?>
+
+	<?php ob_start(); ?>
+
+	<div class="clayton-gerard-latest-projects">
+
+		<h2 class="clayton-gerard-project-loop-heading">The Latest from The Studio</h2>
+
+		<?php while ( $clayton_gerard_latest_projects->have_posts() ) : $clayton_gerard_latest_projects->the_post(); ?>
+
+		<div class="clayton-gerard-project">
+
+			<?php if ( has_post_thumbnail() ) : ?>
+				<a href="<?php the_permalink() ?>" class="post-thumbnail"><?php the_post_thumbnail(); ?></a>
+			<?php endif; ?>
+
+			<h3 class="clayton-gerard-project-heading"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+		</div>
+
+		<?php endwhile; ?>
+
+		<?php wp_reset_postdata(); ?>
+
+	<div class="clayton-gerard-button-wrapper">
+		<a href="/portfolio/" class="clayton-gerard-button">View More Projects</a>
+	</div>
+	</div>
+
+	<?php endif;
+
+	return ob_get_clean();
+}

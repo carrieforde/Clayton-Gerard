@@ -16,7 +16,7 @@ $border__navigation-primary: 2px solid $noir;
 $color__background-blockquote: $crystal;
 $color__background-body: $true-white;
 $color__background-button: $crystal;
-$color__background-button-hover: $crystal;
+$color__background-button-hover: $gold;
 $color__background-featured-image: $crystal;
 $color__background-footer: $noir;
 $color__background-hr: $platinum;
@@ -28,8 +28,8 @@ $color__background-flex-full-black: $titanium;
 
 // Text Colors
 $color__text-body: $noir;
-$color__text-button: $titanium;
-$color__text-button-hover: $gold;
+$color__text-button: $gold;
+$color__text-button-hover: $true-white;
 $color__text-footer: $true-white;
 $color__text-headings: $titanium;
 $color__text-input: $platinum;
@@ -64,6 +64,7 @@ $trebuchet: "Trebuchet MS", Helvetica, sans-serif;
 $arial: Arial, Helvetica, sans-serif;
 
 $font__body: $georgia;
+$font__button: $arial;
 $font__entry-footer: $arial;
 $font__footer: $trebuchet;
 $font__headings: $arial;
@@ -83,8 +84,8 @@ $font__services: $trebuchet;
 
 
 // 2.2.3 Borders
-$border__button: 2px solid $titanium;
-$border__button-hover: 2px solid $titanium;
+$border__button: 2px solid $gold;
+$border__button-hover: 2px solid $gold;
 $border__input: 1px solid $noir;
 $border__input-focus: 1px solid $titanium;
 $border__nav-primary: 2px solid $noir;

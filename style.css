@@ -1381,9 +1381,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   padding: 0.625em 0.9375em;
-  border: 2px solid #333;
+  border: 2px solid #A27A2C;
   background-color: transparent;
-  color: #333;
+  color: #A27A2C;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -1400,9 +1400,9 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border: 2px solid #333;
-  background-color: transparent;
-  color: #A27A2C;
+  border: 2px solid #A27A2C;
+  background-color: #A27A2C;
+  color: #fff;
 }
 
 /**
@@ -1865,6 +1865,35 @@ a {
 }
 
 /**
+ * Components
+ */
+.clayton-gerard-button-wrapper {
+  clear: both;
+  content: "";
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.clayton-gerard-button {
+  padding: 0.625em 0.9375em;
+  border: 2px solid #A27A2C;
+  background-color: transparent;
+  color: #A27A2C;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.clayton-gerard-button:hover {
+  border: 2px solid #A27A2C;
+  background-color: #A27A2C;
+  color: #fff;
+}
+
+/**
  * Widgets
  */
 .primary-sidebar .search-field {
@@ -2104,6 +2133,12 @@ a {
 .grayscale-filter {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  transition: all 0.2s ease-in;
+}
+
+.grayscale-filter:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 /**
@@ -2115,6 +2150,50 @@ a {
 
 .the-studio .entry-content {
   margin-top: 0;
+}
+
+.the-studio .clayton-gerard-latest-projects {
+  max-width: 900px;
+  margin: 0 auto;
+  content: "";
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.the-studio .clayton-gerard-latest-projects .clayton-gerard-button-wrapper {
+  text-align: center;
+}
+
+.the-studio .clayton-gerard-project-loop-heading {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.the-studio .clayton-gerard-project {
+  max-width: 300px;
+  width: 100%;
+  padding: 0.9375em;
+  margin: 0 auto 30px;
+}
+
+.the-studio .clayton-gerard-project .post-thumbnail {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  transition: all 0.2s ease-in;
+}
+
+.the-studio .clayton-gerard-project .post-thumbnail:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.the-studio .clayton-gerard-project-heading a {
+  color: #333;
+}
+
+.the-studio .clayton-gerard-project-heading a:hover {
+  color: #c99838;
 }
 
 .single-portfolio .content-area {
@@ -2920,6 +2999,16 @@ a {
   .logo-regular {
     max-width: 480px;
   }
+  .the-studio .clayton-gerard-project {
+    float: left;
+    width: 31.1111113%;
+    width: calc(34% - 30px);
+    margin-right: 3.333333%;
+    margin-right: calc(30px);
+  }
+  .the-studio .clayton-gerard-project:nth-child(3n) {
+    margin-right: 0;
+  }
   .full-width-row .studio-services {
     margin-bottom: 0;
   }
@@ -2930,7 +3019,7 @@ a {
     margin-right: 3.333333%;
     margin-right: calc(30px);
   }
-  .full-width-row .services:nth-child(3) {
+  .full-width-row .services:nth-child(3n) {
     margin-right: 0;
   }
 }
