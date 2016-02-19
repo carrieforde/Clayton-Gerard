@@ -24,7 +24,7 @@ function alcatraz_child_enqueue_scripts() {
 	// Include this theme's JS.
 	wp_enqueue_script(
 		'alcatraz-child-scripts',
-		ALCATRAZ_CHILD_URL . '/js/alcatraz-clayton-theme.min.js',
+		ALCATRAZ_CHILD_URL . '/js/clayton-gerard-theme.min.js',
 		array( 'jquery' ),
 		ALCATRAZ_CHILD_VERSION
 	);
@@ -32,22 +32,22 @@ function alcatraz_child_enqueue_scripts() {
 
 require_once ALCATRAZ_CHILD_PATH . '/inc/template-tags.php';
 
-add_filter( 'mm_social_networks', 'clayton_social_networks' );
+add_filter( 'mm_social_networks', 'clayton_gerard_social_networks' );
 /**
- * Filter the list of social networks for Alcatraz Clayton.
+ * Filter the list of social networks for Clayton Gerard.
  *
  * @param   string  $context  The context to pass to our filter.
  *
  * @return  array             The array of social networks.
  */
-function clayton_social_networks() {
+function clayton_gerard_social_networks() {
 
 	$social_networks = array(
-		'facebook'  => __( 'Facebook', 'alcatraz-clayton' ),
-		'twitter'   => __( 'Twitter', 'alcatraz-clayton' ),
-		'instagram' => __( 'Instagram', 'alcatraz-clayton' ),
-		'pinterest' => __( 'Pinterest', 'alcatraz-clayton' ),
-		'bloglovin' => __( 'Bloglovin', 'alcatraz-clayton' ),
+		'facebook'  => __( 'Facebook', 'clayton-gerard' ),
+		'twitter'   => __( 'Twitter', 'clayton-gerard' ),
+		'instagram' => __( 'Instagram', 'clayton-gerard' ),
+		'pinterest' => __( 'Pinterest', 'clayton-gerard' ),
+		'bloglovin' => __( 'Bloglovin', 'clayton-gerard' ),
 	);
 
 	return $social_networks;

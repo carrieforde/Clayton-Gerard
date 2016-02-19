@@ -1,6 +1,6 @@
 <?php
 /**
- * Alcatraz Clayton
+ * Clayton Gerard
  *
  * Template Name: Flexible Content
  */
