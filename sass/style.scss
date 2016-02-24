@@ -93,6 +93,20 @@ h6 {
 	margin-bottom: 40px;
 }
 
+blockquote,
+.blockquote {
+	padding: 0;
+	border: none;
+	margin-right: 0;
+	margin-left: 0;
+	text-align: center;
+
+	&::before,
+	&::after {
+		content: none;
+	}
+}
+
 /**
  * Navigation
  */
@@ -137,7 +151,7 @@ a {
 }
 
 .clayton-gerard-button {
-	padding: em(10) em(15);
+	padding: em(15) em(25);
 	border: $border__button;
 	background-color: $color__background-button;
 	color: $color__text-button;
@@ -170,6 +184,7 @@ a {
 }
 
 .site-footer {
+
 	.widget_nav_menu {
 
 		.menu {
@@ -419,7 +434,7 @@ a {
 
 	.clayton-gerard-latest-projects {
 		max-width: 900px;
-		margin: 0 auto;
+		margin: 0 auto 50px;
 		@include clearfix;
 
 		.clayton-gerard-button-wrapper {
@@ -429,13 +444,18 @@ a {
 
 	.clayton-gerard-project-loop-heading {
 		padding: 0 15px;
+		margin-bottom: 50px;
 		text-align: center;
+	}
+
+	.clayton-gerard-project-wrapper {
+		overflow: hidden;
+		margin-bottom: 50px;
 	}
 
 	.clayton-gerard-project {
 		max-width: 300px;
 		width: 100%;
-		padding: em(15);
 		margin: 0 auto 30px;
 
 		.post-thumbnail {
@@ -462,6 +482,23 @@ a {
 			color: $color__link-hover;
 		}
 	}
+
+	.cg-full-width-row.cg-last-row {
+		padding-bottom: 50px;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 3px;
+			margin: 50px auto;
+			background-color: $titanium;
+		}
+	}
+
+	.last {
+		margin-bottom: 0;
+	}
 }
 
 .single-portfolio {
@@ -470,113 +507,6 @@ a {
 		max-width: 960px;
 	}
 }
-
-/**
- * Page Templates
- */
-
-/**
- * Flexible Content
- */
-.full-width-row {
-	padding: 100px $size__padding-default;
-	font-size: 21px;
-	@include clearfix;
-
-	&.black {
-		position: relative;
-		background-color: #333;
-		color: #f2f2f2;
-	}
-
-	&.white {
-		color: #666;
-	}
-
-	.studio-services {
-		margin: 0 auto;
-		font-family: $trebuchet;
-
-		@media (min-width: em(768)) {
-			margin-bottom: 0;
-		}
-
-		@media (min-width: em(960)) {
-			max-width: 900px;
-		}
-	}
-
-	.services {
-		max-width: 300px;
-		width: 100%;
-		padding: em(15);
-		border: $border__services;
-		margin: 0 auto 30px;
-		font-size: 18px;
-
-		@media (min-width: em(768)) {
-			float: left;
-			width: 31.1111113%;
-			width: calc(34% - 30px);
-			margin-right: 3.333333%;
-			margin-right: calc(30px);
-
-			&:nth-child(3n) {
-				margin-right: 0;
-			}
-		}
-	}
-
-	.services-heading {
-		font: 700 21px $trebuchet;
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	.services-offerings ul {
-		margin-left: 0;
-	}
-
-	.full-width-row-content {
-		max-width: 700px;
-		margin: 0 auto;
-	}
-
-	.georgia p {
-		font-family: $georgia;
-	}
-
-	.trebuchet p {
-		font-family: $trebuchet;
-	}
-
-	.full-width-row-accent {
-		position: absolute;
-		right: 0;
-		bottom: -25px;
-		left: 0;
-		width: 50px;
-		height: 50px;
-		margin: 0 auto;
-		background-color: #333;
-		transform: rotate(45deg);
-	}
-
-	blockquote,
-	.blockquote {
-		padding: 0;
-		border: none;
-		margin-right: 0;
-		margin-left: 0;
-		text-align: center;
-
-		&::before,
-		&::after {
-			content: none;
-		}
-	}
-}
-
 
 /**
  * Plugins
@@ -596,11 +526,4 @@ a {
 	@media (min-width: em(945)) {
 		width: 40px;
 	}
-}
-
-/* Clayton Gerard Custom Functionality */
-.cgcf-project-website a {
-	font-family: $arial;
-	font-weight: 700;
-	text-transform: uppercase;
 }

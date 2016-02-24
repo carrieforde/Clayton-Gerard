@@ -15,7 +15,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php echo clayton_flexible_content(); ?>
+		<?php do_shortcode( '[claytongerard_flex_content]' ); ?>
 		<?php echo clayton_gerard_studio_portfolio_loop(); ?>
 	</div>
 

@@ -10,6 +10,8 @@
 		// Add classes to paragraphs before headings
 		$( 'h1, h2, h3, h4, h5, h6' ).prev( 'p' ).addClass( 'extra-p-margin' );
 
+		$( '.cg-full-width-row p:last-child' ).addClass( 'last' );
+
 		// Remove empty p tags
 		$( 'p' ).each(function() {
 			var $this = $( this );
