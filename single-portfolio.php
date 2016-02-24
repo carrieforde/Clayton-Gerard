@@ -22,6 +22,8 @@ get_header(); ?>
 			}
 			get_template_part( 'template-parts/content-portfolio', $post_type ); ?>
 
+			<?php the_post_navigation(); ?>
+
 			<?php
 				// Maybe load comments.
 				if ( comments_open() || get_comments_number() ) {

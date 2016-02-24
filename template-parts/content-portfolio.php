@@ -19,7 +19,7 @@
 			if ( is_archive() ) {
 				return;
 			} else {
-				echo cgcf_single_portfolio_output();
+				do_shortcode( '[claytongerard_project]' );
 			}
 		?>
 	</div>
