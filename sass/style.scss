@@ -150,7 +150,12 @@ a {
 	@include clearfix;
 }
 
+button,
+input[type="button"],
+input[type="submit"],
+.button,
 .clayton-gerard-button {
+	display: inline-block;
 	padding: em(15) em(25);
 	border: $border__button;
 	background-color: $color__background-button;
@@ -160,6 +165,10 @@ a {
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	transition: all 0.2s ease-in;
+
+	&:visited {
+		color: $color__text-button;
+	}
 
 	&:hover {
 		border: $border__button-hover;
@@ -434,6 +443,7 @@ a {
 
 	.clayton-gerard-latest-projects {
 		max-width: 900px;
+		padding: $size__padding-default;
 		margin: 0 auto 50px;
 		@include clearfix;
 
@@ -443,7 +453,7 @@ a {
 	}
 
 	.clayton-gerard-project-loop-heading {
-		padding: 0 15px;
+		padding: 15px 0;
 		margin-bottom: 50px;
 		text-align: center;
 	}
@@ -454,7 +464,6 @@ a {
 	}
 
 	.clayton-gerard-project {
-		max-width: 300px;
 		width: 100%;
 		margin: 0 auto 30px;
 
@@ -462,12 +471,26 @@ a {
 			@include grayscale;
 		}
 
-		@media (min-width: em(768)) {
+		@media (min-width: em(550)) {
 			float: left;
+			width: calc(50% - 15px);
+			margin-right: calc(30px);
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		@media (min-width: em(800)) {
 			width: 31.1111113%;
-			width: calc(34% - 30px);
+			width: calc(32.5% - 15px);
 			margin-right: 3.333333%;
 			margin-right: calc(30px);
+
+			&:nth-child(2n) {
+				margin-right: 3.333333%;
+				margin-right: calc(30px);
+			}
 
 			&:nth-child(3n) {
 				margin-right: 0;
@@ -475,11 +498,15 @@ a {
 		}
 	}
 
-	.clayton-gerard-project-heading a {
-		color: $color__text-headings;
+	.clayton-gerard-project-heading {
+		text-align: center;
 
-		&:hover {
-			color: $color__link-hover;
+		a {
+			color: $color__text-headings;
+
+			&:hover {
+				color: $color__link-hover;
+			}
 		}
 	}
 
@@ -499,6 +526,20 @@ a {
 	.last {
 		margin-bottom: 0;
 	}
+
+	.clayton-gerard-button {
+		width: 245px;
+		margin-bottom: 15px;
+
+		@media (min-width: em(500)) {
+			margin-right: 30px;
+			margin-bottom: 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .single-portfolio {
@@ -511,6 +552,34 @@ a {
 /**
  * Plugins
  */
+
+/* Gravity Forms */
+.gfield_label {
+	font-family: $arial;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+body .gform_wrapper label.gfield_label + div.ginput_container {
+	margin-top: 0;
+}
+
+.gform_wrapper ul li.gfield {
+	margin-bottom: 20px;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+	font-size: 16px;
+	padding: .313em;
+	border: 1px solid #000;
+	border-radius: 0;
+	background-color: white;
+	-webkit-appearance: none;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
+	margin-top: 4px !important;
+}
 
 /* Mm Components */
 

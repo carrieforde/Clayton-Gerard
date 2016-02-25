@@ -66,6 +66,7 @@ function clayton_gerard_studio_portfolio_loop() {
 
 	<div class="clayton-gerard-button-wrapper">
 		<a href="/portfolio/" class="clayton-gerard-button">View More Projects</a>
+		<a href="/contact/" class="clayton-gerard-button">Let's Work Together</a>
 	</div>
 	</section>
 

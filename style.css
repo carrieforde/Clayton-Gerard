@@ -1890,7 +1890,12 @@ a {
   width: 100%;
 }
 
+button,
+input[type="button"],
+input[type="submit"],
+.button,
 .clayton-gerard-button {
+  display: inline-block;
   padding: 0.9375em 1.5625em;
   border: 2px solid #1a1a1a;
   background-color: transparent;
@@ -1902,6 +1907,18 @@ a {
   transition: all 0.2s ease-in;
 }
 
+button:visited,
+input[type="button"]:visited,
+input[type="submit"]:visited,
+.button:visited,
+.clayton-gerard-button:visited {
+  color: #1a1a1a;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.button:hover,
 .clayton-gerard-button:hover {
   border: 2px solid #1a1a1a;
   background-color: #1a1a1a;
@@ -2169,6 +2186,7 @@ a {
 
 .the-studio .clayton-gerard-latest-projects {
   max-width: 900px;
+  padding: 20px;
   margin: 0 auto 50px;
   content: "";
   display: table;
@@ -2181,7 +2199,7 @@ a {
 }
 
 .the-studio .clayton-gerard-project-loop-heading {
-  padding: 0 15px;
+  padding: 15px 0;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -2192,7 +2210,6 @@ a {
 }
 
 .the-studio .clayton-gerard-project {
-  max-width: 300px;
   width: 100%;
   margin: 0 auto 30px;
 }
@@ -2206,6 +2223,10 @@ a {
 .the-studio .clayton-gerard-project .post-thumbnail:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+}
+
+.the-studio .clayton-gerard-project-heading {
+  text-align: center;
 }
 
 .the-studio .clayton-gerard-project-heading a {
@@ -2233,6 +2254,11 @@ a {
   margin-bottom: 0;
 }
 
+.the-studio .clayton-gerard-button {
+  width: 245px;
+  margin-bottom: 15px;
+}
+
 .single-portfolio .content-area {
   max-width: 960px;
 }
@@ -2240,11 +2266,60 @@ a {
 /**
  * Plugins
  */
+/* Gravity Forms */
+.gfield_label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+body .gform_wrapper label.gfield_label + div.ginput_container {
+  margin-top: 0;
+}
+
+.gform_wrapper ul li.gfield {
+  margin-bottom: 20px;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+  font-size: 16px;
+  padding: .313em;
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
+  margin-top: 4px !important;
+}
+
 /* Mm Components */
 /* Mm Social Icons */
 .mm-social-icons a img {
   width: 30px;
   height: auto;
+}
+
+@media (min-width: 31.25em) {
+  .the-studio .clayton-gerard-button {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .the-studio .clayton-gerard-button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 34.375em) {
+  .the-studio .clayton-gerard-project {
+    float: left;
+    width: calc(50% - 15px);
+    margin-right: calc(30px);
+  }
+  .the-studio .clayton-gerard-project:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 48em) {
@@ -2939,10 +3014,16 @@ a {
   .logo-regular {
     max-width: 480px;
   }
+}
+
+@media (min-width: 50em) {
   .the-studio .clayton-gerard-project {
-    float: left;
     width: 31.1111113%;
-    width: calc(34% - 30px);
+    width: calc(32.5% - 15px);
+    margin-right: 3.333333%;
+    margin-right: calc(30px);
+  }
+  .the-studio .clayton-gerard-project:nth-child(2n) {
     margin-right: 3.333333%;
     margin-right: calc(30px);
   }
