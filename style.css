@@ -2186,7 +2186,7 @@ input[type="submit"]:hover,
 
 .the-studio .clayton-gerard-latest-projects {
   max-width: 900px;
-  padding: 20px;
+  /*padding: $size__padding-default;*/
   margin: 0 auto 50px;
   content: "";
   display: table;
@@ -2199,7 +2199,7 @@ input[type="submit"]:hover,
 }
 
 .the-studio .clayton-gerard-project-loop-heading {
-  padding: 15px 0;
+  padding-top: 15px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -2238,13 +2238,13 @@ input[type="submit"]:hover,
 }
 
 .the-studio .cg-full-width-row.cg-last-row {
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 
 .the-studio .cg-full-width-row.cg-last-row::after {
   content: '';
   display: block;
-  width: 50px;
+  width: 100px;
   height: 3px;
   margin: 50px auto;
   background-color: #333;
