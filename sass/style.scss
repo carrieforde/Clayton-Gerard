@@ -443,8 +443,8 @@ input[type="submit"],
 
 	.clayton-gerard-latest-projects {
 		max-width: 900px;
-		/*padding: $size__padding-default;*/
-		margin: 0 auto 50px;
+		padding: $size__padding-default;
+		margin: 50px auto 50px;
 		@include clearfix;
 
 		.clayton-gerard-button-wrapper {
@@ -507,19 +507,6 @@ input[type="submit"],
 			&:hover {
 				color: $color__link-hover;
 			}
-		}
-	}
-
-	.cg-full-width-row.cg-last-row {
-		padding-bottom: 0;
-
-		&::after {
-			content: '';
-			display: block;
-			width: 100px;
-			height: 3px;
-			margin: 50px auto;
-			background-color: $titanium;
 		}
 	}
 
