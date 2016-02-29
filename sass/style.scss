@@ -4,9 +4,9 @@ Author:           Carrie Forde
 Author URI:       http://carrieforde.com
 Description:      A custom child theme for Clayton Gerard built on Alcatraz.
 Version:          1.0.0
-Text Domain:      alcatraz-clayton
+Text Domain:      claytongerard
 Template:         alcatraz
-GitHub Theme URI: https://github.com/carrieforde/alcatraz-clayton
+GitHub Theme URI: https://github.com/carrieforde/Clayton-Gerard
 GitHub Branch:    master
 Tags:
 */
@@ -130,6 +130,11 @@ a {
 	a:hover {
 		color: $color__link-nav-hover;
 	}
+
+	.current-menu-item > a {
+		font-weight: 700;
+		color: $gold;
+	}
 }
 
 .main-navigation #primary-menu .menu-item a {
@@ -137,7 +142,8 @@ a {
 }
 
 /* Post Navigation */
-.posts-navigation {
+.posts-navigation,
+.nav-links a {
 	font-family: $font__navigation;
 	text-transform: uppercase;
 }
@@ -280,7 +286,7 @@ input[type="submit"],
 
 /* Logo */
 .logo-mobile {
-	max-width: 200px;
+	max-width: 150px;
 	margin: 0 auto;
 }
 
@@ -515,12 +521,13 @@ input[type="submit"],
 	}
 
 	.clayton-gerard-button {
+		display: block;
 		width: 245px;
-		margin-right: 30px;
-		margin-bottom: 15px;
+		margin: 0 auto 15px;
 
 		@media (min-width: em(560)) {
-			margin-bottom: 0;
+			display: inline-block;
+			margin: 0 15px 0 0;
 
 			&:last-child {
 				margin-right: 0;
@@ -539,6 +546,18 @@ input[type="submit"],
 /**
  * Plugins
  */
+
+/* Clayton Gerard Custom Functionality */
+.cg-full-width-row {
+
+	blockquote,
+	.blockquote {
+
+		p {
+			padding-left: 0;
+		}
+	}
+}
 
 /* Gravity Forms */
 .gfield_label {
@@ -564,7 +583,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	-webkit-appearance: none;
 }
 
-.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
 	margin-top: 4px !important;
 }
 

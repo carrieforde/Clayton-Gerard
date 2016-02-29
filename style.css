@@ -4,9 +4,9 @@ Author:           Carrie Forde
 Author URI:       http://carrieforde.com
 Description:      A custom child theme for Clayton Gerard built on Alcatraz.
 Version:          1.0.0
-Text Domain:      alcatraz-clayton
+Text Domain:      claytongerard
 Template:         alcatraz
-GitHub Theme URI: https://github.com/carrieforde/alcatraz-clayton
+GitHub Theme URI: https://github.com/carrieforde/Clayton-Gerard
 GitHub Branch:    master
 Tags:
 */
@@ -1869,12 +1869,18 @@ a {
   color: #A27A2C;
 }
 
+#primary-menu .current-menu-item > a {
+  font-weight: 700;
+  color: #A27A2C;
+}
+
 .main-navigation #primary-menu .menu-item a {
   padding: 5px 25px;
 }
 
 /* Post Navigation */
-.posts-navigation {
+.posts-navigation,
+.nav-links a {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-transform: uppercase;
 }
@@ -2023,7 +2029,7 @@ input[type="submit"]:hover,
 
 /* Logo */
 .logo-mobile {
-  max-width: 200px;
+  max-width: 150px;
   margin: 0 auto;
 }
 
@@ -2242,9 +2248,9 @@ input[type="submit"]:hover,
 }
 
 .the-studio .clayton-gerard-button {
+  display: block;
   width: 245px;
-  margin-right: 30px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
 .single-portfolio .content-area {
@@ -2254,6 +2260,12 @@ input[type="submit"]:hover,
 /**
  * Plugins
  */
+/* Clayton Gerard Custom Functionality */
+.cg-full-width-row blockquote p,
+.cg-full-width-row .blockquote p {
+  padding-left: 0;
+}
+
 /* Gravity Forms */
 .gfield_label {
   font-family: Arial, Helvetica, sans-serif;
@@ -2278,7 +2290,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   -webkit-appearance: none;
 }
 
-.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
   margin-top: 4px !important;
 }
 
@@ -2302,7 +2315,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 @media (min-width: 35em) {
   .the-studio .clayton-gerard-button {
-    margin-bottom: 0;
+    display: inline-block;
+    margin: 0 15px 0 0;
   }
   .the-studio .clayton-gerard-button:last-child {
     margin-right: 0;
