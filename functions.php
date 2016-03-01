@@ -53,7 +53,7 @@ function clayton_gerard_social_networks() {
 	return $social_networks;
 }
 
-add_filter( 'post_class', 'clayton_gerard_project_post_class' );
+//add_filter( 'post_class', 'clayton_gerard_project_post_class' );
 /**
  * Add a custom post class to the projects.
  */

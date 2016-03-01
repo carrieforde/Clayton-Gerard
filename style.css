@@ -2258,6 +2258,27 @@ input[type="submit"]:hover,
 }
 
 /**
+ * Portfolio
+ */
+.portfolio-archive .clayton-gerard-portfolio-heading {
+  margin-bottom: 40px;
+}
+
+.portfolio-archive .portfolio {
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.portfolio-archive .post-thumbnail:hover {
+  opacity: 0.7;
+}
+
+.portfolio-archive .entry-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+/**
  * Plugins
  */
 /* Clayton Gerard Custom Functionality */
@@ -2309,6 +2330,15 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     margin-right: calc(30px);
   }
   .the-studio .clayton-gerard-project:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio-archive .portfolio {
+    float: left;
+    width: calc(50% - 15px);
+    margin-right: calc(30px);
+    margin-bottom: 40px;
+  }
+  .portfolio-archive .portfolio:nth-child(2n+1) {
     margin-right: 0;
   }
 }
@@ -3029,6 +3059,19 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     margin-right: calc(30px);
   }
   .the-studio .clayton-gerard-project:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio-archive .portfolio {
+    width: 31.1111113%;
+    width: calc(32.5% - 15px);
+    margin-right: 3.333333%;
+    margin-right: calc(30px);
+  }
+  .portfolio-archive .portfolio:nth-child(2n+1) {
+    margin-right: 3.333333%;
+    margin-right: calc(30px);
+  }
+  .portfolio-archive .portfolio:nth-child(3n+1) {
     margin-right: 0;
   }
 }
