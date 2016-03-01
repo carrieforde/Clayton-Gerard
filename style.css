@@ -1357,7 +1357,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  border: 1px solid #333;
+  border: 1px solid #A27A2C;
   color: #666;
   outline: none;
 }
@@ -2346,7 +2346,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 @media (min-width: 35em) {
   .the-studio .clayton-gerard-button {
     display: inline-block;
-    margin: 0 15px 0 0;
+    margin: 0 30px 0 0;
   }
   .the-studio .clayton-gerard-button:last-child {
     margin-right: 0;
