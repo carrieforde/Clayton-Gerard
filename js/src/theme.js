@@ -22,7 +22,7 @@
 		// Force full-width on The Studio
 		$( '.the-studio, .single-portfolio' ).removeClass( 'boxed-content' ).addClass( 'full-width' );
 
-		$( '.single-portfolio' ).removeClass( 'right-sidebar' );
+		$( '.single-portfolio, .portfolio-archive' ).removeClass( 'right-sidebar' );
 
 		// Add slide toggle for the categories
 		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );

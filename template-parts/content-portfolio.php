@@ -1,7 +1,6 @@
-
 <?php
 /**
- * Content template for flexible content pages.
+ * Content template for portfolio archive pages.
  *
  * @package alcatraz
  */
@@ -11,22 +10,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php if ( has_post_thumbnail() ) : ?>
+		<a href="<?php the_permalink() ?>" class="post-thumbnail"><?php the_post_thumbnail(); ?></a>
+	<?php endif; ?>
+
 	<?php alcatraz_entry_header(); ?>
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			if ( is_archive() ) {
-				return;
-			} else {
-				do_shortcode( '[claytongerard_project]' );
-			}
-		?>
-	</div>
-
-	<footer class="entry-footer">
-		<?php alcatraz_entry_footer(); ?>
-	</footer>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>

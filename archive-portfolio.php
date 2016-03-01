@@ -12,6 +12,8 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
+		<h1 class="clayton-gerard-portfolio-heading">Portfolio</h1>
+
 		<?php do_action( 'alcatraz_before_main_inside' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>

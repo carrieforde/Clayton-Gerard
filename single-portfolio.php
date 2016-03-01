@@ -20,7 +20,7 @@ get_header(); ?>
 			if ( 'post' == $post_type ) {
 				$post_type = '';
 			}
-			get_template_part( 'template-parts/content-portfolio', $post_type ); ?>
+			get_template_part( 'template-parts/content-single-portfolio', $post_type ); ?>
 
 			<?php the_post_navigation(); ?>
 
