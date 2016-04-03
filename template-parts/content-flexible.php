@@ -11,17 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php alcatraz_entry_header(); ?>
+	<?php alcatraz_the_entry_header(); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php do_shortcode( '[claytongerard_flex_content]' ); ?>
 		<?php echo clayton_gerard_studio_portfolio_loop(); ?>
 	</div>
-
-	<footer class="entry-footer">
-		<?php alcatraz_entry_footer(); ?>
-	</footer>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>

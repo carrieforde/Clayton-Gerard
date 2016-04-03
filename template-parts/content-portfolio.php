@@ -14,7 +14,7 @@
 		<a href="<?php the_permalink() ?>" class="post-thumbnail"><?php the_post_thumbnail(); ?></a>
 	<?php endif; ?>
 
-	<?php alcatraz_entry_header(); ?>
+	<?php alcatraz_the_entry_header(); ?>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>

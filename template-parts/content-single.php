@@ -15,7 +15,7 @@
 		</div>
 	<?php endif; ?>
 
-	<?php alcatraz_entry_header(); ?>
+	<?php alcatraz_the_entry_header(); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -27,10 +27,7 @@
 		?>
 	</div>
 
-	<footer class="entry-footer">
-		<?php clayton_entry_footer(); ?>
-		<?php alcatraz_edit_post(); ?>
-	</footer>
+	<?php alcatraz_the_entry_footer(); ?>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>

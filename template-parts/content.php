@@ -13,7 +13,7 @@
 		<a href="<?php the_permalink(); ?>" class="post-thumbnail"><?php the_post_thumbnail(); ?></a>
 	<?php endif; ?>
 
-	<?php alcatraz_entry_header(); ?>
+	<?php alcatraz_the_entry_header(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -31,10 +31,7 @@
 		?>
 	</div>
 
-	<footer class="entry-footer">
-		<?php clayton_entry_footer(); ?>
-		<?php alcatraz_edit_post(); ?>
-	</footer>
+	<?php alcatraz_the_entry_footer(); ?>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>
