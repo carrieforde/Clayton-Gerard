@@ -359,21 +359,24 @@ input[type="submit"],
 	}
 }
 
-.cat-links {
-	display: inline;
-}
-
-.edit-link {
+.entry-tax-term-list {
 	display: inline;
 
-	&::before {
-		content: '| ';
+	&::after {
+		content: ' | ';
 	}
 }
 
-.post-edit-link::before {
-	content: none;
+.post-edit-link {
+	display: inline;
+
+	&::before {
+		content: ' | ';
+		padding-right: 0;
+		font: 13px $arial;
+	}
 }
+
 /**
  * Sidebars
  */
