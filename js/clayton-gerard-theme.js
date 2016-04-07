@@ -19,22 +19,28 @@
 				$this.remove();
 		});
 
+		// Open external links in a new tab.
+		var h = window.location.host.toLowerCase();
+		$( '[href^="http"]' ).not( '[href*="' + h + '"]' ).addClass( 'external-link' ).attr( "target", "_blank" );
+
 		// Force full-width on The Studio
 		$( '.the-studio, .single-portfolio' ).removeClass( 'boxed-content' ).addClass( 'full-width' );
 
 		$( '.single-portfolio, .portfolio-archive' ).removeClass( 'right-sidebar' );
 
 		// Add slide toggle for the categories
-		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+		var $toggle = '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>';
 
-		$( '.widget_categories .widget-toggle' ).click(function() {
+		$( '.widget_categories .widget-title' ).append( $toggle );
+
+		$( '.widget_categories .widget-toggle' ).click( function() {
 			$( this ).toggleClass( 'toggled' );
 			$( '.widget_categories ul' ).slideToggle( 'slow' );
 		});
 
-		$( '.widget_archive .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+		$( '.widget_archive .widget-title' ).append( $toggle );
 
-		$( '.widget_archive .widget-toggle' ).click(function() {
+		$( '.widget_archive .widget-toggle' ).click( function() {
 			$( this ).toggleClass( 'toggled' );
 			$( '.widget_archive ul' ).slideToggle( 'slow' );
 		});
