@@ -29,16 +29,14 @@
 		$( '.single-portfolio, .portfolio-archive' ).removeClass( 'right-sidebar' );
 
 		// Add slide toggle for the categories
-		var $toggle = $( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
-
-		$( '.widget_categories .widget-title' ).append( $toggle );
+		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
 
 		$( '.widget_categories .widget-toggle' ).click( function() {
 			$( this ).toggleClass( 'toggled' );
 			$( '.widget_categories ul' ).slideToggle( 'slow' );
 		});
 
-		$( '.widget_archive .widget-title' ).append( $toggle );
+		$( '.widget_archive .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
 
 		$( '.widget_archive .widget-toggle' ).click( function() {
 			$( this ).toggleClass( 'toggled' );
