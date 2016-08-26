@@ -23,9 +23,6 @@
 		var h = window.location.host.toLowerCase();
 		$( '[href^="http"]' ).not( '[href*="' + h + '"]' ).addClass( 'external-link' ).attr( "target", "_blank" );
 
-		// Force full-width on The Studio
-		$( '.the-studio, .single-portfolio' ).removeClass( 'boxed-content' ).addClass( 'full-width' );
-
 		$( '.single-portfolio, .portfolio-archive' ).removeClass( 'right-sidebar' );
 
 		// Add slide toggle for the categories
