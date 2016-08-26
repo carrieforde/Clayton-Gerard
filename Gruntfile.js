@@ -8,8 +8,8 @@ module.exports = function( grunt ) {
 				// sourceComments: true,
 				sourceMap: true,
 				includePaths: [
-					'lib/bourbon/app/assets/stylesheets',
-					'lib/neat/app/assets/stylesheets',
+					'node_modules/bourbon/app/assets/stylesheets',
+					'node_modules/bourbon-neat/app/assets/stylesheets',
 					'../alcatraz/sass'
 				]
 			},
@@ -47,16 +47,24 @@ module.exports = function( grunt ) {
 		},
 		concat: {
 			options: {
+				banner: '/*! <%= pkg.name %> theme JS - This file is built with Grunt and should not be edited directly */\n\n',
 				separator: '\n\n'
 			},
 			dist: {
-				src: ['js/src/*.js'],
+				src: [
+					'lib/jquery-mobile/jquery.mobile.custom.min.js',
+					'js/src/utilities.js',
+					'js/src/skip-link-focus-fix.js',
+					'js/src/navigation.js',
+					'js/src/alcatraz.js', // This must be included after all other objects.
+					'js/src/init.js' // This should be last.
+				],
 				dest: 'js/<%= pkg.name %>-theme.js'
 			}
 		},
 		uglify: {
 			options: {
-				banner: '/*! <%= pkg.name %> theme JS */\n',
+				banner: '/*! <%= pkg.name %> theme JS - This file is built with Grunt and should not be edited directly */\n',
 				sourceMap: true
 			},
 			dist: {
@@ -67,7 +75,7 @@ module.exports = function( grunt ) {
 		},
 		watch: {
 			css: {
-				files: ['sass/**/*.scss', 'sass/*.scss'],
+				files: ['sass/**/*.scss'],
 				tasks: ['styles'],
 				options: {
 					livereload: true
@@ -90,6 +98,7 @@ module.exports = function( grunt ) {
 				options: {
 					cwd: '',
 					domainPath: 'languages/',
+					potFilename: 'alcatraz.pot',
 					type: 'wp-theme'
 				},
 			},
