@@ -1684,7 +1684,7 @@ a {
   transition: all 0.2s ease-in;
 }
 
-#primary-menu {
+#primary-menu-wrap {
   border-top: 2px solid #1a1a1a;
   border-bottom: 2px solid #1a1a1a;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -1693,16 +1693,16 @@ a {
   text-transform: uppercase;
 }
 
-#primary-menu a,
-#primary-menu a:visited {
+#primary-menu-wrap a,
+#primary-menu-wrap a:visited {
   color: #1a1a1a;
 }
 
-#primary-menu a:hover {
+#primary-menu-wrap a:hover {
   color: #A27A2C;
 }
 
-#primary-menu .current-menu-item > a {
+#primary-menu-wrap .current-menu-item > a {
   font-weight: 700;
   color: #A27A2C;
 }
