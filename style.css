@@ -1770,6 +1770,7 @@ input[type="submit"]:hover,
  * Widgets
  */
 .primary-sidebar .search-field {
+  max-width: 100%;
   width: 100%;
   margin: 0;
 }
@@ -2133,6 +2134,50 @@ input[type="submit"]:hover,
 
 body .gform_wrapper label.gfield_label + div.ginput_container {
   margin-top: 0;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-single .chosen-single {
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+  color: #666;
+  box-shadow: none;
+  height: auto;
+  line-height: inherit;
+  padding: 0.3125rem 0.25rem;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  border-bottom: none;
+  box-shadow: none;
+  color: #666;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container .chosen-drop {
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+  border-top: none;
+  box-shadow: none;
+  padding: 0 0 0.3125rem;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container .chosen-results {
+  padding: 0;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container .chosen-results li {
+  line-height: inherit;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container .chosen-results li.highlighted {
+  background: #A27A2C;
 }
 
 .gform_wrapper ul li.gfield {
