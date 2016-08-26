@@ -23,8 +23,6 @@
 		var h = window.location.host.toLowerCase();
 		$( '[href^="http"]' ).not( '[href*="' + h + '"]' ).addClass( 'external-link' ).attr( "target", "_blank" );
 
-		$( '.single-portfolio, .portfolio-archive' ).removeClass( 'right-sidebar' );
-
 		// Add slide toggle for the categories
 		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
 

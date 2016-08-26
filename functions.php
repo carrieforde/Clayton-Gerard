@@ -107,5 +107,17 @@ function clayton_gerard_portfolio_body_classes( $classes ) {
 	}
 }
 
+add_filter( 'alcatraz_post_types', 'cf_cg_post_types' );
+/**
+ * Filter the post types passed to the metaboxes.
+ */
+function cf_cg_post_types( $context= '' ) {
+	$post_type = array(
+		'page',
+		'portfolio',
+	);
+	return $post_type;
+}
+
 // Add new image sizes.
 add_image_size( 'full-screen-image', 2560, 986, true );
