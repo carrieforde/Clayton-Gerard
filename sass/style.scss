@@ -13,30 +13,17 @@ Tags:
 
 // Include Sass libraries.
 @import "bourbon";
+@import "utilities/index";
 @import "neat";
-
-// Include Sass variables and mixins from Alcatraz.
-@import "base/variables";
-@import "base/mixins";
 
 // Include Sass varaibles and mixins from the child theme.
 @import "partials/variables";
 @import "partials/mixins";
 
 // Include the Alcatraz styles.
-@import "base/normalize";
-@import "base/defaults";
-@import "base/grid";
-@import "base/typography";
-@import "components/navigation";
-@import "components/media";
-@import "components/forms";
-@import "components/tables";
-@import "components/widgets";
-@import "layout/header";
-@import "layout/content";
-@import "layout/sidebars";
-@import "layout/footer";
+@import "base/index";
+@import "components/index";
+@import "layout/index";
 
 /**
  * Alcatraz Clayton Styles
@@ -66,27 +53,27 @@ h6 {
 }
 
 h1 {
-	@include font-size(28);
+	font-size: rem(28);
 }
 
 h2 {
-	@include font-size(24);
+	font-size: rem(24);
 }
 
 h3 {
-	@include font-size(20);
+	font-size: rem(20);
 }
 
 h4 {
-	@include font-size(18);
+	font-size: rem(18);
 }
 
 h5 {
-	@include font-size(16);
+	font-size: rem(16);
 }
 
 h6 {
-	@include font-size(14);
+	font-size: rem(14);
 }
 
 .extra-p-margin {
