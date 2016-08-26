@@ -119,5 +119,34 @@ function cf_cg_post_types( $context= '' ) {
 	return $post_type;
 }
 
+add_action( 'gform_pre_render', 'cf_cg_set_gravity_forms_chosen_options' );
+/**
+ * Pass Chosen options to the form.
+ *
+ * @since 1.2.0
+ *
+ * @param  $form  The form.
+ * @return        The Chosen JS options.
+ */
+function cf_cg_set_gravity_forms_chosen_options( $form ) {
+
+	?>
+
+	<script type="text/javascript">
+
+		gform.addFilter('gform_chosen_options', 'set_chosen_options_js' );
+
+		// Disable the search
+		function set_chosen_options_js( options, element ) {
+			options.disable_search = 'true';
+
+			return options;
+		}
+
+	</script>
+
+	<?php return $form;
+}
+
 // Add new image sizes.
 add_image_size( 'full-screen-image', 2560, 986, true );
