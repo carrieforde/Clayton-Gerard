@@ -6,8 +6,13 @@
 $noir: #1a1a1a;
 $titanium: #333;
 $platinum: #666;
-$gold: #A27A2C;
+$hot-toddy: #A27A2C;
 $crystal: transparent;
+$metallic-gold: #cca42e;
+
+// Gradients
+$gradient__background: linear-gradient(to right, $hot-toddy 0, $metallic-gold 100%);
+$gradient__border: linear-gradient(to top right, $metallic-gold 0, $hot-toddy 50%, $metallic-gold 100%);
 
 // Borders
 $border__navigation-primary: 2px solid $noir;
@@ -21,9 +26,9 @@ $color__background-featured-image: $crystal;
 $color__background-footer: $noir;
 $color__background-hr: $platinum;
 $color__background-menu-toggle: $noir;
-$color__background-menu-toggle-hover: $gold;
+$color__background-menu-toggle-hover: $hot-toddy;
 $color__background-sub-menu-toggle: $titanium;
-$color__background-sub-menu-toggle-hover: $gold;
+$color__background-sub-menu-toggle-hover: $hot-toddy;
 $color__background-flex-full-black: $titanium;
 
 // Text Colors
@@ -35,26 +40,27 @@ $color__text-headings: $titanium;
 $color__text-input: $platinum;
 $color__text-input-focus: $platinum;
 $color__text-post-meta: $platinum;
-$color__link: $gold;
+$color__link: $hot-toddy;
 $color__link-visited: darken($color__link, 10%);
 $color__link-hover: lighten($color__link, 10%);
-$color__link-footer: $gold;
+$color__link-footer: $hot-toddy;
 $color__link-footer-hover: lighten($color__link-footer, 10%);
 $color__link-mobile-nav: $noir;
 $color__link-nav: $noir;
-$color__link-nav-hover: $gold;
+$color__link-nav-hover: $hot-toddy;
 $color__link-nav-footer: $true-white;
-$color__link-nav-footer-hover: $gold;
+$color__link-nav-footer-hover: $hot-toddy;
 $color__link-nav-sub-menu: $titanium;
-$color__link-nav-sub-menu-hover: $gold;
+$color__link-nav-sub-menu-hover: $hot-toddy;
 $color__link-post-meta: $platinum;
-$color__link-post-meta-hover: $gold;
+$color__link-post-meta-hover: $hot-toddy;
 $color__link-taxonomy: $noir;
-$color__link-taxonomy-hover: $gold;
+$color__link-taxonomy-hover: $hot-toddy;
 $color__link-sidebar: $noir;
-$color__link-sidebar-hover: $gold;
+$color__link-sidebar-hover: $hot-toddy;
 $color__link-titles: $titanium;
-$color__link-titles-hover: $gold;
+$color__link-titles-hover: $hot-toddy;
+
 
 // 2.2.2 Typography
 
@@ -87,9 +93,9 @@ $font__services: $trebuchet;
 $border__button: 2px solid $noir;
 $border__button-hover: 2px solid $noir;
 $border__input: 1px solid $noir;
-$border__input-focus: 1px solid $gold;
+$border__input-focus: 1px solid $hot-toddy;
 $border__nav-primary: 2px solid $noir;
-$border__services: 2px solid $gold;
+$border__services: 2px solid $hot-toddy;
 
 
 // 2.2.4 Structure

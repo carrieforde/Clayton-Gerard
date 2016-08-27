@@ -120,7 +120,7 @@ a {
 
 	.current-menu-item > a {
 		font-weight: 700;
-		color: $gold;
+		color: $hot-toddy;
 	}
 }
 
@@ -666,29 +666,49 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 			line-height: inherit;
 
 			&.highlighted {
-				background: $gold;
+				background: $gradient__background;
 			}
 		}
 	}
 }
 
+// Checkboxes
+.gform_wrapper ul.gfield_checkbox li {
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked {
+
+			+ label:before {
+				@include position(absolute, rem(7) null null 0);
+				@include size(rem(20) rem(22));
+
+				content: url(images/checked.svg);
+				display: block;
+			}
+		}
+	}
+
+	label {
+		padding: rem(5) 0 rem(5) rem(30);
+		position: relative;
+
+		&:before {
+			@include position(absolute, rem(8) null null 0);
+			@include size(rem(15));
+
+			content: url(images/unchecked.svg);
+			display: block;
+		}
+	}
+}
+
+
 .gform_wrapper ul li.gfield {
 	margin-bottom: 20px;
 }
 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
-	font-size: 16px;
-	padding: .313em;
-	border: 1px solid #000;
-	border-radius: 0;
-	background-color: white;
-	-webkit-appearance: none;
-}
-
-.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
-.gform_wrapper.gf_browser_chrome .gfield_checkbox li input {
-	margin-top: 4px !important;
-}
 
 /* Mm Components */
 
