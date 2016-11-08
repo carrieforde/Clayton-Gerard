@@ -266,6 +266,8 @@ input[type="submit"],
 	}
 }
 
+
+
 /**
  * Header
  */
@@ -390,6 +392,10 @@ input[type="submit"],
 		&:hover {
 			color: $color__link-sidebar-hover;
 		}
+	}
+
+	.search-field {
+		box-sizing: border-box;
 	}
 }
 
