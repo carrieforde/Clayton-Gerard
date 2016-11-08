@@ -4,48 +4,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clayton Gerard 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2016-04-06 22:51:08+00:00\n"
+"POT-Creation-Date: 2016-11-08 01:41:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: functions.php:57
+#: functions.php:49
 msgid "Posted in: "
 msgstr ""
 
-#: functions.php:67 inc/template-tags.php:21
+#: functions.php:59 inc/template-tags.php:21
 msgid "Leave a Comment"
 msgstr ""
 
-#: functions.php:67 inc/template-tags.php:21
+#: functions.php:59 inc/template-tags.php:21
 msgid "1 Comment"
 msgstr ""
 
-#: functions.php:67 inc/template-tags.php:21
+#: functions.php:59 inc/template-tags.php:21
 msgid "% Comments"
 msgstr ""
 
-#: functions.php:87
+#: functions.php:79
 msgid "Facebook"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:80
 msgid "Twitter"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:81
 msgid "Instagram"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:82
 msgid "Pinterest"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:83
 msgid "Bloglovin"
 msgstr ""
 
@@ -87,4 +87,8 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Flexible Content"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Patterns - Atoms"
 msgstr ""

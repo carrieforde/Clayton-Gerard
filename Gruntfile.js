@@ -47,24 +47,16 @@ module.exports = function( grunt ) {
 		},
 		concat: {
 			options: {
-				banner: '/*! <%= pkg.name %> theme JS - This file is built with Grunt and should not be edited directly */\n\n',
 				separator: '\n\n'
 			},
 			dist: {
-				src: [
-					'lib/jquery-mobile/jquery.mobile.custom.min.js',
-					'js/src/utilities.js',
-					'js/src/skip-link-focus-fix.js',
-					'js/src/navigation.js',
-					'js/src/alcatraz.js', // This must be included after all other objects.
-					'js/src/init.js' // This should be last.
-				],
+				src: ['js/src/*.js'],
 				dest: 'js/<%= pkg.name %>-theme.js'
 			}
 		},
 		uglify: {
 			options: {
-				banner: '/*! <%= pkg.name %> theme JS - This file is built with Grunt and should not be edited directly */\n',
+				banner: '/*! <%= pkg.name %> theme JS */\n',
 				sourceMap: true
 			},
 			dist: {
@@ -75,7 +67,7 @@ module.exports = function( grunt ) {
 		},
 		watch: {
 			css: {
-				files: ['sass/**/*.scss'],
+				files: ['sass/**/*.scss', 'sass/*.scss'],
 				tasks: ['styles'],
 				options: {
 					livereload: true
@@ -98,7 +90,6 @@ module.exports = function( grunt ) {
 				options: {
 					cwd: '',
 					domainPath: 'languages/',
-					potFilename: 'alcatraz.pot',
 					type: 'wp-theme'
 				},
 			},

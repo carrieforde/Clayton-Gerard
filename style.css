@@ -240,6 +240,60 @@ html {
 /**
  * Alcatraz Child Sass Mixins
  */
+.section-pattern {
+  margin: 0 0 3.75rem;
+  overflow: hidden;
+}
+
+.section-pattern .wrap {
+  margin: 0 0 2.5rem;
+}
+
+.pattern-doc-header {
+  -ms-flex-align: end;
+      align-items: flex-end;
+  border-bottom: 0.0625rem solid #c0c0c0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 0 1.5625rem;
+  padding: 0 0 0.3125rem;
+}
+
+.pattern-doc-heading {
+  margin: 0;
+}
+
+.pattern-doc-info {
+  display: none;
+}
+
+.pattern-doc-colors {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.pattern-doc-colors .color-chip {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+  width: 12.5rem;
+}
+
+.pattern-doc-colors .color {
+  height: 6.25rem;
+  width: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3125rem;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -2417,6 +2471,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
 }
 
+@media screen and (min-width: 48em) {
+  .pattern-doc-colors {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 48em) {
   .alcatraz-col-1 {
     float: left;
@@ -3283,6 +3344,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     max-width: 42.5rem;
     max-width: calc(680px);
     position: relative;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .pattern-doc-colors {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
