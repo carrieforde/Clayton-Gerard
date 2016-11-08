@@ -115,6 +115,7 @@ function cf_cg_post_types( $context= '' ) {
 	$post_type = array(
 		'page',
 		'portfolio',
+		'patterns',
 	);
 	return $post_type;
 }
