@@ -138,6 +138,55 @@ a {
 	text-transform: uppercase;
 }
 
+//-------------------------------
+// Social Icons
+//-------------------------------
+.social-navigation {
+
+	.social-links-menu {
+
+		.menu-item {
+			@include size(20% auto);
+
+			> a {
+				@include size(auto);
+
+				&:hover {
+
+					&:before {
+						opacity: 0.75;
+					}
+				}
+
+				&:before {
+					max-width: rem(35);
+					width: 100%;
+				}
+			}
+
+			> a[href*="facebook.com"]:before {
+				content: url(images/facebook-icon.svg);
+			}
+
+			> a[href*="twitter.com"]:before {
+				content: url(images/twitter-icon.svg);
+			}
+
+			> a[href*="instagram.com"]:before {
+				content: url(images/instagram-icon.svg);
+			}
+
+			> a[href*="pinterest.com"]:before {
+				content: url(images/pinterest-icon.svg);
+			}
+
+			> a[href*="bloglovin.com"]:before {
+				content: url(images/bloglovin-icon.svg);
+			}
+		}
+	}
+}
+
 /**
  * Components
  */
@@ -716,21 +765,4 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .gform_wrapper ul li.gfield {
 	margin-bottom: 20px;
-}
-
-
-/* Mm Components */
-
-/* Mm Social Icons */
-.mm-social-icons a img {
-	width: 30px;
-	height: auto;
-
-	@media (min-width: em(880)) {
-		width: 36px;
-	}
-
-	@media (min-width: em(945)) {
-		width: 40px;
-	}
 }

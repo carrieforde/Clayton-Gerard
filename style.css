@@ -1939,6 +1939,45 @@ a {
   text-transform: uppercase;
 }
 
+.social-navigation .social-links-menu .menu-item {
+  height: auto;
+  width: 20%;
+}
+
+.social-navigation .social-links-menu .menu-item > a {
+  height: auto;
+  width: auto;
+}
+
+.social-navigation .social-links-menu .menu-item > a:hover:before {
+  opacity: 0.75;
+}
+
+.social-navigation .social-links-menu .menu-item > a:before {
+  max-width: 2.1875rem;
+  width: 100%;
+}
+
+.social-navigation .social-links-menu .menu-item > a[href*="facebook.com"]:before {
+  content: url(images/facebook-icon.svg);
+}
+
+.social-navigation .social-links-menu .menu-item > a[href*="twitter.com"]:before {
+  content: url(images/twitter-icon.svg);
+}
+
+.social-navigation .social-links-menu .menu-item > a[href*="instagram.com"]:before {
+  content: url(images/instagram-icon.svg);
+}
+
+.social-navigation .social-links-menu .menu-item > a[href*="pinterest.com"]:before {
+  content: url(images/pinterest-icon.svg);
+}
+
+.social-navigation .social-links-menu .menu-item > a[href*="bloglovin.com"]:before {
+  content: url(images/bloglovin-icon.svg);
+}
+
 /**
  * Components
  */
@@ -2027,8 +2066,8 @@ input[type="submit"]:hover,
 .widget_categories ul,
 .widget_archive ul {
   display: none;
-  margin-left: 0;
   list-style: square;
+  margin: 0 0 0 1.25rem;
 }
 
 .widget_categories .widget-toggle,
@@ -2193,6 +2232,10 @@ input[type="submit"]:hover,
 
 .primary-sidebar a:hover {
   color: #A27A2C;
+}
+
+.primary-sidebar .search-field {
+  box-sizing: border-box;
 }
 
 /**
@@ -2434,13 +2477,6 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   margin-bottom: 20px;
 }
 
-/* Mm Components */
-/* Mm Social Icons */
-.mm-social-icons a img {
-  width: 30px;
-  height: auto;
-}
-
 @media (min-width: 34.375em) {
   .the-studio .clayton-gerard-project {
     float: left;
@@ -2468,13 +2504,6 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
   .the-studio .clayton-gerard-button:last-child {
     margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .pattern-doc-colors {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
   }
 }
 
@@ -3197,6 +3226,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
 }
 
+@media screen and (min-width: 48em) {
+  .pattern-doc-colors {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 50em) {
   .the-studio .clayton-gerard-project {
     width: 31.1111113%;
@@ -3226,24 +3262,12 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
 }
 
-@media (min-width: 55em) {
-  .mm-social-icons a img {
-    width: 36px;
-  }
-}
-
 @media (min-width: 56.25em) {
   .content-area {
     padding: 2.5rem 1.25rem;
   }
   .hentry {
     margin-bottom: 3.125rem;
-  }
-}
-
-@media (min-width: 59.0625em) {
-  .mm-social-icons a img {
-    width: 40px;
   }
 }
 
@@ -3461,17 +3485,6 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
 }
 
-@media (max-width: 59.9375em) {
-  .mobile-nav-style-slide-left.header-style-side #primary-menu-wrap,
-  .mobile-nav-style-slide-right.header-style-side #primary-menu-wrap {
-    background-color: #fff;
-  }
-  .mobile-nav-style-slide-left.header-style-side #primary-menu-wrap a,
-  .mobile-nav-style-slide-right.header-style-side #primary-menu-wrap a {
-    color: #1a1a1a;
-  }
-}
-
 @media (max-width: 47.9375em) {
   .mobile-nav-style-slide-left.header-style-default #primary-menu-wrap,
   .mobile-nav-style-slide-left.header-style-short #primary-menu-wrap,
@@ -3483,6 +3496,17 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   .mobile-nav-style-slide-left.header-style-short #primary-menu-wrap a,
   .mobile-nav-style-slide-right.header-style-default #primary-menu-wrap a,
   .mobile-nav-style-slide-right.header-style-short #primary-menu-wrap a {
+    color: #1a1a1a;
+  }
+}
+
+@media (max-width: 59.9375em) {
+  .mobile-nav-style-slide-left.header-style-side #primary-menu-wrap,
+  .mobile-nav-style-slide-right.header-style-side #primary-menu-wrap {
+    background-color: #fff;
+  }
+  .mobile-nav-style-slide-left.header-style-side #primary-menu-wrap a,
+  .mobile-nav-style-slide-right.header-style-side #primary-menu-wrap a {
     color: #1a1a1a;
   }
 }
