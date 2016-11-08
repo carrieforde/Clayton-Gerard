@@ -224,8 +224,8 @@ input[type="submit"],
 
 	ul {
 		display: none;
-		margin-left: 0;
 		list-style: square;
+		margin: 0 0 0 rem(20);
 	}
 
 	.widget-toggle {
