@@ -46,7 +46,7 @@ add_action( 'alcatraz_before', function() {
 		}
 
 		$footer_taxonomies = array(
-			'category' => __( 'Posted in: ', 'clayton-gerard' )
+			'category' => __( 'Posted in: ', 'clayton-gerard' ),
 		);
 
 		foreach ( $footer_taxonomies as $footer_taxonomy => $label ) {
@@ -63,28 +63,6 @@ add_action( 'alcatraz_before', function() {
 		alcatraz_the_edit_post_link( $post_id );
 	}
 } );
-
-
-add_filter( 'mm_social_networks', 'clayton_gerard_social_networks' );
-/**
- * Filter the list of social networks for Clayton Gerard.
- *
- * @param   string  $context  The context to pass to our filter.
- *
- * @return  array             The array of social networks.
- */
-function clayton_gerard_social_networks() {
-
-	$social_networks = array(
-		'facebook'  => __( 'Facebook', 'clayton-gerard' ),
-		'twitter'   => __( 'Twitter', 'clayton-gerard' ),
-		'instagram' => __( 'Instagram', 'clayton-gerard' ),
-		'pinterest' => __( 'Pinterest', 'clayton-gerard' ),
-		'bloglovin' => __( 'Bloglovin', 'clayton-gerard' ),
-	);
-
-	return $social_networks;
-}
 
 add_filter( 'body_class', 'clayton_gerard_portfolio_body_classes' );
 /**
@@ -111,7 +89,7 @@ add_filter( 'alcatraz_post_types', 'cf_cg_post_types' );
 /**
  * Filter the post types passed to the metaboxes.
  */
-function cf_cg_post_types( $context= '' ) {
+function cf_cg_post_types( $context = '' ) {
 	$post_type = array(
 		'page',
 		'portfolio',
