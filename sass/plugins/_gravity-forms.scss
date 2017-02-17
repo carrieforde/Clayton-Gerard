@@ -77,29 +77,30 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 		&:checked {
 
 			+ label:before {
-				@include position(absolute, rem(7) null null 0);
-				@include size(rem(20) rem(22));
+				@include size(19px 16px);
 
 				content: url(images/checked.svg);
-				display: block;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: middle;
 			}
 		}
 	}
 
 	label {
-		padding: rem(5) 0 rem(5) rem(30);
-		position: relative;
+		line-height: 1;
+		padding: rem(5) 0;
 
 		&:before {
-			@include position(absolute, rem(8) null null 0);
-			@include size(rem(15));
+			@include size(15px);
 
 			content: url(images/unchecked.svg);
-			display: block;
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
 		}
 	}
 }
-
 
 .gform_wrapper ul li.gfield {
 	margin-bottom: 20px;
