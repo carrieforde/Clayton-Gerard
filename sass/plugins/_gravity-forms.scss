@@ -1,0 +1,106 @@
+//--------------------------------------------------------------
+// GRAVITY FORMS
+//--------------------------------------------------------------
+.gfield_label {
+	font-family: $arial;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+body .gform_wrapper label.gfield_label + div.ginput_container {
+	margin-top: 0;
+}
+
+// Selects using Chosen.js
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container {
+	max-width: 100%;
+	width: 100%;
+
+	// The select replacement div
+	&.chosen-container-single {
+
+		// The container within
+		.chosen-single {
+			background: $true-white;
+			border: $border__input;
+			border-radius: 0;
+			color: $color__text-input;
+			box-shadow: none;
+			height: auto;
+			line-height: inherit;
+			padding: rem(5) rem(4);
+		}
+	}
+
+	// The select replacement div when it's active
+	&.chosen-container-active.chosen-with-drop {
+
+		.chosen-single {
+			background: $true-white;
+			border: $border__input;
+			border-bottom: none;
+			box-shadow: none;
+			color: $color__text-input;
+		}
+	}
+
+	// The actual dropdown
+	.chosen-drop {
+		border: $border__input;
+		border-radius: 0;
+		border-top: none;
+		box-shadow: none;
+		padding: 0 0 rem(5);
+	}
+
+	// The list of options
+	.chosen-results {
+		padding: 0;
+
+		// An option
+		li {
+			line-height: inherit;
+
+			&.highlighted {
+				background: $gradient__background;
+			}
+		}
+	}
+}
+
+// Checkboxes
+.gform_wrapper ul.gfield_checkbox li {
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked {
+
+			+ label:before {
+				@include position(absolute, rem(7) null null 0);
+				@include size(rem(20) rem(22));
+
+				content: url(images/checked.svg);
+				display: block;
+			}
+		}
+	}
+
+	label {
+		padding: rem(5) 0 rem(5) rem(30);
+		position: relative;
+
+		&:before {
+			@include position(absolute, rem(8) null null 0);
+			@include size(rem(15));
+
+			content: url(images/unchecked.svg);
+			display: block;
+		}
+	}
+}
+
+
+.gform_wrapper ul li.gfield {
+	margin-bottom: 20px;
+}

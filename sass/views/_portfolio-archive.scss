@@ -1,0 +1,53 @@
+//--------------------------------------------------------------
+// PORTFOLIO ARCHIVE
+//--------------------------------------------------------------
+.portfolio-archive {
+
+	.clayton-gerard-portfolio-heading {
+		margin-bottom: 40px;
+	}
+
+	.portfolio {
+		width: 100%;
+		margin: 0 auto 30px;
+
+		@media (min-width: em(550)) {
+			float: left;
+			width: calc(50% - 15px);
+			margin-right: calc(30px);
+			margin-bottom: 40px;
+
+			&:nth-child(2n+1) {
+				margin-right: 0;
+			}
+		}
+
+		@media (min-width: em(800)) {
+			width: 31.1111113%;
+			width: calc(32.5% - 15px);
+			margin-right: 3.333333%;
+			margin-right: calc(30px);
+
+			&:nth-child(2n+1) {
+				margin-right: 3.333333%;
+				margin-right: calc(30px);
+			}
+
+			&:nth-child(3n+1) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.post-thumbnail {
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.entry-title {
+		font-size: 20px;
+		text-align: center;
+	}
+}

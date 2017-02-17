@@ -1,0 +1,101 @@
+//--------------------------------------------------------------
+// THE STUDIO
+//--------------------------------------------------------------
+.the-studio {
+
+	.content-area {
+		padding: 0;
+	}
+
+	.entry-content {
+		margin-top: 0;
+	}
+
+	.clayton-gerard-latest-projects {
+		max-width: 900px;
+		padding: $size__padding-default;
+		margin: 50px auto 50px;
+		@include clearfix;
+
+		.clayton-gerard-button-wrapper {
+			text-align: center;
+		}
+	}
+
+	.clayton-gerard-project-loop-heading {
+		padding-top: 15px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.clayton-gerard-project-wrapper {
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+
+	.clayton-gerard-project {
+		width: 100%;
+		margin: 0 auto 30px;
+
+		.post-thumbnail {
+			@include grayscale;
+		}
+
+		@media (min-width: em(550)) {
+			float: left;
+			width: calc(50% - 15px);
+			margin-right: calc(30px);
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		@media (min-width: em(800)) {
+			width: 31.1111113%;
+			width: calc(32.5% - 15px);
+			margin-right: 3.333333%;
+			margin-right: calc(30px);
+
+			&:nth-child(2n) {
+				margin-right: 3.333333%;
+				margin-right: calc(30px);
+			}
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.clayton-gerard-project-heading {
+		text-align: center;
+
+		a {
+			color: $color__text-headings;
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
+	}
+
+	.last {
+		margin-bottom: 0;
+	}
+
+	.clayton-gerard-button {
+		display: block;
+		width: 245px;
+		margin: 0 auto 15px;
+
+		@media (min-width: em(560)) {
+			display: inline-block;
+			margin: 0 30px 0 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

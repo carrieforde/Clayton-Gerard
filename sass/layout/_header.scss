@@ -1,0 +1,19 @@
+//--------------------------------------------------------------
+// HEADER
+//--------------------------------------------------------------
+.mobile-nav-toggle-style-hamburger .site-header .header-inner {
+	float: none;
+	margin: 10px auto 20px;
+}
+
+/* Logo */
+.logo-mobile {
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+@media (min-width: em(768)) {
+	.logo-regular {
+		max-width: 480px;
+	}
+}

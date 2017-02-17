@@ -1,0 +1,74 @@
+//--------------------------------------------------------------
+// TYPOGRAPHY
+//--------------------------------------------------------------
+
+body {
+	font-size: 15px;
+	letter-spacing: $font__letter-spacing-body;
+}
+
+//-------------------------------
+// Headings
+//-------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 10px;
+	font-family: $font__headings;
+	letter-spacing: $font__letter-spacing-headings;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+
+//-------------------------------
+// Blockquote
+//-------------------------------
+blockquote,
+.blockquote {
+	padding: 0;
+	border: none;
+	margin-right: 0;
+	margin-left: 0;
+	text-align: center;
+
+	&::before,
+	&::after {
+		content: none;
+	}
+}
+
+
+//-------------------------------
+// Add extra margin after
+// paragraph
+//-------------------------------
+.extra-p-margin {
+	margin-bottom: 40px;
+}

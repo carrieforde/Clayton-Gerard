@@ -1,0 +1,23 @@
+//--------------------------------------------------------------
+// SIDEBAR
+//--------------------------------------------------------------
+.primary-sidebar {
+	font: 300 12px / #{$font__line-height-sidebar} $font__sidebar;
+	letter-spacing: $font__letter-spacing-sidebar;
+
+	.widget-title {
+		text-transform: uppercase;
+	}
+
+	a {
+		color: $color__link-sidebar;
+
+		&:visited {
+			color: $color__link-sidebar;
+		}
+
+		&:hover {
+			color: $color__link-sidebar-hover;
+		}
+	}
+}

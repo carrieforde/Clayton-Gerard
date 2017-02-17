@@ -1,0 +1,105 @@
+//--------------------------------------------------------------
+// PRIMARY NAVIGATION
+//--------------------------------------------------------------
+
+//-------------------------------
+// Primary Menu
+//-------------------------------
+#primary-menu {
+	border-top: $border__nav-primary;
+	border-bottom: $border__nav-primary;
+	font-family: $font__navigation;
+	font-weight: 700;
+	letter-spacing: $font__letter-spacing-nav;
+	text-transform: uppercase;
+
+	@include media ($tablet-portrait) {
+		width: 100%;
+	}
+
+	a,
+	a:visited {
+		color: $color__link-nav;
+	}
+
+	a:hover {
+		color: $color__link-nav-hover;
+	}
+
+	.current-menu-item > a {
+		font-weight: 700;
+		color: $hot-toddy;
+	}
+}
+
+.main-navigation #primary-menu .menu-item a {
+	padding: 5px 25px;
+}
+
+
+//-------------------------------
+// Post Navigation
+//-------------------------------
+.posts-navigation,
+.nav-links a {
+	font-family: $font__navigation;
+	text-transform: uppercase;
+}
+
+
+//-------------------------------
+// Links
+//-------------------------------
+a {
+	transition: all 0.2s ease-in;
+}
+
+
+//-------------------------------
+// Social Navigation
+//-------------------------------
+.social-navigation {
+
+	.social-links-menu {
+
+		.menu-item {
+			@include size(20% auto);
+
+			> a {
+				@include size(auto);
+
+				&:hover {
+
+					&:before {
+						opacity: 0.75;
+					}
+				}
+
+				&:before {
+					max-width: rem(35);
+					width: 100%;
+				}
+			}
+
+			> a[href*="facebook.com"]:before {
+				content: url(images/facebook-icon.svg);
+			}
+
+			> a[href*="twitter.com"]:before {
+				content: url(images/twitter-icon.svg);
+			}
+
+			> a[href*="instagram.com"]:before {
+				content: url(images/instagram-icon.svg);
+			}
+
+			> a[href*="pinterest.com"]:before {
+				content: url(images/pinterest-icon.svg);
+			}
+
+			> a[href*="bloglovin.com"]:before {
+				content: url(images/bloglovin-icon.svg);
+			}
+		}
+	}
+}

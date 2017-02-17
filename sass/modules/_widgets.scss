@@ -1,0 +1,91 @@
+//--------------------------------------------------------------
+// WIDGETS
+//--------------------------------------------------------------
+.primary-sidebar {
+
+	.search-field {
+		width: 100%;
+		margin: 0;
+	}
+
+	input[type='submit'].search-submit {
+		display: none;
+	}
+}
+
+.site-footer {
+
+	.widget_nav_menu {
+
+		.menu {
+			padding-left: 0;
+			margin: 0;
+			font-weight: 700;
+			letter-spacing: $font__letter-spacing-nav;
+			list-style: none;
+			text-align: center;
+			text-transform: uppercase;
+
+			a {
+				color: $color__link-nav-footer;
+				line-height: 2;
+				transition: color 0.2s ease-in;
+
+				&:visited {
+					color: $color__link-nav-footer;
+				}
+
+				&:hover {
+					color: $color__link-nav-footer-hover;
+				}
+			}
+		}
+	}
+}
+
+.widget_categories,
+.widget_archive {
+
+	ul {
+		display: none;
+		margin-left: 0;
+		list-style: square;
+	}
+
+	.widget-toggle {
+		display: block;
+		float: right;
+		width: 15px;
+		height: 15px;
+		position: relative;
+		line-height: $font__line-height-body;
+		transition: all 0.2s ease;
+
+		&:hover {
+			cursor: pointer;
+
+			.widget-toggle-span {
+				background-color: $color__background-menu-toggle-hover;
+			}
+		}
+	}
+
+	.widget-toggle-span {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		display: block;
+		width: 10px;
+		height: 2px;
+		background-color: $color__background-menu-toggle;
+		transition: all 0.2s ease;
+
+		&.span-2 {
+			transform: rotate(90deg);
+		}
+	}
+
+	.toggled .span-2 {
+		transform: rotate(180deg);
+	}
+}
