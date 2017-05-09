@@ -1,0 +1,97 @@
+{
+    "key": "group_591105f56a07b",
+    "title": "Content Block with Button",
+    "fields": [
+        {
+            "key": "field_591106034e7e0",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "Add a block heading.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_591106214e7e1",
+            "label": "Text",
+            "name": "text",
+            "type": "wysiwyg",
+            "instructions": "Add your main text (body copy).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5911063e4e7e2",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "Add the text to show on the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Learn More",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_591106524e7e3",
+            "label": "Button Link",
+            "name": "button_link",
+            "type": "url",
+            "instructions": "Add a link for the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494288161
+}

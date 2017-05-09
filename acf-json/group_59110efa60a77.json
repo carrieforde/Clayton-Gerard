@@ -1,0 +1,120 @@
+{
+    "key": "group_59110efa60a77",
+    "title": "Latest Projects",
+    "fields": [
+        {
+            "key": "field_59110f2f4f24d",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "Add a heading.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59110f064f24c",
+            "label": "Number of Projects",
+            "name": "number_of_projects",
+            "type": "number",
+            "instructions": "Select the number of projects to display.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_59110f474f24e",
+            "label": "Buttons",
+            "name": "buttons",
+            "type": "repeater",
+            "instructions": "Add up to two buttons to display below the projects.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59110fb44f24f",
+                    "label": "Button Text",
+                    "name": "button_text",
+                    "type": "text",
+                    "instructions": "Add the button text.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "View All Projects",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59110fcd4f250",
+                    "label": "Button Link",
+                    "name": "button_link",
+                    "type": "url",
+                    "instructions": "Add a link to the button.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494290420
+}

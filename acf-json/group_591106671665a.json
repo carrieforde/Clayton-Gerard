@@ -1,0 +1,65 @@
+{
+    "key": "group_591106671665a",
+    "title": "Category Block",
+    "fields": [
+        {
+            "key": "field_591106755dd35",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "Add a heading for the block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_591106865dd36",
+            "label": "Categories",
+            "name": "categories",
+            "type": "taxonomy",
+            "instructions": "Add up to six categories.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494290153
+}

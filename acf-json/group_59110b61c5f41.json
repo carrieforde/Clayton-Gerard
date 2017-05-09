@@ -1,0 +1,123 @@
+{
+    "key": "group_59110b61c5f41",
+    "title": "Services Block",
+    "fields": [
+        {
+            "key": "field_59110b6560b17",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "Add a heading for the block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Services",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59110b7560b18",
+            "label": "Services",
+            "name": "services",
+            "type": "repeater",
+            "instructions": "Add a category and offerings within each category.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59110ba160b19",
+                    "label": "Service",
+                    "name": "service",
+                    "type": "text",
+                    "instructions": "Enter the service category.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Branding",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59110bd160b1a",
+                    "label": "Offerings",
+                    "name": "offerings",
+                    "type": "repeater",
+                    "instructions": "Add your offerings within the service category, one offering per line.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_59110bde60b1b",
+                            "label": "Offering",
+                            "name": "offering",
+                            "type": "text",
+                            "instructions": "Add the offering.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "logo design",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494289543
+}

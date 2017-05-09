@@ -1,0 +1,201 @@
+{
+    "key": "group_5911031994b9e",
+    "title": "Hero with Call to Action",
+    "fields": [
+        {
+            "key": "field_59110339f8179",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "Upload an image, which will show on the left side of the section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59110387f817a",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "Add a catchy heading.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59110399f817b",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "Add a short paragraph of text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_591103d1f817c",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "Enter the text to appear on the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_591103e8f817d",
+            "label": "Button Link",
+            "name": "button_link",
+            "type": "url",
+            "instructions": "Add a link destination for the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5911056ff817e",
+            "label": "Hero Navigation",
+            "name": "hero_navigation",
+            "type": "repeater",
+            "instructions": "Add up to three hero navigation links.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5911058af817f",
+                    "label": "Navigation Label",
+                    "name": "navigation_label",
+                    "type": "text",
+                    "instructions": "Add a text label for the navigation.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Read",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_591105b6f8180",
+                    "label": "Navigation Link",
+                    "name": "navigation_link",
+                    "type": "url",
+                    "instructions": "Add a link for the navigation.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_591105c9f8181",
+                    "label": "Navigation Icon",
+                    "name": "navigation_icon",
+                    "type": "image",
+                    "instructions": "Upload a icon to be used with the navigation.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494287857
+}

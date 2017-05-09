@@ -1,0 +1,45 @@
+{
+    "key": "group_591107398de7e",
+    "title": "Latest Posts",
+    "fields": [
+        {
+            "key": "field_591107434d3af",
+            "label": "Number of Posts",
+            "name": "number_of_posts",
+            "type": "number",
+            "instructions": "Enter the number of posts to display.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1494288301
+}
