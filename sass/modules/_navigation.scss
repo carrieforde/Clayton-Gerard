@@ -6,6 +6,7 @@
 // Main Navigation
 //-----------------------------------------
 .main-navigation {
+	background-color: $titanium;
 	font-family: $montserrat;
 	font-size: rem(12);
 	font-weight: 600;
@@ -16,9 +17,17 @@
 		background-color: transparent;
 	}
 
+	.mobile-menu-is-visible & {
+		z-index: 7;
+	}
+
 	a,
 	a:visited {
-		color: $titanium;
+		color: $concrete;
+
+		@include grid-media($tablet-landscape-up) {
+			color: $titanium;
+		}
 	}
 }
 
@@ -28,10 +37,11 @@
 //-----------------------------------------
 .primary-menu {
 
-	@media (max-width: em(768)) {
-		padding: $size__padding * 2 $size__padding $size__padding;
+	@media (max-width: map-get($tablet-landscape-up, 'media')) {
+		padding: $size__padding * 3 $size__padding $size__padding;
 	}
 }
+
 
 //-----------------------------------------
 // Mobile Menu Toggle
@@ -39,11 +49,24 @@
 .mobile-menu-toggle {
 	border: none;
 	padding: 0;
+	z-index: 8;
 
 	&:hover {
 		border: none;
 	}
+
+	@include element(bar) {
+		background-color: $titanium;
+	}
+
+	.mobile-menu-is-visible & {
+
+		&__bar {
+			background-color: $concrete;
+		}
+	}
 }
+
 
 //-------------------------------
 // Social Navigation
