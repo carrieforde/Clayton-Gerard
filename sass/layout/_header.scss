@@ -1,19 +1,34 @@
 //--------------------------------------------------------------
 // HEADER
 //--------------------------------------------------------------
-.mobile-nav-toggle-style-hamburger .site-header .header-inner {
-	float: none;
-	margin: 10px auto 20px;
+
+//-----------------------------------------
+// General Header Styles
+//
+// The max-content width should be 1120px.
+//-----------------------------------------
+.site-header {
+	background-color: $concrete;
+	border-bottom: 3.5px solid $driftwood;
 }
 
-/* Logo */
-.logo-mobile {
-	max-width: 150px;
-	margin: 0 auto;
-}
 
-@media (min-width: em(768)) {
-	.logo-regular {
-		max-width: 480px;
+//-----------------------------------------
+// Site Branding
+//-----------------------------------------
+.site-title {
+	font-family: $montserrat;
+	font-size: rem(25);
+	font-weight: 700;
+	letter-spacing: (2 / 25) * 1em;
+	margin-bottom: 0;
+
+	a,
+	a:visited {
+		color: $ship-gray;
 	}
+}
+
+.site-description {
+	@extend .screen-reader-text;
 }
