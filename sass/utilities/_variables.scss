@@ -9,6 +9,9 @@ $platinum: #666;
 $hot-toddy: #A27A2C;
 $crystal: transparent;
 $metallic-gold: #cca42e;
+$concrete: #f2f2f2;
+$driftwood: #B48D53;
+$ship-gray: #4D4D4D;
 
 // Gradients
 $gradient__background: linear-gradient(to right, $hot-toddy 0, $metallic-gold 100%);
@@ -65,17 +68,16 @@ $color__link-titles-hover: $hot-toddy;
 // 2.2.2 Typography
 
 // Font Palette
-$georgia: Georgia, serif;
-$trebuchet: "Trebuchet MS", Helvetica, sans-serif;
-$arial: Arial, Helvetica, sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
-$font__body: $georgia;
-$font__button: $arial;
-$font__entry-footer: $arial;
-$font__footer: $trebuchet;
-$font__headings: $arial;
-$font__navigation: $trebuchet;
-$font__sidebar: $arial;
+$font__body: $open-sans;
+$font__button: $montserrat;
+$font__entry-footer: $open-sans;
+$font__footer: $open-sans;
+$font__headings: $montserrat;
+$font__navigation: $montserrat;
+$font__sidebar: $open-sans;
 $font__letter-spacing-body: 0.5px;
 $font__letter-spacing-entry-footer: 0.5px;
 $font__letter-spacing-headings: 1px;
@@ -86,7 +88,7 @@ $font__line-height-headings: 1.2;
 $font__line-height-sidebar: 1.5;
 $font__line-height-pre: 1.6;
 $font__margin-headings: 0 0 em(10) 0;
-$font__services: $trebuchet;
+$font__services: $open-sans;
 
 
 // 2.2.3 Borders

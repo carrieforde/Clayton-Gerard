@@ -13,6 +13,13 @@ add_action( 'wp_enqueue_scripts', 'alcatraz_child_enqueue_scripts' );
  */
 function alcatraz_child_enqueue_scripts() {
 
+	// Google fonts.
+	wp_register_style(
+		'claytongerard-fonts',
+		str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,400i,600,600i' ),
+		CARRIEFORDE_VERSION
+	);
+
 	// Include this theme's stylesheet.
 	wp_enqueue_style(
 		'alcatraz-child-style',
