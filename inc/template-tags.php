@@ -74,3 +74,15 @@ function clayton_gerard_studio_portfolio_loop() {
 
 	return ob_get_clean();
 }
+
+/**
+ * Rearrange footer output.
+ *
+ */
+add_action( 'alcatraz_before', function() {
+	remove_action( 'alcatraz_footer', 'alcatraz_output_footer_widget_areas', 8 );
+	remove_action( 'alcatraz_footer', 'alcatraz_output_footer_bottom', 30 );
+
+	add_action( 'alcatraz_footer', 'alcatraz_output_footer_bottom', 8 );
+	add_action( 'alcatraz_footer', 'alcatraz_output_footer_widget_areas', 30 );
+} );
