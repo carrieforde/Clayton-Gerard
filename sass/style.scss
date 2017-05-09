@@ -13,8 +13,9 @@ Tags:
 
 // Include Sass libraries.
 @import 'bourbon';
-@import 'alcatraz/sass/utilities/index'; // Alcatraz's utilities
+@import 'alcatraz/assets/sass/utilities/index'; // Alcatraz's utilities
 @import 'neat';
+@import 'sanitize';
 
 
 // Include Sass variables and mixins from the child theme.
@@ -23,9 +24,9 @@ Tags:
 
 
 // Include the Alcatraz styles.
-@import 'alcatraz/sass/base/index';
-@import 'alcatraz/sass/components/index';
-@import 'alcatraz/sass/layout/index';
+@import 'alcatraz/assets/sass/base/index';
+@import 'alcatraz/assets/sass/modules/index';
+@import 'alcatraz/assets/sass/layout/index';
 
 
 // Child theme styles.
