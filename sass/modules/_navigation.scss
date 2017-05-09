@@ -12,12 +12,38 @@
 	letter-spacing: (1 / 12) * 1em;
 	text-transform: uppercase;
 
+	@include grid-media($tablet-landscape-up) {
+		background-color: transparent;
+	}
+
 	a,
 	a:visited {
 		color: $titanium;
 	}
 }
 
+
+//-----------------------------------------
+// Primary Menu
+//-----------------------------------------
+.primary-menu {
+
+	@media (max-width: em(768)) {
+		padding: $size__padding * 2 $size__padding $size__padding;
+	}
+}
+
+//-----------------------------------------
+// Mobile Menu Toggle
+//-----------------------------------------
+.mobile-menu-toggle {
+	border: none;
+	padding: 0;
+
+	&:hover {
+		border: none;
+	}
+}
 
 //-------------------------------
 // Social Navigation

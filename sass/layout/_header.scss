@@ -12,6 +12,16 @@
 	border-bottom: 3.5px solid $driftwood;
 }
 
+.header-wrap {
+	@include center;
+
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	width: rem(1120);
+}
+
 
 //-----------------------------------------
 // Site Branding
