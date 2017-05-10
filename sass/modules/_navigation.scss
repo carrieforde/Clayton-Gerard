@@ -68,6 +68,30 @@
 }
 
 
+//-----------------------------------------
+// Footer Menu
+//-----------------------------------------
+.widget_nav_menu {
+
+	.menu {
+		@include margin-padding-reset;
+	}
+
+	.menu-item {
+		display: block;
+
+		> a,
+		> a:visited {
+			color: $driftwood;
+			text-decoration: none;
+
+			&:hover {
+				color: darken($driftwood, 15%);
+			}
+		}
+	}
+}
+
 //-------------------------------
 // Social Navigation
 //-------------------------------

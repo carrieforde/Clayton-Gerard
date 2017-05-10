@@ -4,42 +4,12 @@
 .primary-sidebar {
 
 	.search-field {
-		width: 100%;
 		margin: 0;
+		width: 100%;
 	}
 
 	input[type='submit'].search-submit {
 		display: none;
-	}
-}
-
-.site-footer {
-
-	.widget_nav_menu {
-
-		.menu {
-			padding-left: 0;
-			margin: 0;
-			font-weight: 700;
-			letter-spacing: $font__letter-spacing-nav;
-			list-style: none;
-			text-align: center;
-			text-transform: uppercase;
-
-			a {
-				color: $color__link-nav-footer;
-				line-height: 2;
-				transition: color 0.2s ease-in;
-
-				&:visited {
-					color: $color__link-nav-footer;
-				}
-
-				&:hover {
-					color: $color__link-nav-footer-hover;
-				}
-			}
-		}
 	}
 }
 
@@ -53,12 +23,11 @@
 	}
 
 	.widget-toggle {
+		@include size(rem(15));
 		display: block;
 		float: right;
-		width: 15px;
-		height: 15px;
-		position: relative;
 		line-height: $font__line-height-body;
+		position: relative;
 		transition: all 0.2s ease;
 
 		&:hover {
