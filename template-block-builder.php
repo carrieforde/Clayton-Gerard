@@ -2,7 +2,7 @@
 /**
  * Clayton Gerard
  *
- * Template Name: Flexible Content
+ * Template Name: Block Builder
  */
 get_header(); ?>
 
@@ -16,18 +16,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php $post_type = get_post_type();
-			if ( 'post' == $post_type ) {
-				$post_type = '';
-			}
-			get_template_part( 'template-parts/content-flexible' ); ?>
-
-			<?php
-				// Maybe load comments.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-			?>
+			<?php ac_component_flexible_content_rows(); ?>
 
 		<?php endwhile; ?>
 

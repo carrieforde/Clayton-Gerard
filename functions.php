@@ -37,6 +37,7 @@ function alcatraz_child_enqueue_scripts() {
 	);
 }
 
+require_once ALCATRAZ_CHILD_PATH . '/inc/acf.php';
 require_once ALCATRAZ_CHILD_PATH . '/inc/template-tags.php';
 
 // Customize the entry footer.
