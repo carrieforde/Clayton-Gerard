@@ -31,10 +31,21 @@
 .mobile-menu-toggle {
 
 	.mobile-nav-toggle-style-hamburger &,
+	.mobile-nav-toggle-style-hamburger.admin-bar &,
 	body:not(.mobile-nav-style-default).menu-open & {
 		margin-left: auto;
 		position: relative;
 		right: auto;
 		top: auto;
+	}
+
+	@include grid-media($wp-admin-bar) {
+		.mobile-nav-toggle-style-hamburger.admin-bar &,
+		body:not(.mobile-nav-style-default).menu-open.admin-bar & {
+			margin-left: auto;
+			position: relative;
+			right: auto;
+			top: auto;
+		}
 	}
 }
