@@ -14,10 +14,12 @@ if ( ! $post_id ) {
 $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 
 // This block's fields.
+$heading = get_post_meta( $post_id, $prefix . 'heading', true );
 $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true ); ?>
 
-<section class="latest-posts">
+<section class="latest-posts full-width container">
 	<div class="row">
+		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 		<?php cf_cg_fetch_posts( array(
 			'post_type' => 'cg-portfolio',
 			'posts_per_page' => $number_of_posts,

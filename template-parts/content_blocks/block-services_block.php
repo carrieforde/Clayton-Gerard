@@ -17,9 +17,9 @@ $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 $heading = get_post_meta( $post_id, $prefix . 'heading', true );
 $services = get_post_meta( $post_id, $prefix . 'services', true ); ?>
 
-<section class="services-block">
+<section class="services-block full-width container background-mine-shaft color-white">
 	<div class="row">
-		<h2 class="heading"><?php echo esc_html( $heading ); ?>
+		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 
 		<div class="services">
 

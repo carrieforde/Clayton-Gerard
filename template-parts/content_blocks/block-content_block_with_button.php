@@ -21,9 +21,9 @@ $button_link = get_post_meta( $post_id, $prefix . 'button_link', true );
 
 ?>
 
-<section class="content-block-with-button">
+<section class="content-block-with-button full-width container">
 
-	<div class="row">
+	<div class="row row-600">
 		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 		<div class="content">
 			<?php echo wp_kses_post( wpautop( $text ) ); ?>

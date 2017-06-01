@@ -16,7 +16,7 @@ $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 // This block's fields.
 $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true ); ?>
 
-<section class="latest-posts">
+<section class="latest-posts full-width container">
 	<div class="row">
 		<?php cf_cg_fetch_posts( array(
 			'posts_per_page' => $number_of_posts,

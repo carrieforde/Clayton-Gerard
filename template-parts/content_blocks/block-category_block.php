@@ -20,9 +20,11 @@ $i          = 0; // iterator for our loop.
 
 ?>
 
-<section class="category-block">
+<section class="category-block full-width container">
 
-	<div class="row">
+	<div class="row row-600">
+
+		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 
 		<ul class="categories">
 			<?php foreach ( $categories as $category ) :
