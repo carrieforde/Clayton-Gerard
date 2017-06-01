@@ -1,6 +1,6 @@
 <?php
 /**
- * Hero with Call to Action
+ * Hero with Image Only.
  *
  * @package Clayton Gerard
  */
