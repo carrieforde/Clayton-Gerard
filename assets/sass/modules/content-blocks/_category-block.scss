@@ -1,0 +1,27 @@
+//--------------------------------------------------------------
+// CATEGORY BLOCK 
+//--------------------------------------------------------------
+.category-block {
+	text-align: center;
+
+	.categories {
+		@include list-reset;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.category {
+		flex: 0 0 50%;
+		margin-bottom: rem(25);
+
+		@include grid-media($tablet-portrait-up) {
+			flex: 0 0 33%;
+		}
+
+		a {
+			width: calc(100% - 25px);
+		}
+	}
+}
