@@ -1,0 +1,36 @@
+//--------------------------------------------------------------
+// GRID 
+//--------------------------------------------------------------
+.full-width {
+	@include full-width;
+}
+
+.container {
+	padding: rem(50) rem(20);
+
+	@include grid-media($tablet-landscape-up) {
+		padding: rem(100) rem(20);
+	}
+
+	.home & {
+
+		+ .container {
+			border-top: 2px solid color(iron);
+		}
+	}
+}
+
+.row {
+	@include center;
+
+	max-width: 100%;
+	width: rem(900);
+
+	&-600 {
+		width: rem(600);
+	}
+
+	.heading {
+		margin-bottom: rem(50);
+	}
+}
