@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php cf_cg_display_component(); ?>
+			<?php get_template_part( 'template-parts/content', 'block-builder' ); ?>
 
 		<?php endwhile; ?>
 

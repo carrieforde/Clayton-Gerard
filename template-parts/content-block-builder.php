@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Content template for flexible content pages.
@@ -14,9 +13,7 @@
 	<?php alcatraz_the_entry_header(); ?>
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php do_shortcode( '[claytongerard_flex_content]' ); ?>
-		<?php echo clayton_gerard_studio_portfolio_loop(); ?>
+		<?php cf_cg_display_component(); ?>
 	</div>
 </article>
 
