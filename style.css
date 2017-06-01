@@ -1380,6 +1380,16 @@ blockquote::before, blockquote::after,
   margin-bottom: 40px;
 }
 
+.main-navigation {
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.0833333333em;
+}
+
+.main-navigation a {
+  color: #333;
+}
+
 .primary-sidebar .search-field {
   margin: 0;
   width: 100%;
@@ -1542,24 +1552,20 @@ blockquote::before, blockquote::after,
 .site-header {
   background-color: #f2f2f2;
   border-bottom: 3.5px solid #B48D53;
+  font-family: "Montserrat", sans-serif;
+  padding: 1.625rem;
+  text-transform: uppercase;
 }
 
-.header-wrap {
-  margin-left: auto;
-  margin-right: auto;
+.header-inner {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  max-width: 100%;
-  width: 70rem;
 }
 
 .site-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.5625em;
   font-weight: 700;
   letter-spacing: 0.08em;
   margin-bottom: 0;
@@ -1568,6 +1574,7 @@ blockquote::before, blockquote::after,
 .site-title a,
 .site-title a:visited {
   color: #4D4D4D;
+  text-decoration: none;
 }
 
 .primary-sidebar .widget-title {
@@ -2028,6 +2035,10 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     width: calc(25% - 25px);
     float: left;
     margin-left: 20px;
+  }
+  .mobile-nav-style-slide-right .main-navigation {
+    background-color: transparent;
+    padding: 0;
   }
 }
 

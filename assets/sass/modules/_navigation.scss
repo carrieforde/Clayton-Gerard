@@ -1,141 +1,20 @@
 //--------------------------------------------------------------
 // PRIMARY NAVIGATION
 //--------------------------------------------------------------
+.main-navigation {
+	font-size: em(12);
+	font-weight: 700;
+	letter-spacing: em(1, 12);
+	
+	@include grid-media($tablet-landscape-up) {
 
-// //-----------------------------------------
-// // Main Navigation
-// //-----------------------------------------
-// .main-navigation {
-// 	font-family: $font__heading;
-// 	font-size: rem(12);
-// 	font-weight: 600;
-// 	letter-spacing: (1 / 12) * 1em;
-// 	text-transform: uppercase;
+		.mobile-nav-style-slide-right & {
+			background-color: transparent;
+			padding: 0;
+		} // .mobile-nav-style-slide-right
+	}
 
-// 	@include grid-media($tablet-landscape-up) {
-// 		background-color: transparent;
-// 	}
-
-// 	.mobile-menu-is-visible & {
-// 		z-index: 7;
-// 	}
-
-// 	a,
-// 	a:visited {
-// 		color: color(concrete);
-
-// 		@include grid-media($tablet-landscape-up) {
-// 			color: color(mine-shaft);
-// 		}
-// 	}
-// }
-
-
-// //-----------------------------------------
-// // Primary Menu
-// //-----------------------------------------
-// .primary-menu {
-
-// 	@media (max-width: map-get($tablet-landscape-up, 'media')) {
-// 		padding: $size__padding * 3 $size__padding $size__padding;
-// 	}
-// }
-
-
-// //-----------------------------------------
-// // Mobile Menu Toggle
-// //-----------------------------------------
-// .mobile-menu-toggle {
-// 	border: none;
-// 	padding: 0;
-// 	z-index: 8;
-
-// 	&:hover {
-// 		border: none;
-// 	}
-
-// 	@include element(bar) {
-// 		background-color: $titanium;
-// 	}
-
-// 	.mobile-menu-is-visible & {
-
-// 		&__bar {
-// 			background-color: $concrete;
-// 		}
-// 	}
-// }
-
-
-// //-----------------------------------------
-// // Footer Menu
-// //-----------------------------------------
-// .widget_nav_menu {
-
-// 	.menu {
-// 		@include margin-padding-reset;
-// 	}
-
-// 	.menu-item {
-// 		display: block;
-
-// 		> a,
-// 		> a:visited {
-// 			color: $driftwood;
-// 			text-decoration: none;
-
-// 			&:hover {
-// 				color: darken($driftwood, 15%);
-// 			}
-// 		}
-// 	}
-// }
-
-// //-------------------------------
-// // Social Navigation
-// //-------------------------------
-// .social-navigation {
-
-// 	.social-links-menu {
-
-// 		.menu-item {
-// 			@include size(20% auto);
-
-// 			> a {
-// 				@include size(auto);
-
-// 				&:hover {
-
-// 					&:before {
-// 						opacity: 0.75;
-// 					}
-// 				}
-
-// 				&:before {
-// 					max-width: rem(35);
-// 					width: 100%;
-// 				}
-// 			}
-
-// 			> a[href*="facebook.com"]:before {
-// 				content: url(images/facebook-icon.svg);
-// 			}
-
-// 			> a[href*="twitter.com"]:before {
-// 				content: url(images/twitter-icon.svg);
-// 			}
-
-// 			> a[href*="instagram.com"]:before {
-// 				content: url(images/instagram-icon.svg);
-// 			}
-
-// 			> a[href*="pinterest.com"]:before {
-// 				content: url(images/pinterest-icon.svg);
-// 			}
-
-// 			> a[href*="bloglovin.com"]:before {
-// 				content: url(images/bloglovin-icon.svg);
-// 			}
-// 		}
-// 	}
-// }
+	a {
+		color: color(mine-shaft);
+	}
+}

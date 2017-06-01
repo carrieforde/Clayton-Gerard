@@ -10,16 +10,14 @@
 .site-header {
 	background-color: $color__site-header;
 	border-bottom: 3.5px solid color(driftwood);
+	font-family: $font__headings;
+	padding: rem(26);
+	text-transform: uppercase;
 }
 
-.header-wrap {
-	@include center;
-
+.header-inner {
 	align-items: center;
 	display: flex;
-	justify-content: space-between;
-	max-width: 100%;
-	width: rem(1120);
 }
 
 
@@ -27,15 +25,15 @@
 // Site Branding
 //-----------------------------------------
 .site-title {
-	font-family: $font__headings;
-	font-size: rem(25);
+	font-size: em(25);
 	font-weight: 700;
-	letter-spacing: (2 / 25) * 1em;
+	letter-spacing: em(2, 25);
 	margin-bottom: 0;
 
 	a,
 	a:visited {
 		color: color(ship-gray);
+		text-decoration: none;
 	}
 }
 
