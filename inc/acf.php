@@ -60,6 +60,11 @@ function cf_cg_display_component( $post_id = 0 ) {
 
 				include( locate_template( 'template-parts/content_blocks/block-services_block.php' ) );
 				break;
+
+			case 'latest_projects' :
+
+				include( locate_template( 'template-parts/content_blocks/block-latest_projects.php' ) );
+				break;
 		} // End switch().
 	} // End foreach().
 }
