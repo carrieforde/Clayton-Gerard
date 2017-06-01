@@ -10,6 +10,7 @@
 .site-header {
 	background-color: $color__site-header;
 	border-bottom: 3.5px solid color(driftwood);
+	display: flex;
 	font-family: $font__headings;
 	padding: rem(26);
 	text-transform: uppercase;

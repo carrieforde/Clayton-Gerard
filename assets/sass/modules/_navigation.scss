@@ -18,3 +18,18 @@
 		color: color(mine-shaft);
 	}
 }
+
+
+//-----------------------------------------
+// Mobile Navigation Toggle
+//-----------------------------------------
+.mobile-menu-toggle {
+
+	.mobile-nav-toggle-style-hamburger &,
+	body:not(.mobile-nav-style-default).menu-open & {
+		margin-left: auto;
+		position: relative;
+		right: auto;
+		top: auto;
+	}
+}
