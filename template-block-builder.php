@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php ac_component_flexible_content_rows(); ?>
+			<?php cf_cg_display_component(); ?>
 
 		<?php endwhile; ?>
 

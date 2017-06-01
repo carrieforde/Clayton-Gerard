@@ -9,22 +9,26 @@
  *
  * @author Carrie Forde
  */
-function ac_component_flexible_content_rows() {
+function cf_cg_display_component( $post_id = 0 ) {
 
-	if ( ! function_exists( 'get_sub_field' ) ) {
-		return;
+	// Get the post id.
+	if ( ! $post_id ) {
+		$post_id = get_the_ID();
 	}
 
-	if ( have_rows( 'blocks' ) ) {
+	// Get our data.
+	$component = get_post_meta( $post_id, 'blocks', true );
 
-		while ( have_rows( 'blocks' ) ) {
+	// Determine which layout to grab.
+	foreach ( (array) $component as $count => $component ) {
 
-			the_row();
-			get_template_part( 'template-parts/content_blocks/block', get_row_layout() );
+		switch ( $component ) {
 
-			// var_dump( get_row_layout() );
+			// Image Hero.
+			case 'hero_with_call_to_action' :
+
+				include( locate_template( 'template-parts/content_blocks/block-hero_with_call_to_action.php' ) );
+				break;
 		}
 	}
-
-	wp_reset_postdata();
 }
