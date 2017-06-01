@@ -39,6 +39,7 @@ function alcatraz_child_enqueue_scripts() {
 
 require_once ALCATRAZ_CHILD_PATH . '/inc/acf.php';
 require_once ALCATRAZ_CHILD_PATH . '/inc/template-tags.php';
+require_once ALCATRAZ_CHILD_PATH . '/inc/queries.php';
 
 // Customize the entry footer.
 add_action( 'alcatraz_before', function() {
@@ -124,3 +125,4 @@ function cf_cg_set_gravity_forms_chosen_options( $form ) {
 
 // Add new image sizes.
 add_image_size( 'full-screen-image', 2560, 986, true );
+
