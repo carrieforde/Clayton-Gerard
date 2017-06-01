@@ -1323,6 +1323,110 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
   text-align: center;
 }
 
+.color-white,
+a.color-white {
+  color: #fff;
+}
+
+.color-black,
+a.color-black {
+  color: #000;
+}
+
+.color-metallic-gold,
+a.color-metallic-gold {
+  color: #cca42e;
+}
+
+.color-concrete,
+a.color-concrete {
+  color: #f2f2f2;
+}
+
+.color-driftwood,
+a.color-driftwood {
+  color: #B48D53;
+}
+
+.color-mine-shaft,
+a.color-mine-shaft {
+  color: #333;
+}
+
+.color-ship-gray,
+a.color-ship-gray {
+  color: #4D4D4D;
+}
+
+.color-iron,
+a.color-iron {
+  color: #ccc;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-black {
+  background-color: #000;
+}
+
+.background-metallic-gold {
+  background-color: #cca42e;
+}
+
+.background-concrete {
+  background-color: #f2f2f2;
+}
+
+.background-driftwood {
+  background-color: #B48D53;
+}
+
+.background-mine-shaft {
+  background-color: #333;
+}
+
+.background-ship-gray {
+  background-color: #4D4D4D;
+}
+
+.background-iron {
+  background-color: #ccc;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-black {
+  fill: #000;
+}
+
+.fill-metallic-gold {
+  fill: #cca42e;
+}
+
+.fill-concrete {
+  fill: #f2f2f2;
+}
+
+.fill-driftwood {
+  fill: #B48D53;
+}
+
+.fill-mine-shaft {
+  fill: #333;
+}
+
+.fill-ship-gray {
+  fill: #4D4D4D;
+}
+
+.fill-iron {
+  fill: #ccc;
+}
+
 body {
   font-size: 0.9375em;
 }
@@ -1384,6 +1488,27 @@ blockquote::before, blockquote::after,
   margin-bottom: 40px;
 }
 
+button,
+.button,
+.button:visited,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.6875em;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover,
+.button:hover,
+.button:visited:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  color: #fff;
+}
+
 .main-navigation {
   font-size: 0.75em;
   font-weight: 700;
@@ -1401,6 +1526,7 @@ blockquote::before, blockquote::after,
 }
 
 .mobile-nav-toggle-style-hamburger .mobile-menu-toggle,
+.mobile-nav-toggle-style-hamburger.admin-bar .mobile-menu-toggle,
 body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-left: auto;
   position: relative;
@@ -1464,6 +1590,147 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 .widget_categories .toggled .span-2,
 .widget_archive .toggled .span-2 {
   transform: rotate(180deg);
+}
+
+.services-block {
+  padding: 6.25rem 1.25rem;
+}
+
+.services-block .heading {
+  text-align: center;
+}
+
+.services-block .services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 56.25rem;
+}
+
+.services-block .service {
+  border: 2px solid #cca42e;
+  -ms-flex: 0 0 33%;
+      flex: 0 0 33%;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.services-block .service .offerings {
+  padding-left: 1.25rem;
+}
+
+.services-block .service h3 {
+  text-align: center;
+}
+
+.services-block .service + .service {
+  margin-left: 1.875rem;
+}
+
+.content-block {
+  padding: 6.25rem 1.25rem;
+  position: relative;
+  text-align: center;
+}
+
+.content-block.background-mine-shaft {
+  color: #fff;
+}
+
+.content-block.background-mine-shaft .accent {
+  background-color: inherit;
+}
+
+.content-block.background-white {
+  border-bottom: 2px solid #B48D53;
+}
+
+.content-block.background-white .accent {
+  background-color: inherit;
+  border-bottom: 2px solid #B48D53;
+  border-right: 2px solid #B48D53;
+  bottom: -1.6875rem;
+}
+
+.content-block .accent {
+  position: absolute;
+  right: 0;
+  bottom: -1.5625rem;
+  left: 0;
+  height: 3.125rem;
+  width: 3.125rem;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+
+.category-block {
+  text-align: center;
+}
+
+.category-block .categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.category-block .category {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  margin-bottom: 1.5625rem;
+}
+
+.category-block .category a {
+  width: calc(100% - 25px);
+}
+
+.content-block-with-button {
+  text-align: center;
+}
+
+.content-block-with-button .button {
+  margin-top: 0.5rem;
+}
+
+.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+.container {
+  padding: 3.125rem 1.25rem;
+}
+
+.home .container + .container {
+  border-top: 2px solid #ccc;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 56.25rem;
+}
+
+.row-600 {
+  width: 37.5rem;
+}
+
+.row .heading {
+  margin-bottom: 3.125rem;
 }
 
 .right-sidebar .content-area {
@@ -1822,6 +2089,10 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 }
 
 @media only screen and (min-width: 37.5em) {
+  .category-block .category {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+  }
   .footer-widget-areas-2 .footer-widget-area {
     float: none;
     margin-left: 0;
@@ -1842,6 +2113,13 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   .mobile-nav-style-slide-left.admin-bar .main-navigation,
   .mobile-nav-style-slide-right.admin-bar .main-navigation {
     top: 2rem;
+  }
+  .mobile-nav-toggle-style-hamburger.admin-bar .mobile-menu-toggle,
+  body:not(.mobile-nav-style-default).menu-open.admin-bar .mobile-menu-toggle {
+    margin-left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
   }
 }
 
@@ -2059,6 +2337,9 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   .mobile-nav-style-slide-right .main-navigation {
     background-color: transparent;
     padding: 0;
+  }
+  .container {
+    padding: 6.25rem 1.25rem;
   }
 }
 
