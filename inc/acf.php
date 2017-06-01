@@ -45,6 +45,11 @@ function cf_cg_display_component( $post_id = 0 ) {
 
 				include( locate_template( 'template-parts/content_blocks/block-latest_posts.php' ) );
 				break;
+
+			case 'hero_image_only' :
+
+				include( locate_template( 'template-parts/content_blocks/block-hero_image_only.php' ) );
+				break;
 		}
 	}
 }

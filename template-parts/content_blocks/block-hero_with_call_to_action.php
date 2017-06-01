@@ -11,8 +11,9 @@ if ( ! $post_id ) {
 }
 
 // If this is used within flexible contnet, we need to component prefix.
-$prefix    = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
+$prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 
+// This block's fields.
 $image           = get_post_meta( $post_id, $prefix . 'image', true );
 $heading         = get_post_meta( $post_id, $prefix . 'heading', true );
 $description     = get_post_meta( $post_id, $prefix . 'description', true );
