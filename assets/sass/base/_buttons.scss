@@ -1,0 +1,18 @@
+//--------------------------------------------------------------
+// BUTTONS 
+//--------------------------------------------------------------
+button,
+.button,
+.button:visited,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-family: $font__headings;
+	padding-top: em(11);
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		color: $color__button-text;
+	}
+}
