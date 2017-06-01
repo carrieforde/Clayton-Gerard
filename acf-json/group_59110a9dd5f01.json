@@ -17,7 +17,7 @@
             },
             "choices": {
                 "white": "White",
-                "black": "Black"
+                "mine-shaft": "Black"
             },
             "default_value": [],
             "allow_null": 0,
@@ -87,5 +87,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1494289239
+    "modified": 1496293580
 }
