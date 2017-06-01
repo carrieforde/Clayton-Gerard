@@ -4,6 +4,7 @@
  *
  * @package Clayton Gerard
  */
+
 /**
  * Display the Flexible Content Rows.
  *
@@ -38,6 +39,11 @@ function cf_cg_display_component( $post_id = 0 ) {
 			case 'category_block' :
 
 				include( locate_template( 'template-parts/content_blocks/block-category_block.php' ) );
+				break;
+
+			case 'latest_posts' :
+
+				include( locate_template( 'template-parts/content_blocks/block-latest_posts.php' ) );
 				break;
 		}
 	}
