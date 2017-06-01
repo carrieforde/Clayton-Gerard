@@ -1,0 +1,36 @@
+//--------------------------------------------------------------
+// CONTENT BLOCK 
+//--------------------------------------------------------------
+.content-block {
+	padding: rem(100) rem(20);
+	position: relative;
+	text-align: center;
+
+	&.background-mine-shaft {
+		color: color(white);
+
+		.accent {
+			background-color: inherit;
+		}
+	}
+
+	&.background-white {
+		border-bottom: 2px solid color(driftwood);
+
+		.accent {
+			background-color: inherit;
+			border-bottom: 2px solid color(driftwood);
+			border-right: 2px solid color(driftwood);
+			bottom: rem(-27);
+		}
+	}
+
+	.accent {
+		@include position(absolute, null 0 rem(-25) 0);
+		@include size(rem(50));
+
+		margin: 0 auto;
+		transform: rotate(45deg);
+		z-index: 3;
+	}
+}
