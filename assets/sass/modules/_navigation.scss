@@ -14,8 +14,13 @@
 		} // .mobile-nav-style-slide-right
 	}
 
-	a {
+	a,
+	a:visited {
 		color: color(mine-shaft);
+
+		&:hover {
+			color: color(driftwood);
+		}
 	}
 }
 

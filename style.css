@@ -1361,6 +1361,10 @@ h6 {
   font-size: 14px;
 }
 
+a {
+  transition: color 0.3s ease-in-out;
+}
+
 blockquote,
 .blockquote {
   border: none;
@@ -1386,8 +1390,14 @@ blockquote::before, blockquote::after,
   letter-spacing: 0.0833333333em;
 }
 
-.main-navigation a {
+.main-navigation a,
+.main-navigation a:visited {
   color: #333;
+}
+
+.main-navigation a:hover,
+.main-navigation a:visited:hover {
+  color: #B48D53;
 }
 
 .mobile-nav-toggle-style-hamburger .mobile-menu-toggle,
