@@ -1,3 +1,41 @@
 //--------------------------------------------------------------
 // SERVICES 
 //--------------------------------------------------------------
+.services-block {
+	padding: rem(100) rem(20);
+
+	.heading {
+		text-align: center;
+	}
+
+	// The card container.
+	.services {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 100%;
+		width: rem(900);
+	}
+
+	//-----------------------------------------
+	// Service Card
+	//-----------------------------------------
+	.service {
+		border: 2px solid color(metallic-gold);
+		flex: 0 0 33%;
+		padding: $size__padding;
+		text-align: left;
+
+		.offerings {
+			padding-left: $size__padding;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		+ .service {
+			margin-left: rem(30);
+		}
+	}
+}
