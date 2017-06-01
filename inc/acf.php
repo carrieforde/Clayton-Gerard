@@ -55,6 +55,11 @@ function cf_cg_display_component( $post_id = 0 ) {
 
 				include( locate_template( 'template-parts/content_blocks/block-content_block.php' ) );
 				break;
+
+			case 'services_block' :
+
+				include( locate_template( 'template-parts/content_blocks/block-services_block.php' ) );
+				break;
 		} // End switch().
 	} // End foreach().
 }
