@@ -93,19 +93,6 @@ function clayton_gerard_portfolio_body_classes( $classes ) {
 	}
 }
 
-add_filter( 'alcatraz_post_types', 'cf_cg_post_types' );
-/**
- * Filter the post types passed to the metaboxes.
- */
-function cf_cg_post_types( $context = '' ) {
-	$post_type = array(
-		'page',
-		'portfolio',
-		'alcatraz_patterns',
-	);
-	return $post_type;
-}
-
 add_action( 'gform_pre_render', 'cf_cg_set_gravity_forms_chosen_options' );
 /**
  * Pass Chosen options to the form.
@@ -133,49 +120,6 @@ function cf_cg_set_gravity_forms_chosen_options( $form ) {
 	</script>
 
 	<?php return $form;
-}
-
-add_filter( 'alcatraz_set_colors', 'cf_cg_set_theme_colors' );
-/**
- * Set the theme colors.
- *
- * @return  array  The theme colors.
- */
-function cf_cg_set_theme_colors() {
-
-	$colors = array(
-		'Brand Colors'   => array(
-			'noir'           => '#1a1a1a',
-			'gold-gradient'  => 'linear-gradient(to right, #a27a2c 0, #cca42e 100%)',
-		),
-		'Neutral Colors' => array(
-			'platinum' => '#666',
-			'titanium' => '#333',
-		),
-		'Utility Colors' => array(
-			'hot-toddy'      => '#a27a2c',
-			'metallic-gold'  => '#cca42e',
-		),
-	);
-
-	return $colors;
-}
-
-add_filter( 'alcatraz_set_fonts', 'cf_cg_set_theme_fonts' );
-/**
- * Set the theme fonts.
- *
- * @return  array  The theme fonts.
- */
-function cf_cg_set_theme_fonts() {
-
-	$fonts = array(
-		'Georgia'   => '\'Georgia\', serif',
-		'Trebuchet' => '\'Trebuchet MS\', Helvetica, sans-serif',
-		'Arial'     => 'Arial, Helvetica, sans-serif',
-	);
-
-	return $fonts;
 }
 
 // Add new image sizes.
