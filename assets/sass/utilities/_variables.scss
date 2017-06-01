@@ -1,104 +1,104 @@
-/**
- * Alcatraz Child Sass Variables
- */
+// /**
+//  * Alcatraz Child Sass Variables
+//  */
 
-// Color Palette
-$noir: #1a1a1a;
-$titanium: #333;
-$platinum: #666;
-$hot-toddy: #A27A2C;
-$crystal: transparent;
-$metallic-gold: #cca42e;
-$concrete: #f2f2f2;
-$driftwood: #B48D53;
-$ship-gray: #4D4D4D;
+// // Color Palette
+// $noir: #1a1a1a;
+// $titanium: #333;
+// $platinum: #666;
+// $hot-toddy: #A27A2C;
+// $crystal: transparent;
+// $metallic-gold: #cca42e;
+// $concrete: #f2f2f2;
+// $driftwood: #B48D53;
+// $ship-gray: #4D4D4D;
 
-// Gradients
-$gradient__background: linear-gradient(to right, $hot-toddy 0, $metallic-gold 100%);
-$gradient__border: linear-gradient(to top right, $metallic-gold 0, $hot-toddy 50%, $metallic-gold 100%);
+// // Gradients
+// $gradient__background: linear-gradient(to right, $hot-toddy 0, $metallic-gold 100%);
+// $gradient__border: linear-gradient(to top right, $metallic-gold 0, $hot-toddy 50%, $metallic-gold 100%);
 
-// Borders
-$border__navigation-primary: 2px solid $noir;
+// // Borders
+// $border__navigation-primary: 2px solid $noir;
 
-// Background Colors
-$color__background-blockquote: $crystal;
-$color__background-body: $true-white;
-$color__background-button: $crystal;
-$color__background-button-hover: $noir;
-$color__background-featured-image: $crystal;
-$color__background-footer: $noir;
-$color__background-hr: $platinum;
-$color__background-menu-toggle: $noir;
-$color__background-menu-toggle-hover: $hot-toddy;
-$color__background-sub-menu-toggle: $titanium;
-$color__background-sub-menu-toggle-hover: $hot-toddy;
-$color__background-flex-full-black: $titanium;
+// // Background Colors
+// $color__background-blockquote: $crystal;
+// $color__background-body: $true-white;
+// $color__background-button: $crystal;
+// $color__background-button-hover: $noir;
+// $color__background-featured-image: $crystal;
+// $color__background-footer: $noir;
+// $color__background-hr: $platinum;
+// $color__background-menu-toggle: $noir;
+// $color__background-menu-toggle-hover: $hot-toddy;
+// $color__background-sub-menu-toggle: $titanium;
+// $color__background-sub-menu-toggle-hover: $hot-toddy;
+// $color__background-flex-full-black: $titanium;
 
-// Text Colors
-$color__text-body: $noir;
-$color__text-button: $noir;
-$color__text-button-hover: $true-white;
-$color__text-footer: $true-white;
-$color__text-headings: $titanium;
-$color__text-input: $platinum;
-$color__text-input-focus: $platinum;
-$color__text-post-meta: $platinum;
-$color__link: $hot-toddy;
-$color__link-visited: darken($color__link, 10%);
-$color__link-hover: lighten($color__link, 10%);
-$color__link-footer: $hot-toddy;
-$color__link-footer-hover: lighten($color__link-footer, 10%);
-$color__link-mobile-nav: $noir;
-$color__link-nav: $noir;
-$color__link-nav-hover: $hot-toddy;
-$color__link-nav-footer: $true-white;
-$color__link-nav-footer-hover: $hot-toddy;
-$color__link-nav-sub-menu: $titanium;
-$color__link-nav-sub-menu-hover: $hot-toddy;
-$color__link-post-meta: $platinum;
-$color__link-post-meta-hover: $hot-toddy;
-$color__link-taxonomy: $noir;
-$color__link-taxonomy-hover: $hot-toddy;
-$color__link-sidebar: $noir;
-$color__link-sidebar-hover: $hot-toddy;
-$color__link-titles: $titanium;
-$color__link-titles-hover: $hot-toddy;
-
-
-// 2.2.2 Typography
-
-// Font Palette
-$montserrat: 'Montserrat', sans-serif;
-$open-sans: 'Open Sans', sans-serif;
-
-$font__body: $open-sans;
-$font__button: $montserrat;
-$font__entry-footer: $open-sans;
-$font__footer: $open-sans;
-$font__headings: $montserrat;
-$font__navigation: $montserrat;
-$font__sidebar: $open-sans;
-$font__letter-spacing-body: 0.5px;
-$font__letter-spacing-entry-footer: 0.5px;
-$font__letter-spacing-headings: 1px;
-$font__letter-spacing-nav: 1.5px;
-$font__letter-spacing-sidebar: 0.5px;
-$font__line-height-body: 1.65;
-$font__line-height-headings: 1.2;
-$font__line-height-sidebar: 1.5;
-$font__line-height-pre: 1.6;
-$font__margin-headings: 0 0 em(10) 0;
-$font__services: $open-sans;
+// // Text Colors
+// $color__text-body: $noir;
+// $color__text-button: $noir;
+// $color__text-button-hover: $true-white;
+// $color__text-footer: $true-white;
+// $color__text-headings: $titanium;
+// $color__text-input: $platinum;
+// $color__text-input-focus: $platinum;
+// $color__text-post-meta: $platinum;
+// $color__link: $hot-toddy;
+// $color__link-visited: darken($color__link, 10%);
+// $color__link-hover: lighten($color__link, 10%);
+// $color__link-footer: $hot-toddy;
+// $color__link-footer-hover: lighten($color__link-footer, 10%);
+// $color__link-mobile-nav: $noir;
+// $color__link-nav: $noir;
+// $color__link-nav-hover: $hot-toddy;
+// $color__link-nav-footer: $true-white;
+// $color__link-nav-footer-hover: $hot-toddy;
+// $color__link-nav-sub-menu: $titanium;
+// $color__link-nav-sub-menu-hover: $hot-toddy;
+// $color__link-post-meta: $platinum;
+// $color__link-post-meta-hover: $hot-toddy;
+// $color__link-taxonomy: $noir;
+// $color__link-taxonomy-hover: $hot-toddy;
+// $color__link-sidebar: $noir;
+// $color__link-sidebar-hover: $hot-toddy;
+// $color__link-titles: $titanium;
+// $color__link-titles-hover: $hot-toddy;
 
 
-// 2.2.3 Borders
-$border__button: 2px solid $noir;
-$border__button-hover: 2px solid $noir;
-$border__input: 1px solid $noir;
-$border__input-focus: 1px solid $hot-toddy;
-$border__nav-primary: 2px solid $noir;
-$border__services: 2px solid $hot-toddy;
+// // 2.2.2 Typography
+
+// // Font Palette
+// $montserrat: 'Montserrat', sans-serif;
+// $open-sans: 'Open Sans', sans-serif;
+
+// $font__body: $open-sans;
+// $font__button: $montserrat;
+// $font__entry-footer: $open-sans;
+// $font__footer: $open-sans;
+// $font__headings: $montserrat;
+// $font__navigation: $montserrat;
+// $font__sidebar: $open-sans;
+// $font__letter-spacing-body: 0.5px;
+// $font__letter-spacing-entry-footer: 0.5px;
+// $font__letter-spacing-headings: 1px;
+// $font__letter-spacing-nav: 1.5px;
+// $font__letter-spacing-sidebar: 0.5px;
+// $font__line-height-body: 1.65;
+// $font__line-height-headings: 1.2;
+// $font__line-height-sidebar: 1.5;
+// $font__line-height-pre: 1.6;
+// $font__margin-headings: 0 0 em(10) 0;
+// $font__services: $open-sans;
 
 
-// 2.2.4 Structure
-$size__width-boxed-content: 960px;
+// // 2.2.3 Borders
+// $border__button: 2px solid $noir;
+// $border__button-hover: 2px solid $noir;
+// $border__input: 1px solid $noir;
+// $border__input-focus: 1px solid $hot-toddy;
+// $border__nav-primary: 2px solid $noir;
+// $border__services: 2px solid $hot-toddy;
+
+
+// // 2.2.4 Structure
+// $size__width-boxed-content: 960px;

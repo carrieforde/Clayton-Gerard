@@ -13,15 +13,10 @@ Tags:
 
 // Include Sass libraries.
 @import 'bourbon';
-@import 'alcatraz/assets/sass/utilities/index'; // Alcatraz's utilities
+@import 'alcatraz/assets/sass/utilities/index'; // Alcatraz's utilities.
+@import 'assets/sass/utilities/index'; // This theme's utilities.
 @import 'neat';
 @import 'sanitize';
-
-
-// Include Sass variables and mixins from the child theme.
-@import 'utilities/variables';
-@import 'utilities/mixins';
-
 
 // Include the Alcatraz styles.
 @import 'alcatraz/assets/sass/base/index';

@@ -2,141 +2,140 @@
 // PRIMARY NAVIGATION
 //--------------------------------------------------------------
 
-//-----------------------------------------
-// Main Navigation
-//-----------------------------------------
-.main-navigation {
-	background-color: $titanium;
-	font-family: $montserrat;
-	font-size: rem(12);
-	font-weight: 600;
-	letter-spacing: (1 / 12) * 1em;
-	text-transform: uppercase;
+// //-----------------------------------------
+// // Main Navigation
+// //-----------------------------------------
+// .main-navigation {
+// 	font-family: $font__heading;
+// 	font-size: rem(12);
+// 	font-weight: 600;
+// 	letter-spacing: (1 / 12) * 1em;
+// 	text-transform: uppercase;
 
-	@include grid-media($tablet-landscape-up) {
-		background-color: transparent;
-	}
+// 	@include grid-media($tablet-landscape-up) {
+// 		background-color: transparent;
+// 	}
 
-	.mobile-menu-is-visible & {
-		z-index: 7;
-	}
+// 	.mobile-menu-is-visible & {
+// 		z-index: 7;
+// 	}
 
-	a,
-	a:visited {
-		color: $concrete;
+// 	a,
+// 	a:visited {
+// 		color: color(concrete);
 
-		@include grid-media($tablet-landscape-up) {
-			color: $titanium;
-		}
-	}
-}
-
-
-//-----------------------------------------
-// Primary Menu
-//-----------------------------------------
-.primary-menu {
-
-	@media (max-width: map-get($tablet-landscape-up, 'media')) {
-		padding: $size__padding * 3 $size__padding $size__padding;
-	}
-}
+// 		@include grid-media($tablet-landscape-up) {
+// 			color: color(mine-shaft);
+// 		}
+// 	}
+// }
 
 
-//-----------------------------------------
-// Mobile Menu Toggle
-//-----------------------------------------
-.mobile-menu-toggle {
-	border: none;
-	padding: 0;
-	z-index: 8;
+// //-----------------------------------------
+// // Primary Menu
+// //-----------------------------------------
+// .primary-menu {
 
-	&:hover {
-		border: none;
-	}
-
-	@include element(bar) {
-		background-color: $titanium;
-	}
-
-	.mobile-menu-is-visible & {
-
-		&__bar {
-			background-color: $concrete;
-		}
-	}
-}
+// 	@media (max-width: map-get($tablet-landscape-up, 'media')) {
+// 		padding: $size__padding * 3 $size__padding $size__padding;
+// 	}
+// }
 
 
-//-----------------------------------------
-// Footer Menu
-//-----------------------------------------
-.widget_nav_menu {
+// //-----------------------------------------
+// // Mobile Menu Toggle
+// //-----------------------------------------
+// .mobile-menu-toggle {
+// 	border: none;
+// 	padding: 0;
+// 	z-index: 8;
 
-	.menu {
-		@include margin-padding-reset;
-	}
+// 	&:hover {
+// 		border: none;
+// 	}
 
-	.menu-item {
-		display: block;
+// 	@include element(bar) {
+// 		background-color: $titanium;
+// 	}
 
-		> a,
-		> a:visited {
-			color: $driftwood;
-			text-decoration: none;
+// 	.mobile-menu-is-visible & {
 
-			&:hover {
-				color: darken($driftwood, 15%);
-			}
-		}
-	}
-}
+// 		&__bar {
+// 			background-color: $concrete;
+// 		}
+// 	}
+// }
 
-//-------------------------------
-// Social Navigation
-//-------------------------------
-.social-navigation {
 
-	.social-links-menu {
+// //-----------------------------------------
+// // Footer Menu
+// //-----------------------------------------
+// .widget_nav_menu {
 
-		.menu-item {
-			@include size(20% auto);
+// 	.menu {
+// 		@include margin-padding-reset;
+// 	}
 
-			> a {
-				@include size(auto);
+// 	.menu-item {
+// 		display: block;
 
-				&:hover {
+// 		> a,
+// 		> a:visited {
+// 			color: $driftwood;
+// 			text-decoration: none;
 
-					&:before {
-						opacity: 0.75;
-					}
-				}
+// 			&:hover {
+// 				color: darken($driftwood, 15%);
+// 			}
+// 		}
+// 	}
+// }
 
-				&:before {
-					max-width: rem(35);
-					width: 100%;
-				}
-			}
+// //-------------------------------
+// // Social Navigation
+// //-------------------------------
+// .social-navigation {
 
-			> a[href*="facebook.com"]:before {
-				content: url(images/facebook-icon.svg);
-			}
+// 	.social-links-menu {
 
-			> a[href*="twitter.com"]:before {
-				content: url(images/twitter-icon.svg);
-			}
+// 		.menu-item {
+// 			@include size(20% auto);
 
-			> a[href*="instagram.com"]:before {
-				content: url(images/instagram-icon.svg);
-			}
+// 			> a {
+// 				@include size(auto);
 
-			> a[href*="pinterest.com"]:before {
-				content: url(images/pinterest-icon.svg);
-			}
+// 				&:hover {
 
-			> a[href*="bloglovin.com"]:before {
-				content: url(images/bloglovin-icon.svg);
-			}
-		}
-	}
-}
+// 					&:before {
+// 						opacity: 0.75;
+// 					}
+// 				}
+
+// 				&:before {
+// 					max-width: rem(35);
+// 					width: 100%;
+// 				}
+// 			}
+
+// 			> a[href*="facebook.com"]:before {
+// 				content: url(images/facebook-icon.svg);
+// 			}
+
+// 			> a[href*="twitter.com"]:before {
+// 				content: url(images/twitter-icon.svg);
+// 			}
+
+// 			> a[href*="instagram.com"]:before {
+// 				content: url(images/instagram-icon.svg);
+// 			}
+
+// 			> a[href*="pinterest.com"]:before {
+// 				content: url(images/pinterest-icon.svg);
+// 			}
+
+// 			> a[href*="bloglovin.com"]:before {
+// 				content: url(images/bloglovin-icon.svg);
+// 			}
+// 		}
+// 	}
+// }

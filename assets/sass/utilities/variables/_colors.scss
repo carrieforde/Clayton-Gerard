@@ -1,0 +1,53 @@
+//--------------------------------------------------------------
+// COLORS 
+//--------------------------------------------------------------
+
+
+$theme-colors: (
+	white: #fff,
+	black: #000,
+	metallic-gold: #cca42e,
+	concrete: #f2f2f2,
+	driftwood: #B48D53,
+	mine-shaft: #333,
+	ship-gray: #4D4D4D,
+);
+
+
+//-------------------------------
+// Buttons
+//-------------------------------
+$color__button-background: color(driftwood);
+$color__button-background-hover: color(metallic-gold);
+
+
+//-----------------------------------------
+// Typography
+//-----------------------------------------
+$color__body-text: color(mine-shaft);
+$color__link: color(driftwood);
+$color__link-hover: color(metallic-gold);
+$color__link-visited: color(driftwood);
+
+
+//-------------------------------
+// Navigation
+//-------------------------------
+$color__toggle-background: color(mine-shaft);
+$color__menu-sub-toggle: color(mine-shaft);
+$color__mobile-nav-background: color(concrete);
+$color__mobile-nav-slide-background: color(concrete);
+$color__mobile-nav-slide-overlay-background: rgba(color(black), 0.85);
+$color__sub-menu-background: color(concrete);
+
+
+//-----------------------------------------
+// Footer
+//-----------------------------------------
+$color__site-footer: color(concrete);
+
+
+//-----------------------------------------
+// Header
+//-----------------------------------------
+$color__site-header: color(concrete);

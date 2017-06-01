@@ -8,8 +8,8 @@
 // The max-content width should be 1120px.
 //-----------------------------------------
 .site-header {
-	background-color: $concrete;
-	border-bottom: 3.5px solid $driftwood;
+	background-color: $color__site-header;
+	border-bottom: 3.5px solid color(driftwood);
 }
 
 .header-wrap {
@@ -27,7 +27,7 @@
 // Site Branding
 //-----------------------------------------
 .site-title {
-	font-family: $montserrat;
+	font-family: $font__headings;
 	font-size: rem(25);
 	font-weight: 700;
 	letter-spacing: (2 / 25) * 1em;
@@ -35,7 +35,7 @@
 
 	a,
 	a:visited {
-		color: $ship-gray;
+		color: color(ship-gray);
 	}
 }
 

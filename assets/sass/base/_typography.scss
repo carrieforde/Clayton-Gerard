@@ -3,8 +3,7 @@
 //--------------------------------------------------------------
 
 body {
-	font-size: 15px;
-	letter-spacing: $font__letter-spacing-body;
+	font-size: $font__body-size;
 }
 
 //-------------------------------
@@ -18,8 +17,6 @@ h5,
 h6 {
 	margin-bottom: 10px;
 	font-family: $font__headings;
-	letter-spacing: $font__letter-spacing-headings;
-	text-transform: uppercase;
 }
 
 h1 {
@@ -52,10 +49,10 @@ h6 {
 //-------------------------------
 blockquote,
 .blockquote {
-	padding: 0;
 	border: none;
-	margin-right: 0;
 	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
 	text-align: center;
 
 	&::before,

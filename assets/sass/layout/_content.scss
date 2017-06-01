@@ -7,17 +7,7 @@
 
 .entry-title {
 	margin-bottom: 0;
-	font-family: $font__headings;
 	text-transform: uppercase;
-
-	a {
-		color: $color__link-titles;
-
-		&:hover {
-			color: $color__link-titles-hover;
-			text-decoration: underline;
-		}
-	}
 }
 
 .byline {
@@ -26,38 +16,13 @@
 
 .posted-on,
 .byline {
-	color: $color__text-post-meta;
 	font-size: em(14);
 	font-style: italic;
-
-	a,
-	a:visited {
-		color: $color__text-post-meta;
-	}
-
-	a:hover {
-		color: $color__link-post-meta-hover;
-	}
 }
 
 .entry-footer {
-	font-family: $font__entry-footer;
 	font-size: 13px;
-	letter-spacing: $font__letter-spacing-entry-footer;
 	text-transform: uppercase;
-
-	a {
-		color: $color__link-taxonomy;
-
-		&:visited {
-			color: $color__link-taxonomy;
-		}
-
-		&:hover {
-			color: $color__link-taxonomy-hover;
-			text-decoration: underline;
-		}
-	}
 }
 
 .entry-tax-term-list {
@@ -73,8 +38,8 @@
 
 	&::before {
 		content: ' | ';
-		padding-right: 0;
 		font-size: 13px;
+		padding-right: 0;
 	}
 }
 

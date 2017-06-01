@@ -24,9 +24,9 @@
 
 	.widget-toggle {
 		@include size(rem(15));
+
 		display: block;
 		float: right;
-		line-height: $font__line-height-body;
 		position: relative;
 		transition: all 0.2s ease;
 
@@ -34,20 +34,20 @@
 			cursor: pointer;
 
 			.widget-toggle-span {
-				background-color: $color__background-menu-toggle-hover;
+				background-color: $color__menu-sub-toggle;
 			}
 		}
 	}
 
 	.widget-toggle-span {
-		position: absolute;
-		top: 7px;
-		right: 7px;
+		background-color: $color__menu-sub-toggle;
 		display: block;
-		width: 10px;
 		height: 2px;
-		background-color: $color__background-menu-toggle;
+		position: absolute;
+		right: 7px;
+		top: 7px;
 		transition: all 0.2s ease;
+		width: 10px;
 
 		&.span-2 {
 			transform: rotate(90deg);

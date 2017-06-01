@@ -12,10 +12,11 @@
 	}
 
 	.clayton-gerard-latest-projects {
+		@include clearfix;
+
+		margin: 50px auto 50px;
 		max-width: 900px;
 		padding: $size__padding;
-		margin: 50px auto 50px;
-		@include clearfix;
 
 		.clayton-gerard-button-wrapper {
 			text-align: center;
@@ -23,19 +24,19 @@
 	}
 
 	.clayton-gerard-project-loop-heading {
-		padding-top: 15px;
 		margin-bottom: 50px;
+		padding-top: 15px;
 		text-align: center;
 	}
 
 	.clayton-gerard-project-wrapper {
-		overflow: hidden;
 		margin-bottom: 50px;
+		overflow: hidden;
 	}
 
 	.clayton-gerard-project {
-		width: 100%;
 		margin: 0 auto 30px;
+		width: 100%;
 
 		.post-thumbnail {
 			@include grayscale;
@@ -43,8 +44,8 @@
 
 		@media (min-width: em(550)) {
 			float: left;
-			width: calc(50% - 15px);
 			margin-right: calc(30px);
+			width: calc(50% - 15px);
 
 			&:nth-child(2n) {
 				margin-right: 0;
@@ -52,13 +53,10 @@
 		}
 
 		@media (min-width: em(800)) {
-			width: 31.1111113%;
-			width: calc(32.5% - 15px);
-			margin-right: 3.333333%;
 			margin-right: calc(30px);
+			width: calc(32.5% - 15px);
 
 			&:nth-child(2n) {
-				margin-right: 3.333333%;
 				margin-right: calc(30px);
 			}
 
@@ -70,14 +68,6 @@
 
 	.clayton-gerard-project-heading {
 		text-align: center;
-
-		a {
-			color: $color__text-headings;
-
-			&:hover {
-				color: $color__link-hover;
-			}
-		}
 	}
 
 	.last {
@@ -86,8 +76,8 @@
 
 	.clayton-gerard-button {
 		display: block;
-		width: 245px;
 		margin: 0 auto 15px;
+		width: 245px;
 
 		@media (min-width: em(560)) {
 			display: inline-block;

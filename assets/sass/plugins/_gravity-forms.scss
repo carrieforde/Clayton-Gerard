@@ -20,10 +20,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 		// The container within
 		.chosen-single {
-			background: $true-white;
-			border: $border__input;
+			background: color(white);
 			border-radius: 0;
-			color: $color__text-input;
 			box-shadow: none;
 			height: auto;
 			line-height: inherit;
@@ -35,17 +33,14 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	&.chosen-container-active.chosen-with-drop {
 
 		.chosen-single {
-			background: $true-white;
-			border: $border__input;
+			background: color(white);
 			border-bottom: none;
 			box-shadow: none;
-			color: $color__text-input;
 		}
 	}
 
 	// The actual dropdown
 	.chosen-drop {
-		border: $border__input;
 		border-radius: 0;
 		border-top: none;
 		box-shadow: none;
@@ -61,7 +56,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 			line-height: inherit;
 
 			&.highlighted {
-				background: $gradient__background;
+				// background: $gradient__background;
 			}
 		}
 	}
