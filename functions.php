@@ -125,4 +125,4 @@ function cf_cg_set_gravity_forms_chosen_options( $form ) {
 
 // Add new image sizes.
 add_image_size( 'full-screen-image', 2560, 986, true );
-
+add_image_size( 'hero-half', 515, 515, true );

@@ -25,7 +25,7 @@ $hero_navigation = get_post_meta( $post_id, $prefix . 'hero_navigation', true );
 <section class="hero hero--call-to-action">
 	
 	<div class="hero__image">
-		<?php echo wp_kses_post( wp_get_attachment_image( $image ) ); ?>
+		<?php echo wp_kses_post( wp_get_attachment_image( $image, 'hero-half' ) ); ?>
 	</div>
 
 	<div class="hero__content">
