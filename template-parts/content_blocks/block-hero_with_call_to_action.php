@@ -23,44 +23,47 @@ $hero_navigation = get_post_meta( $post_id, $prefix . 'hero_navigation', true );
 ?>
 
 <section class="hero hero--call-to-action">
+
+	<div class="row">
 	
-	<div class="hero__image">
-		<?php echo wp_kses_post( wp_get_attachment_image( $image, 'hero-half' ) ); ?>
+		<div class="hero__image">
+			<?php echo wp_kses_post( wp_get_attachment_image( $image, 'hero-half' ) ); ?>
+		</div>
+
+		<div class="hero__content">
+
+			<div class="cta-area">
+				<?php if ( ! empty( $heading ) ) : ?>
+					<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
+				<?php endif; ?>
+
+				<?php if ( ! empty( $description ) ) : ?>
+					<div class="description">
+						<?php echo wp_kses_post( wpautop( $description ) ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if ( ! empty( $button_link && $button_text ) ) : ?>
+					<a class="button" href="<?php echo esc_url( $button_link ); ?>"><?php echo esc_html( $button_text ); ?></a>
+				<?php endif; ?>
+			</div><!-- .cta-area -->
+
+			<?php if ( ! empty( $hero_navigation ) ) : ?>
+				<ul class="hero__navigation">
+
+					<?php for ( $i = 0; $i < $hero_navigation; $i++ ) :
+
+						$nav_link = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_link', true );
+						$nav_label = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_label', true );
+						$nav_icon = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_icon', true ); ?>
+
+						<li class="nav-item">
+							<a href="<?php echo esc_url( $nav_link ); ?>"><?php echo esc_html( $nav_label ); ?></a>
+							<span class="nav-icon"><?php echo wp_kses_post( wp_get_attachment_image( $nav_icon ) ); ?></span>
+						</li>
+					<?php endfor; ?>
+				</ul><!-- .hero__navigation -->
+			<?php endif; ?>
+		</div><!-- .hero__content -->
 	</div>
-
-	<div class="hero__content">
-
-		<div class="cta-area">
-			<?php if ( ! empty( $heading ) ) : ?>
-				<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
-			<?php endif; ?>
-
-			<?php if ( ! empty( $description ) ) : ?>
-				<div class="description">
-					<?php echo wp_kses_post( $description ); ?>
-				</div>
-			<?php endif; ?>
-
-			<?php if ( ! empty( $button_link && $button_text ) ) : ?>
-				<a class="button" href="<?php echo esc_url( $button_link ); ?>"><?php echo esc_html( $button_text ); ?></a>
-			<?php endif; ?>
-		</div><!-- .cta-area -->
-
-		<?php if ( ! empty( $hero_navigation ) ) : ?>
-			<div class="hero__navigation">
-
-				<?php for ( $i = 0; $i < $hero_navigation; $i++ ) :
-
-					$nav_link = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_link', true );
-					$nav_label = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_label', true );
-					$nav_icon = get_post_meta( $post_id, $prefix . 'hero_navigation_' . $i . '_navigation_icon', true ); ?>
-
-					<li class="nav-item">
-						<a href="<?php echo esc_url( $nav_link ); ?>"><?php echo esc_html( $nav_label ); ?></a>
-						<span class="nav-icon"><?php echo wp_kses_post( wp_get_attachment_image( $nav_icon ) ); ?></span>
-					</li>
-				<?php endfor; ?>
-			</div><!-- .hero__navigation -->
-		<?php endif; ?>
-	</div><!-- .hero__content -->
 </section>
