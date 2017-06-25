@@ -1,0 +1,61 @@
+//--------------------------------------------------------------
+// CONTENT BLOCK - HERO
+//--------------------------------------------------------------
+.hero {
+
+	@include modifier(call-to-action) {
+
+		.row {
+			display: flex;
+			flex-direction: column;
+
+			@include grid-media($tablet-portrait-up) {
+				flex-direction: row;
+
+				.hero__image,
+				.hero__content {
+					flex: 0 0 50%;
+				}
+			}
+		}
+
+		.hero__content {
+			margin-top: $size__padding;
+			text-align: right;
+		}
+
+		.hero__navigation {
+			@include list-reset;
+
+			margin-top: $size__padding * 2;
+			text-align: right;
+
+			.nav-item {
+				font-family: $font__headings;
+				font-size: em(19);
+				font-weight: 700;
+				text-transform: uppercase;
+
+				+ .nav-item {
+					margin-top: rem(18);
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
+
+			.nav-icon {
+				@include size(rem(44) rem(36));
+
+				display: inline-block;
+				margin-left: rem(30);
+
+				img {
+					margin-bottom: 0;
+					width: 60%;
+				}
+			}
+		}
+	}
+}
