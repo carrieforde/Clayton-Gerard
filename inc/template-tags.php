@@ -104,3 +104,13 @@ function cf_cg_get_blog_posts_page_url() {
 	// The front page IS the posts page. Get its URL.
 	return get_home_url();
 }
+
+add_filter( 'excerpt_more', 'cf_cg_excerpt_more' );
+/**
+ * Filter the excerpt more text.
+ *
+ * @return  string  The excerpt more text.
+ */
+function cf_cg_excerpt_more() {
+	return '&hellip;';
+}
