@@ -1,0 +1,28 @@
+//--------------------------------------------------------------
+// LATEST POST
+//--------------------------------------------------------------
+.latest-post {
+
+	.entry-header {
+
+		&:after {
+			@include size(80% 2px);
+
+			background-color: color(driftwood);
+			content: '';
+			display: block;
+			margin-top: rem(18);
+		}
+	}
+
+	.entry-title {
+
+		a {
+			color: color(mine-shaft);
+
+			&:hover {
+				color: color(metallic-gold);
+			}
+		}
+	}
+}
