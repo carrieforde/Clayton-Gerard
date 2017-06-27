@@ -24,6 +24,8 @@
 			) );
 		?>
 	</div>
+	
+	<footer class="entry-footer"><a href="<?php the_permalink(); ?>" class="read-more">Read More&hellip;</a></footer>
 </article>
 
 <?php do_action( 'alcatraz_after_entry' ); ?>
