@@ -24,6 +24,11 @@
 			text-align: right;
 		}
 
+		.heading {
+			font-size: em(42);
+			margin-bottom: rem(13);
+		}
+
 		.hero__navigation {
 			@include list-reset;
 
