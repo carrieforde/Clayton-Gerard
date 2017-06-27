@@ -25,4 +25,13 @@
 			}
 		}
 	}
+
+	p:last-of-type {
+		margin-bottom: rem(5);
+	}
+
+	.read-more {
+		font-style: italic;
+		text-transform: none;
+	}
 }
