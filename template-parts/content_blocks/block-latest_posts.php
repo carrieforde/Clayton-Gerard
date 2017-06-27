@@ -17,7 +17,7 @@ $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true ); ?>
 
 <section class="latest-posts full-width container">
-	<div class="row">
+	<div class="row row-600">
 		<?php cf_cg_fetch_posts( array(
 			'posts_per_page' => $number_of_posts,
 			'template_part'  => 'template-parts/content-latest-post',
