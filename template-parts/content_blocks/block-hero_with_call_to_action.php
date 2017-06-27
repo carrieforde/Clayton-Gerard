@@ -22,7 +22,7 @@ $button_link     = get_post_meta( $post_id, $prefix . 'button_link', true );
 $hero_navigation = get_post_meta( $post_id, $prefix . 'hero_navigation', true );
 ?>
 
-<section class="hero hero--call-to-action">
+<section class="hero hero--call-to-action container container--no-padding">
 
 	<div class="row">
 	
