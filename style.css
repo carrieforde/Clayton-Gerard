@@ -1713,6 +1713,11 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   text-align: right;
 }
 
+.hero--call-to-action .heading {
+  font-size: 2.625em;
+  margin-bottom: 0.8125rem;
+}
+
 .hero--call-to-action .hero__navigation {
   list-style: none;
   margin: 0;
@@ -1748,6 +1753,23 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   width: 60%;
 }
 
+.latest-post .entry-header:after {
+  height: 2px;
+  width: 80%;
+  background-color: #B48D53;
+  content: '';
+  display: block;
+  margin-top: 1.125rem;
+}
+
+.latest-post .entry-title a {
+  color: #333;
+}
+
+.latest-post .entry-title a:hover {
+  color: #cca42e;
+}
+
 .full-width {
   left: 50%;
   margin-left: -50vw;
@@ -1759,6 +1781,10 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .container {
   padding: 3.125rem 1.25rem;
+}
+
+.container--no-padding {
+  padding: 0 1.25rem;
 }
 
 .home .container + .container {
@@ -1786,7 +1812,6 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .entry-title {
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 
 .byline {
@@ -2396,6 +2421,9 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
   .container {
     padding: 6.25rem 1.25rem;
+  }
+  .container--no-padding {
+    padding: 0 1.25rem;
   }
 }
 
