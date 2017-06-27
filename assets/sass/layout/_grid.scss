@@ -8,8 +8,16 @@
 .container {
 	padding: rem(50) rem(20);
 
+	&--no-padding {
+		padding: 0 rem(20);
+	}
+
 	@include grid-media($tablet-landscape-up) {
 		padding: rem(100) rem(20);
+
+		&--no-padding {
+			padding: 0 rem(20);
+		}
 	}
 
 	.home & {
