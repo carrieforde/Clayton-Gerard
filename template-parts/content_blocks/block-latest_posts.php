@@ -22,6 +22,10 @@ $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true );
 			'posts_per_page' => $number_of_posts,
 			'template_part'  => 'template-parts/content-latest-post',
 		) ); ?>
-		<a href="<?php echo esc_url( cf_cg_get_blog_posts_page_url() ); ?>" class="button"><?php esc_html_e( 'More Posts', 'claytongerard' ); ?></a>
+		
+		<footer class="footer">
+			<a href="<?php echo esc_url( cf_cg_get_blog_posts_page_url() ); ?>" class="button"><?php esc_html_e( 'More Posts', 'claytongerard' ); ?></a>
+		</footer>
 	</div>
+
 </section>
