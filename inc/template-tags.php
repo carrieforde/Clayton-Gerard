@@ -114,3 +114,28 @@ add_filter( 'excerpt_more', 'cf_cg_excerpt_more' );
 function cf_cg_excerpt_more() {
 	return '&hellip;';
 }
+
+add_filter( 'alcatraz_posted_on', 'cf_cg_posted_on' );
+/**
+ * Modifies the posted on date.
+ *
+ * @return  string  The new posted on string.
+ */
+function cf_cg_posted_on() {
+
+	$post_id = get_the_ID();
+
+	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+
+	$time_string = sprintf( $time_string,
+		esc_attr( get_the_date( 'c', $post_id ) ),
+		esc_html( get_the_date( 'm.d.Y', $post_id ) )
+	);
+
+	$posted_on = sprintf(
+		esc_html_x( '%s', 'post date', 'alcatraz' ),
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+	);
+
+	return $posted_on;
+}
