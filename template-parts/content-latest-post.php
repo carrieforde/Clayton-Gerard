@@ -8,7 +8,7 @@
 
 <?php do_action( 'alcatraz_before_entry' ); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'latest-post' ); ?>>
 	
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
