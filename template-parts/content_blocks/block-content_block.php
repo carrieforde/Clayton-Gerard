@@ -20,7 +20,7 @@ $content  = get_post_meta( $post_id, $prefix . 'content', true );
 
 ?>
 
-<section class="content-block full-width container background-<?php echo esc_attr( $bg_color ); ?>">
+<section class="content-block full-width container background-<?php echo esc_attr( $bg_color ); ?><?php echo esc_attr( ( ! empty( $triangle ) ? ' has-triangle' : '' ) ); ?>">
 	<div class="row">
 		<?php echo wp_kses_post( wpautop( $content ) ); ?>
 	</div>
