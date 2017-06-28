@@ -2,6 +2,11 @@
 // LATEST POST
 //--------------------------------------------------------------
 .latest-post {
+	@include vertical-rhythm(rem(60));
+
+	&.hentry {
+		margin-bottom: 0;
+	}
 
 	.entry-header {
 
@@ -11,11 +16,12 @@
 			background-color: color(driftwood);
 			content: '';
 			display: block;
-			margin-top: rem(18);
+			margin-top: rem(15);
 		}
 	}
 
 	.entry-title {
+		font-size: em(31);
 
 		a {
 			color: color(mine-shaft);
@@ -24,6 +30,23 @@
 				color: color(metallic-gold);
 			}
 		}
+	}
+
+	a[rel="bookmark"] {
+		color: color(mine-shaft);
+		display: inline-block;
+		font-family: $font__headings;
+		font-weight: 700;
+		margin-top: rem(20);
+		text-decoration: none;
+
+		&:hover {
+			color: color(metallic-gold);
+		}
+	}
+
+	.entry-content {
+		margin-top: rem(15);
 	}
 
 	p:last-of-type {
