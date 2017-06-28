@@ -5,39 +5,6 @@
 	@include full-width;
 }
 
-.container {
-	padding: rem(50) rem(20);
-
-	&--no-padding {
-		padding: 0 rem(20);
-	}
-
-	@include grid-media($tablet-landscape-up) {
-		padding: rem(100) rem(20);
-
-		&--no-padding {
-			padding: 0 rem(20);
-		}
-	}
-
-	.heading {
-		font-size: em(31);
-	}
-
-	.home & {
-
-		+ .container {
-			border-top: 2px solid color(iron);
-		}
-	}
-
-	.footer {
-		clear: both;
-		margin-top: rem(60);
-		text-align: center;
-	}
-}
-
 .row {
 	@include center;
 
