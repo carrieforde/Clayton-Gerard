@@ -2,8 +2,15 @@
 // CONTENT BLOCK - HERO
 //--------------------------------------------------------------
 .hero {
+	background-position: 75% center;
+	height: 50vh;
+
+	@include grid-media($tablet-portrait-up) {
+		background-position: center center;
+	}
 
 	@include modifier(call-to-action) {
+		height: auto;
 
 		.row {
 			display: flex;
