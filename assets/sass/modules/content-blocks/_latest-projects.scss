@@ -35,4 +35,16 @@ $four-column: (
 			@include grid-column(1, $three-column);
 		}
 	}
+
+	.button {
+		width: rem(220);
+
+		+ .button {
+			margin-top: rem(20);
+
+			@include grid-media($tablet-portrait-up) {
+				margin-left: rem(20);
+			}
+		}
+	}
 }
