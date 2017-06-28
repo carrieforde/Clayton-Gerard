@@ -17,7 +17,7 @@ $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 $heading         = get_post_meta( $post_id, $prefix . 'heading', true );
 $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true ); ?>
 
-<section class="latest-projects full-width container">
+<section class="latest-projects full-width block">
 	<div class="row">
 		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 		<?php cf_cg_fetch_posts( array(

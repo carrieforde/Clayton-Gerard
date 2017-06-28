@@ -20,7 +20,7 @@ $i          = 0; // iterator for our loop.
 
 ?>
 
-<section class="category-block full-width container">
+<section class="category-block full-width block">
 
 	<div class="row row-600">
 

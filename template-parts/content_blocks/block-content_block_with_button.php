@@ -21,7 +21,7 @@ $button_link = get_post_meta( $post_id, $prefix . 'button_link', true );
 
 ?>
 
-<section class="content-block-with-button full-width container">
+<section class="content-block-with-button full-width block">
 
 	<div class="row row-600">
 		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
