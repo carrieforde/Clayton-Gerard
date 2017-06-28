@@ -18,8 +18,17 @@
 		}
 	}
 
-	.heading {
-		font-size: em(31);
+	@include element(header) {
+
+		h2 {
+			font-size: em(31);
+		}
+	}
+
+	@include element(footer) {
+		clear: both;
+		margin-top: rem(60);
+		text-align: center;
 	}
 
 	.home & {
@@ -27,11 +36,5 @@
 		+ .block {
 			border-top: 2px solid color(iron);
 		}
-	}
-
-	.footer {
-		clear: both;
-		margin-top: rem(60);
-		text-align: center;
 	}
 }
