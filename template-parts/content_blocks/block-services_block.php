@@ -19,9 +19,12 @@ $services = get_post_meta( $post_id, $prefix . 'services', true ); ?>
 
 <section class="services-block full-width block background-mine-shaft color-white">
 	<div class="row">
-		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
 
-		<div class="services">
+		<header class="block__header">
+			<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
+		</header>
+
+		<div class="block__content services">
 
 			<?php for ( $i = 0; $i < $services; $i++ ) :
 				$service = get_post_meta( $post_id, $prefix . 'services_' . $i . '_service', true );

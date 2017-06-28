@@ -24,25 +24,29 @@ $i          = 0; // iterator for our loop.
 
 	<div class="row row-600">
 
-		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
+		<header class="block__header">
+			<h2><?php echo esc_html( $heading ); ?></h2>
+		</header>
 
-		<ul class="categories">
-			<?php foreach ( $categories as $category ) :
+		<div class="block__content">
+			<ul class="categories">
+				<?php foreach ( $categories as $category ) :
 
-				$link = get_category_link( $category );
-				$name = get_the_category_by_ID( $category ); ?>
+					$link = get_category_link( $category );
+					$name = get_the_category_by_ID( $category ); ?>
 
-				<li class="category">
-					<a href="<?php echo esc_url( $link ); ?>" class="button"><?php echo esc_html( $name ); ?></a>
-				</li>
+					<li class="category">
+						<a href="<?php echo esc_url( $link ); ?>" class="button"><?php echo esc_html( $name ); ?></a>
+					</li>
 
-				
-				<?php $i++;
+					
+					<?php $i++;
 
-				if ( 6 === $i ) {
-					break;
-				} ?>
-			<?php endforeach; ?>
-		</ul>
+					if ( 6 === $i ) {
+						break;
+					} ?>
+				<?php endforeach; ?>
+			</ul>
+		</div>
 	</div>
 </section>

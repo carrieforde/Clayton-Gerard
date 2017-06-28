@@ -24,10 +24,16 @@ $button_link = get_post_meta( $post_id, $prefix . 'button_link', true );
 <section class="content-block-with-button full-width block">
 
 	<div class="row row-600">
-		<h2 class="heading"><?php echo esc_html( $heading ); ?></h2>
-		<div class="content">
+		<header class="block__header">
+			<h2><?php echo esc_html( $heading ); ?></h2>
+		</header>
+
+		<div class="block__content">
 			<?php echo wp_kses_post( wpautop( $text ) ); ?>
 		</div>
-		<a href="<?php echo esc_url( $button_link ); ?>" class="button"><?php echo esc_html( $button_text ); ?></a>
+
+		<footer class="block__footer">
+			<a href="<?php echo esc_url( $button_link ); ?>" class="button"><?php echo esc_html( $button_text ); ?></a>
+		</footer>
 	</div><!-- .row -->
 </section>
