@@ -15,7 +15,8 @@ $prefix = ( ! empty( $component ) ) ? 'blocks_' . $count . '_' : '';
 
 // This block's fields.
 $heading         = get_post_meta( $post_id, $prefix . 'heading', true );
-$number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true ); ?>
+$number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true );
+$buttons         = get_post_meta( $post_id, $prefix . 'buttons', true ); ?>
 
 <section class="latest-projects full-width block">
 	<div class="row">
@@ -31,6 +32,17 @@ $number_of_posts = get_post_meta( $post_id, $prefix . 'number_of_posts', true );
 			) ); ?>
 		</div>
 
-		<footer class="block__footer"><a href="<?php echo esc_url( cf_cg_get_blog_posts_page_url() ); ?>" class="button"><?php esc_html_e( 'More Posts', 'claytongerard' ); ?></a></footer>
+		<?php if ( ! empty( $buttons) ) : ?>
+		<footer class="block__footer">
+
+			<?php for ( $i = 0; $i < $buttons; $i++ ) :
+
+				$button_link = get_post_meta( $post_id, $prefix . 'buttons_' . $i . '_button_link', true );
+				$button_text = get_post_meta( $post_id, $prefix . 'buttons_' . $i . '_button_text', true ); ?>
+
+				<a href="<?php echo esc_url( $button_link ); ?>" class="button"><?php echo esc_html( $button_text ); ?></a>
+			<?php endfor; ?>
+		</footer>
+		<?php endif; ?>
 	</div>
 </section>
