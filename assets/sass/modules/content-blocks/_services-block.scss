@@ -2,19 +2,24 @@
 // SERVICES 
 //--------------------------------------------------------------
 .services-block {
-	padding: rem(100) rem(20);
 
 	.heading {
+		color: color(white);
 		text-align: center;
 	}
 
 	// The card container.
 	.services {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 		margin: 0 auto;
 		max-width: 100%;
 		width: rem(900);
+
+		@include grid-media($tablet-portrait-up) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
 	//-----------------------------------------
@@ -31,11 +36,15 @@
 		}
 
 		h3 {
+			color: color(white);
 			text-align: center;
 		}
 
 		+ .service {
-			margin-left: rem(30);
+
+			@include grid-media($tablet-portrait-up) {
+				margin-left: rem(30);
+			}
 		}
 	}
 }

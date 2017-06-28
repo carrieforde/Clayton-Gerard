@@ -8,7 +8,7 @@
 
 <?php do_action( 'alcatraz_before_entry' ); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'portfolio-card' ); ?>>
 	<a href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail(); ?>

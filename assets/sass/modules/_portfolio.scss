@@ -1,0 +1,24 @@
+//--------------------------------------------------------------
+// PORTFOLIO
+//--------------------------------------------------------------
+.portfolio-card {
+	text-align: center;
+
+	img {
+		filter: grayscale(1);
+		transition: filter 0.3s ease-in-out;
+
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+
+	.entry-title a {
+		color: color(mine-shaft);
+		text-decoration: none;
+
+		&:hover {
+			color: color(metallic-gold);
+		}
+	}
+}
