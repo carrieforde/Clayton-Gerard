@@ -1,0 +1,37 @@
+//--------------------------------------------------------------
+// BLOCK
+//
+// This file contains all shared block styles.
+//--------------------------------------------------------------
+.block {
+	padding: rem(50) rem(20);
+
+	&--no-padding {
+		padding: 0 rem(20);
+	}
+
+	@include grid-media($tablet-landscape-up) {
+		padding: rem(100) rem(20);
+
+		&--no-padding {
+			padding: 0 rem(20);
+		}
+	}
+
+	.heading {
+		font-size: em(31);
+	}
+
+	.home & {
+
+		+ .block {
+			border-top: 2px solid color(iron);
+		}
+	}
+
+	.footer {
+		clear: both;
+		margin-top: rem(60);
+		text-align: center;
+	}
+}
