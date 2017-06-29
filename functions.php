@@ -31,10 +31,23 @@ function alcatraz_child_enqueue_scripts() {
 	// Include this theme's JS.
 	wp_enqueue_script(
 		'alcatraz-child-scripts',
-		ALCATRAZ_CHILD_URL . 'js/clayton-gerard-theme.min.js',
+		ALCATRAZ_CHILD_URL . 'assets/scripts/clayton-gerard-theme.min.js',
 		array( 'jquery' ),
-		ALCATRAZ_CHILD_VERSION
+		ALCATRAZ_CHILD_VERSION,
+		true
 	);
+
+	wp_register_script(
+		'flickity-js',
+		ALCATRAZ_CHILD_URL . 'assets/scripts/flickity.pkgd.min.js',
+		array( 'jquery' ),
+		'2.0.8',
+		true
+	);
+
+	if ( is_singular( 'cg-portfolio' ) ) {
+		wp_enqueue_script( 'flickity-js' );
+	}
 }
 
 require_once ALCATRAZ_CHILD_PATH . '/inc/acf.php';
