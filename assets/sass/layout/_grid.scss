@@ -19,3 +19,46 @@
 		margin-bottom: rem(50);
 	}
 }
+
+
+//-----------------------------------------
+// Portfolio Grid
+//-----------------------------------------
+// Grid variables
+$one-column: (
+	columns: 1,
+);
+
+$two-column: (
+	columns: 2,
+	gutter: rem(30),
+);
+
+$three-column: (
+	columns: 3,
+	gutter: rem(30),
+);
+
+$four-column: (
+	columns: 4,
+	gutter: rem(30),
+);
+
+.project-posts,
+.latest-projects .block__content {
+	
+	@include grid-media($tablet-portrait-up) {
+		@include grid-collapse($two-column);
+	}
+}
+
+.portfolio-card {
+
+	@include grid-media($tablet-portrait-up) {
+		@include grid-column(1, $two-column);
+	}
+
+	@include grid-media($tablet-landscape-up) {
+		@include grid-column(1, $three-column);
+	}
+}

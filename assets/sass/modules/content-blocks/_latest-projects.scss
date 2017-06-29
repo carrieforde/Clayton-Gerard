@@ -1,40 +1,8 @@
 //--------------------------------------------------------------
 // LATEST PROJECTS
 //--------------------------------------------------------------
-
-// Grid variables
-$one-column: (
-	columns: 1,
-);
-
-$two-column: (
-	columns: 2,
-	gutter: rem(30),
-);
-
-$three-column: (
-	columns: 3,
-	gutter: rem(30),
-);
-
-$four-column: (
-	columns: 4,
-	gutter: rem(30),
-);
-
 .latest-projects {
 	text-align: center;
-
-	.portfolio-card {
-
-		@include grid-media($tablet-portrait-up) {
-			@include grid-column(1, $two-column);
-		}
-
-		@include grid-media($tablet-landscape-up) {
-			@include grid-column(1, $three-column);
-		}
-	}
 
 	.button {
 		width: rem(220);
