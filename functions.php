@@ -73,27 +73,6 @@ add_action( 'alcatraz_before', function() {
 	}
 } );
 
-// add_filter( 'body_class', 'clayton_gerard_portfolio_body_classes' );
-/**
- * Add a custom post class to the portfolio archive.
- */
-function clayton_gerard_portfolio_body_classes( $classes ) {
-
-	$post_type = get_post_type();
-
-	if ( 'portfolio' === $post_type && is_archive() ) {
-
-		$classes[] = 'portfolio-archive';
-		return $classes;
-	}
-
-	if ( 'portfolio' === $post_type && is_singular() ) {
-
-		$classes[] = 'single-portfolio';
-		return $classes;
-	}
-}
-
 add_action( 'gform_pre_render', 'cf_cg_set_gravity_forms_chosen_options' );
 /**
  * Pass Chosen options to the form.
