@@ -139,3 +139,72 @@ function cf_cg_posted_on() {
 
 	return $posted_on;
 }
+
+/**
+ * Get the terms associated with a post.
+ *
+ * @param   int    [$post_id  = 0]        The post ID.
+ * @param   string [$taxonomy = '']       The taxonomy to query.
+ * @param   array  [$args     = array()]  Additional args to pass to wp_get_post_terms()
+ * @return  array                         The terms.
+ */
+function cf_cg_get_post_terms( $post_id = 0, $taxonomy = '', $args = array() ) {
+
+	if ( ! $post_id ) {
+		$post_id = get_the_ID();
+	}
+
+	$defaults = array(
+		'orderby' => 'name',
+		'number'  => 0,
+		'fields'  => 'all',
+	);
+
+	$args = wp_parse_args( $defaults, $args );
+
+	$term_args = array(
+		'orderby' => esc_attr( $args['orderby'] ),
+		'number'  => esc_attr( $args['number'] ),
+		'fields'  => esc_attr( $args['fields'] ),
+	);
+
+	$terms = wp_get_post_terms( $post_id, $taxonomy, $term_args );
+
+	if ( empty( $terms ) || is_wp_error( $terms ) ) {
+		return '';
+	}
+
+	return $terms;
+}
+
+/**
+ * Get the portfolio terms (project services).
+ *
+ * @param   int     [$post_id = 0] Post ID.
+ *
+ * @return  string                 The terms.
+ */
+function cf_cg_get_portfolio_terms( $post_id = 0 ) {
+
+	if ( ! $post_id ) {
+		$post_id = get_the_ID();
+	}
+
+	$terms = cf_cg_get_post_terms( $post_id, 'cg-services' );
+
+	if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+
+		$project_terms = array();
+
+		foreach ( $terms as $term ) {
+
+			$project_terms[] = sprintf( '<span class="project-service">%s</span>',
+				esc_html( $term->name )
+			);
+		}
+
+		$project_terms = implode( ', ', $project_terms );
+		
+		return $project_terms;
+	}
+}
