@@ -1639,8 +1639,8 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .services-block .service {
   border: 2px solid #cca42e;
-  -ms-flex: 0 0 33%;
-      flex: 0 0 33%;
+  -ms-flex: 0 1 33%;
+      flex: 0 1 33%;
   padding: 1.25rem;
   text-align: left;
 }
@@ -1652,6 +1652,10 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 .services-block .service h3 {
   color: #fff;
   text-align: center;
+}
+
+.services-block .service + .service {
+  margin-top: 1.875rem;
 }
 
 .content-block {
@@ -1725,6 +1729,15 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-top: 0.5rem;
 }
 
+.hero {
+  background-position: 75% center;
+  height: 50vh;
+}
+
+.hero--call-to-action {
+  height: auto;
+}
+
 .hero--call-to-action .row {
   display: -ms-flexbox;
   display: flex;
@@ -1779,6 +1792,14 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .latest-projects {
   text-align: center;
+}
+
+.latest-projects .button {
+  width: 13.75rem;
+}
+
+.latest-projects .button + .button {
+  margin-top: 1.25rem;
 }
 
 .latest-post + .latest-post {
@@ -1882,8 +1903,10 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-bottom: 3.125rem;
 }
 
-.right-sidebar .content-area {
-  max-width: 640px;
+.content-area::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .entry-title {
@@ -1923,7 +1946,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 }
 
 .single-portfolio .content-area {
-  max-width: 960px;
+  max-width: 60rem;
 }
 
 .site-footer {
@@ -2244,10 +2267,14 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
   .services-block .service + .service {
     margin-left: 1.875rem;
+    margin-top: 0;
   }
   .category-block .category {
     -ms-flex: 0 0 33%;
     flex: 0 0 33%;
+  }
+  .hero {
+    background-position: center center;
   }
   .hero--call-to-action .row {
     -ms-flex-direction: row;
@@ -2258,7 +2285,16 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
   }
-  .latest-projects .portfolio-card {
+  .latest-projects .button + .button {
+    margin-left: 1.25rem;
+  }
+  .project-posts,
+  .latest-projects .block__content {
+    margin-left: -1.875rem;
+    margin-right: -1.875rem;
+    width: calc(100% + 3.75rem);
+  }
+  .portfolio-card {
     width: calc(50% - 2.8125rem);
     float: left;
     margin-left: 1.875rem;
@@ -2513,6 +2549,11 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
   .block--no-padding {
     padding: 0 1.25rem;
+  }
+  .portfolio-card {
+    width: calc(33.3333333333% - 2.5rem);
+    float: left;
+    margin-left: 1.875rem;
   }
 }
 
