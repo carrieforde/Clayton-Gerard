@@ -1,8 +1,8 @@
 //--------------------------------------------------------------
 // CONTENT
 //--------------------------------------------------------------
-.right-sidebar .content-area {
-	max-width: 640px;
+.content-area {
+	@include clearfix;
 }
 
 .entry-title {
@@ -48,6 +48,6 @@
 .single-portfolio {
 
 	.content-area {
-		max-width: 960px;
+		max-width: rem(960);
 	}
 }
