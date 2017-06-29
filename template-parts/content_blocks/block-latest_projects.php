@@ -28,7 +28,7 @@ $buttons         = get_post_meta( $post_id, $prefix . 'buttons', true ); ?>
 			<?php cf_cg_fetch_posts( array(
 				'post_type'      => 'cg-portfolio',
 				'posts_per_page' => $number_of_posts,
-				'template_part'  => 'template-parts/content-latest-project',
+				'template_part'  => 'template-parts/content-cg-portfolio',
 			) ); ?>
 		</div>
 
