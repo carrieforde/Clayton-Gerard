@@ -7,4 +7,31 @@
 	.project-image {
 		width: 100%;
 	}
+
+	.cg-project__details {
+		margin-top: rem(40);
+	}
+
+	@include grid-media($tablet-landscape-up) {
+
+		.cg-project__details {
+			@include grid-collapse;
+
+			margin-top: rem(60);
+		}
+
+		.project-overview,
+		.project-meta {
+			border-top: 1px solid color(mine-shaft);
+			padding-top: $size__padding;
+		}
+
+		.project-overview {
+			@include grid-column(8);
+		}
+
+		.project-meta {
+			@include grid-column(4);
+		}
+	}
 }
