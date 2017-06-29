@@ -38,21 +38,21 @@ $credits  = get_post_meta( $post_id, 'credits', true );
 
 		<div class="cg-project__details">
 			<div class="project-overview">
-				<h2><?php esc_html_e( 'Overview', 'claytongerard' ); ?></h2>
+				<h2 class="h3"><?php esc_html_e( 'Overview', 'claytongerard' ); ?></h2>
 				<?php the_content(); ?>
 			</div>
 
 			<div class="project-meta">
-				<h2><?php esc_html_e( 'Services', 'claytongerard' ); ?></h2>
+				<h2 class="h3"><?php esc_html_e( 'Services', 'claytongerard' ); ?></h2>
 				<p><?php echo cf_cg_get_portfolio_terms(); // WPCS: XSS OK. ?></p>
 
 				<?php if ( ! empty( $web_name && $web_url ) ) : ?>
-					<h2><?php esc_html_e( 'Website', 'claytongerard' ); ?></h2>
+					<h2 class="h3"><?php esc_html_e( 'Website', 'claytongerard' ); ?></h2>
 					<a href="<?php echo esc_url( $web_url ); ?>"><?php echo esc_html( $web_name ); ?></a>
 				<?php endif; ?>
 
 				<?php if ( ! empty( $credits ) ) : ?>
-					<h2><?php esc_html_e( 'Credits', 'claytongerard' ); ?></h2>
+					<h2 class="h3"><?php esc_html_e( 'Credits', 'claytongerard' ); ?></h2>
 					<?php echo wp_kses_post( wpautop( $credits ) ); ?>
 				<?php endif; ?>
 			</div>
