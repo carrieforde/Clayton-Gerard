@@ -24,7 +24,6 @@ function alcatraz_child_enqueue_scripts() {
 	wp_enqueue_style(
 		'alcatraz-child-style',
 		ALCATRAZ_CHILD_URL . 'style.css',
-		array(),
 		ALCATRAZ_CHILD_VERSION
 	);
 
@@ -45,8 +44,23 @@ function alcatraz_child_enqueue_scripts() {
 		true
 	);
 
+	wp_register_script(
+		'cg-portfolio',
+		ALCATRAZ_CHILD_URL . 'assets/scripts/cg-portfolio.js',
+		array( 'jquery', 'flickity-js' ),
+		ALCATRAZ_CHILD_VERSION,
+		true
+	);
+
 	if ( is_singular( 'cg-portfolio' ) ) {
 		wp_enqueue_script( 'flickity-js' );
+		wp_enqueue_script( 'cg-portfolio' );
+
+		wp_enqueue_style(
+			'flickity-style',
+			ALCATRAZ_CHILD_URL . 'assets/scripts/flickity.css',
+			'2.0.8'
+		);
 	}
 }
 
