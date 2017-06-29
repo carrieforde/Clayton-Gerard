@@ -44,7 +44,7 @@ $credits  = get_post_meta( $post_id, 'credits', true );
 
 			<div class="project-meta">
 				<h2><?php esc_html_e( 'Services', 'claytongerard' ); ?></h2>
-				
+				<p><?php echo cf_cg_get_portfolio_terms(); // WPCS: XSS OK. ?></p>
 
 				<?php if ( ! empty( $web_name && $web_url ) ) : ?>
 					<h2><?php esc_html_e( 'Website', 'claytongerard' ); ?></h2>
