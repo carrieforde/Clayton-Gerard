@@ -4,40 +4,50 @@
 
 ( function( $ ) {
 
-	// Executes when the document is ready
-	jQuery( document ).ready( function( $ ) {
+	var body = $( 'body' );
 
-		// Add classes to paragraphs before headings
-		$( 'h1, h2, h3, h4, h5, h6' ).prev( 'p' ).addClass( 'extra-p-margin' );
+	var initStickyNav = function() {
 
-		$( '.cg-full-width-row p:last-child' ).addClass( 'last' );
+		var windowWidth = $( window ).width(),
+			tabletPortrait = 600,
+			$header = $( '.site-header' );
 
-		// Remove empty p tags
-		$( 'p' ).each(function() {
-			var $this = $( this );
-			if( $this.html().replace(/\s|&nbsp;/g, '' ).length === 0 )
-				$this.remove();
-		});
+		// Fire sticky navigation on tablet portrait+.
+		if ( tabletPortrait <= windowWidth ) {
 
-		// Open external links in a new tab.
-		var h = window.location.host.toLowerCase();
-		$( '[href^="http"]' ).not( '[href*="' + h + '"]' ).addClass( 'external-link' ).attr( "target", "_blank" );
+			$header.sticky({
+				zIndex: 3
+			});
+		}
 
-		// Add slide toggle for the categories
-		$( '.widget_categories .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+		// If the window is resized, or small to start, unstick the header.
+		if ( tabletPortrait > windowWidth ) {
 
-		$( '.widget_categories .widget-toggle' ).click( function() {
-			$( this ).toggleClass( 'toggled' );
-			$( '.widget_categories ul' ).slideToggle( 'slow' );
-		});
+			$header.unstick();
+		}
+	};
 
-		$( '.widget_archive .widget-title' ).append( '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>' );
+	var createCategoryToggle = function() {
 
-		$( '.widget_archive .widget-toggle' ).click( function() {
-			$( this ).toggleClass( 'toggled' );
-			$( '.widget_archive ul' ).slideToggle( 'slow' );
-		});
+		var $toggle = '<span class="widget-toggle"><span class="widget-toggle-span span-1"></span><span class="widget-toggle-span span-2"></span></span>',
+			categoryTitle = $( '.widget_categories .widget-title' ),
+			archiveTitle = $( '.widget_archive .widget-title' );
 
-	});
+		categoryTitle.append( $toggle );
+		archiveTitle.append( $toggle );
+	};
+
+	var toggleWidgetContent = function() {
+
+		console.log( 'clicked' );
+		$( this ).toggleClass( 'toggled' );
+		$( this ).parent( 'h2' ).siblings( 'ul' ).slideToggle( 'slow' );
+	};
+
+	// Fire all the things. 🔥
+	$( window ).on( 'load', initStickyNav );
+	$( window ).on( 'resize', initStickyNav );
+	$( document ).on( 'ready', createCategoryToggle );
+	$( document.body ).on('click', '.widget-toggle', toggleWidgetContent );
 
 })( jQuery );
