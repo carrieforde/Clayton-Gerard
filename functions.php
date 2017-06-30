@@ -27,11 +27,20 @@ function alcatraz_child_enqueue_scripts() {
 		ALCATRAZ_CHILD_VERSION
 	);
 
+	// Include Sticky JS.
+	wp_enqueue_script(
+		'sticky-js',
+		ALCATRAZ_CHILD_URL . 'assets/scripts/jquery.sticky.js',
+		array( 'jquery' ),
+		'1.0.4',
+		true
+	);
+
 	// Include this theme's JS.
 	wp_enqueue_script(
 		'alcatraz-child-scripts',
 		ALCATRAZ_CHILD_URL . 'assets/scripts/clayton-gerard-theme.min.js',
-		array( 'jquery' ),
+		array( 'jquery', 'sticky-js' ),
 		ALCATRAZ_CHILD_VERSION,
 		true
 	);
