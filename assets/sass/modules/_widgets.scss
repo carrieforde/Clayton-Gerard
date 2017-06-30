@@ -16,6 +16,10 @@
 .widget_categories,
 .widget_archive {
 
+	.widget-title {
+		position: relative;
+	}
+
 	ul {
 		display: none;
 		margin-left: 0;
@@ -23,11 +27,11 @@
 	}
 
 	.widget-toggle {
+		@include position(absolute, 0 0 0 null);
 		@include size(rem(15));
 
 		display: block;
-		float: right;
-		position: relative;
+		margin: auto;
 		transition: all 0.2s ease;
 
 		&:hover {
@@ -40,14 +44,13 @@
 	}
 
 	.widget-toggle-span {
+		@include position(absolute, 0 0 0 0);
+		@include size(rem(12) rem(2));
+
 		background-color: $color__menu-sub-toggle;
 		display: block;
-		height: 2px;
-		position: absolute;
-		right: 7px;
-		top: 7px;
+		margin-top: rem(2);
 		transition: all 0.2s ease;
-		width: 10px;
 
 		&.span-2 {
 			transform: rotate(90deg);
@@ -55,6 +58,6 @@
 	}
 
 	.toggled .span-2 {
-		transform: rotate(180deg);
+		transform: rotate(0);
 	}
 }
