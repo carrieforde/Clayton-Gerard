@@ -30,20 +30,3 @@ Tags:
 @import 'layout/index';
 @import 'views/index';
 @import 'plugins/index';
-
-
-//-------------------------------
-// Button
-//-------------------------------
-.clayton-gerard-button-wrapper {
-	clear: both;
-	@include clearfix;
-}
-
-
-//-------------------------------
-// Grayscale class
-//-------------------------------
-.grayscale-filter {
-	@include grayscale;
-}
