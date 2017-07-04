@@ -14,6 +14,17 @@
 	font-family: $font__headings;
 	padding: rem(26);
 	text-transform: uppercase;
+
+	.admin-bar & {
+
+		@include grid-media($tablet-portrait-up) {
+			top: rem(46) !important;
+		}
+
+		@include grid-media($wp-admin-bar) {
+			top: rem(32) !important;
+		}
+	}
 }
 
 .header-inner {
