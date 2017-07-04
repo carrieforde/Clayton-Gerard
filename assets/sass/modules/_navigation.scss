@@ -36,7 +36,7 @@
 		margin-left: auto;
 		position: relative;
 		right: auto;
-		top: auto;
+		top: auto !important;
 	}
 
 	@include grid-media($wp-admin-bar) {
