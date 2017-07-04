@@ -1542,7 +1542,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-left: auto;
   position: relative;
   right: auto;
-  top: auto;
+  top: auto !important;
 }
 
 .primary-sidebar .search-field {
@@ -2199,6 +2199,9 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     margin-left: 0;
     width: 100%;
   }
+  .admin-bar .site-header {
+    top: 2.875rem !important;
+  }
 }
 
 @media only screen and (min-width: 48.9375em) {
@@ -2221,6 +2224,9 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     position: relative;
     right: auto;
     top: auto;
+  }
+  .admin-bar .site-header {
+    top: 2rem !important;
   }
 }
 
