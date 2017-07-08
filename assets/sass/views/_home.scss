@@ -1,5 +1,13 @@
 //--------------------------------------------------------------
-// VIEWS
+// HOME
 //--------------------------------------------------------------
-@import 'single-portfolio';
-@import 'home';
+.home {
+
+	.content-area {
+		padding-top: 0;
+	}
+
+	.entry-content {
+		margin-top: 0;
+	}
+}
