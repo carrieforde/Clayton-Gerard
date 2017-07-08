@@ -1,6 +1,13 @@
 //--------------------------------------------------------------
 // CONTENT
 //--------------------------------------------------------------
+.site-content {
+
+	.right-sidebar & {
+		max-width: rem(1200);
+	}
+}
+
 .content-area {
 	@include clearfix;
 
@@ -12,7 +19,7 @@
 .entry-title {
 	margin-bottom: 0;
 
-	.page .entry-header > &,
+	body:not(.home) .page .entry-header > &,
 	.cf-portfolio .entry-header > & {
 		text-align: center;
 	}
@@ -82,6 +89,13 @@
 
 	.entry-title {
 		font-size: em(31);
+
+		.blog & {
+			
+			a {
+				margin-top: 0;
+			}
+		}
 
 		a {
 			color: color(mine-shaft);
