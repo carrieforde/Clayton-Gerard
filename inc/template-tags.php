@@ -204,7 +204,16 @@ function cf_cg_get_portfolio_terms( $post_id = 0 ) {
 		}
 
 		$project_terms = implode( ', ', $project_terms );
-		
+
 		return $project_terms;
 	}
+}
+
+add_action( 'alcatraz_after_nav_inside', 'cf_cg_hook_search' );
+/**
+ * Output a search form.
+ */
+function cf_cg_hook_search() {
+
+	get_search_form();
 }
