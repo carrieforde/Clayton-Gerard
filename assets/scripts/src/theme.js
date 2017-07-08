@@ -17,7 +17,7 @@
 		if ( tabletPortrait <= windowWidth ) {
 
 			$header.sticky({
-				zIndex: 3
+				zIndex: 30
 			});
 		}
 
