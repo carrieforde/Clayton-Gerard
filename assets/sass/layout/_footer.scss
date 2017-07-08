@@ -10,6 +10,10 @@
 	padding: rem(30) $size__padding;
 	text-align: left;
 	text-transform: uppercase;
+
+	.social-navigation {
+		font-weight: 400;
+	}
 }
 
 .footer-wrap {
@@ -58,4 +62,3 @@
 .footer-logo {
 	max-width: rem(95);
 }
-
