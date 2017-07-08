@@ -39,16 +39,32 @@ $three-column: (
 	gutter: rem(30),
 );
 
-$four-column: (
-	columns: 4,
-	gutter: rem(30),
-);
-
 .project-posts,
 .latest-projects .block__content {
+	@include clearfix;
 	
 	@include grid-media($tablet-portrait-up) {
 		@include grid-collapse($two-column);
+
+		@supports(display: grid) {
+			display: grid;
+			grid-gap: rem(30);
+			grid-template-columns: repeat(2, 1fr);
+			margin-left: 0;
+			margin-right: 0;
+			width: auto;
+		}
+	}
+
+	@include grid-media($tablet-landscape-up) {
+		@include grid-collapse;
+
+		@supports(display: grid) {
+			grid-template-columns: repeat(3, 1fr);
+			margin-left: 0;
+			margin-right: 0;
+			width: auto;
+		}
 	}
 }
 
@@ -56,9 +72,21 @@ $four-column: (
 
 	@include grid-media($tablet-portrait-up) {
 		@include grid-column(1, $two-column);
+
+		@supports(display:grid) {
+			float: none;
+			margin: 0;
+			width: 100%;
+		}
 	}
 
 	@include grid-media($tablet-landscape-up) {
 		@include grid-column(1, $three-column);
+
+		@supports(display:grid) {
+			float: none;
+			margin: 0;
+			width: 100%;
+		}
 	}
 }
