@@ -4,7 +4,8 @@
 
 ( function( $ ) {
 
-	var body = $( 'body' );
+	var body = $( 'body' ),
+		searchIcon = $( '.search' );
 
 	var initStickyNav = function() {
 
@@ -16,7 +17,7 @@
 		if ( tabletPortrait <= windowWidth ) {
 
 			$header.sticky({
-				zIndex: 3
+				zIndex: 30
 			});
 		}
 
@@ -39,9 +40,15 @@
 
 	var toggleWidgetContent = function() {
 
-		console.log( 'clicked' );
 		$( this ).toggleClass( 'toggled' );
 		$( this ).parent( 'h2' ).siblings( 'ul' ).slideToggle( 'slow' );
+	};
+
+	var toggleSearch = function( e ) {
+
+		e.preventDefault();
+
+		$( this ).parents( '.main-navigation__menu' ).next( '.search-form' ).slideToggle( 'slow' );
 	};
 
 	// Fire all the things. 🔥
@@ -49,5 +56,6 @@
 	$( window ).on( 'resize', initStickyNav );
 	$( document ).on( 'ready', createCategoryToggle );
 	$( document.body ).on('click', '.widget-toggle', toggleWidgetContent );
+	searchIcon.on( 'click', toggleSearch );
 
 })( jQuery );

@@ -614,7 +614,9 @@ td {
 
 button,
 .button,
+.posts-navigation .nav-links a,
 .button:visited,
+.posts-navigation .nav-links a:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -630,11 +632,17 @@ input[type="submit"] {
 
 button:hover, button:active, button:focus,
 .button:hover,
+.posts-navigation .nav-links a:hover,
 .button:active,
+.posts-navigation .nav-links a:active,
 .button:focus,
+.posts-navigation .nav-links a:focus,
 .button:visited:hover,
+.posts-navigation .nav-links a:visited:hover,
 .button:visited:active,
+.posts-navigation .nav-links a:visited:active,
 .button:visited:focus,
+.posts-navigation .nav-links a:visited:focus,
 input[type="button"]:hover,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -1499,9 +1507,19 @@ blockquote::before, blockquote::after,
   margin-bottom: 40px;
 }
 
+.search-form {
+  margin-top: 1.25rem;
+}
+
+.search-form .search-field {
+  background-color: #fff;
+}
+
 button,
 .button,
+.posts-navigation .nav-links a,
 .button:visited,
+.posts-navigation .nav-links a:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -1513,7 +1531,9 @@ input[type="submit"] {
 
 button:hover,
 .button:hover,
+.posts-navigation .nav-links a:hover,
 .button:visited:hover,
+.posts-navigation .nav-links a:visited:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -1543,6 +1563,22 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   position: relative;
   right: auto;
   top: auto !important;
+}
+
+.menu-item.search {
+  font-size: 1.1428571429em;
+}
+
+.menu-item.search a {
+  color: #B48D53;
+}
+
+.menu-item.search a:hover {
+  color: #cca42e;
+}
+
+.posts-navigation {
+  margin-top: 3.75rem;
 }
 
 .primary-sidebar .search-field {
@@ -1739,7 +1775,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   text-align: center;
 }
 
-.content-block-with-button .button {
+.content-block-with-button .button, .content-block-with-button .posts-navigation .nav-links a, .posts-navigation .nav-links .content-block-with-button a {
   margin-top: 0.5rem;
 }
 
@@ -1752,6 +1788,10 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   height: auto;
 }
 
+.hero--call-to-action img {
+  margin-bottom: 0;
+}
+
 .hero--call-to-action .row {
   display: -ms-flexbox;
   display: flex;
@@ -1760,7 +1800,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 }
 
 .hero--call-to-action .hero__content {
-  margin-top: 1.25rem;
+  margin: 1.25rem 0;
   text-align: right;
 }
 
@@ -1773,6 +1813,8 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   list-style: none;
   margin: 0;
   padding: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-top: 2.5rem;
   text-align: right;
 }
@@ -1808,11 +1850,11 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   text-align: center;
 }
 
-.latest-projects .button {
+.latest-projects .button, .latest-projects .posts-navigation .nav-links a, .posts-navigation .nav-links .latest-projects a {
   width: 13.75rem;
 }
 
-.latest-projects .button + .button {
+.latest-projects .button + .button, .latest-projects .posts-navigation .nav-links a + .button, .posts-navigation .nav-links .latest-projects a + .button, .latest-projects .posts-navigation .nav-links .button + a, .posts-navigation .nav-links .latest-projects .button + a, .latest-projects .posts-navigation .nav-links a + a, .posts-navigation .nav-links .latest-projects a + a {
   margin-top: 1.25rem;
 }
 
@@ -2068,9 +2110,17 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-top: 2.5rem;
 }
 
+.home .content-area {
+  padding-top: 0;
+}
+
+.home .page > .entry-content {
+  margin-top: 0;
+}
+
 .gfield_label {
   font-weight: 700;
-  text-transform: uppercase;
+  margin-bottom: 0.3125rem;
 }
 
 body .gform_wrapper label.gfield_label + div.ginput_container {
@@ -2084,11 +2134,22 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-single .chosen-single {
   background: #fff;
+  border-color: #4D4D4D;
   border-radius: 0;
   box-shadow: none;
   height: auto;
   line-height: inherit;
   padding: 0.3125rem 0.25rem;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-single .chosen-single div {
+  padding-right: 0.3125rem;
+}
+
+.gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-single .chosen-single div b {
+  background-image: url(assets/images/angle-down.svg) !important;
+  background-position: center !important;
+  background-size: contain !important;
 }
 
 .gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
@@ -2117,9 +2178,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 }
 
 .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label:before {
-  height: 16px;
-  width: 19px;
-  content: url(images/checked.svg);
+  content: url(assets/images/checked.svg);
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
@@ -2133,7 +2192,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 .gform_wrapper ul.gfield_checkbox li label:before {
   height: 15px;
   width: 15px;
-  content: url(images/unchecked.svg);
+  border: 1px solid #4D4D4D;
+  content: '';
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
@@ -2175,12 +2235,22 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .hero--call-to-action .row .hero__image,
-  .hero--call-to-action .row .hero__content {
+  .hero--call-to-action .row .hero__content,
+  .hero--call-to-action .row .hero__image {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .hero--call-to-action .row .hero__image {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
   }
-  .latest-projects .button + .button {
+  .latest-projects .button + .button, .latest-projects .posts-navigation .nav-links a + .button, .posts-navigation .nav-links .latest-projects a + .button, .latest-projects .posts-navigation .nav-links .button + a, .posts-navigation .nav-links .latest-projects .button + a, .latest-projects .posts-navigation .nav-links a + a, .posts-navigation .nav-links .latest-projects a + a {
     margin-left: 1.25rem;
   }
   .project-posts,
@@ -2415,6 +2485,11 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     float: left;
     margin-left: 20px;
   }
+  .search-form {
+    display: none;
+    float: right;
+    width: calc(100% - 10px);
+  }
   .mobile-nav-style-slide-right .main-navigation {
     background-color: transparent;
     padding: 0;
@@ -2424,6 +2499,10 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
   }
   .block--no-padding {
     padding: 0 1.25rem;
+  }
+  .hero--call-to-action .row .hero__image {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
   }
   .portfolio-card {
     width: calc(33.3333333333% - 2.5rem);
@@ -2475,6 +2554,20 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     right: 0;
     bottom: 0;
     transform: translateX(400px);
+  }
+}
+
+@media only screen and (max-width: 56.1875em) {
+  .menu-item.search {
+    display: none;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .gform_wrapper.clayton-gerard-contact-form_wrapper .chosen-container.chosen-container-single .chosen-single div b {
+    background-image: url(assets/images/angle-down.svg) !important;
+    background-position: center !important;
+    background-size: contain !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
