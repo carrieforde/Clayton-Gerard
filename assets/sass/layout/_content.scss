@@ -11,6 +11,11 @@
 
 .entry-title {
 	margin-bottom: 0;
+
+	.page .entry-header > &,
+	.cf-portfolio .entry-header > & {
+		text-align: center;
+	}
 }
 
 .byline {

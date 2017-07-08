@@ -1918,6 +1918,11 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-bottom: 0;
 }
 
+.page .entry-header > .entry-title,
+.cf-portfolio .entry-header > .entry-title {
+  text-align: center;
+}
+
 .byline {
   display: inline;
 }
