@@ -912,6 +912,10 @@ body:not(.header-style-side) .reverse-expand .sub-menu .sub-menu {
   content: '\f171';
 }
 
+.social-navigation .social-links-menu .menu-item > a[href*="bloglovin.com"]:before {
+  content: '\f067';
+}
+
 .social-navigation .social-links-menu .menu-item > a[href*="codepen.io"]:before {
   content: '\f1cb';
 }
@@ -2042,6 +2046,10 @@ body:not(.home) .page .entry-header > .entry-title,
   padding: 1.875rem 1.25rem;
   text-align: left;
   text-transform: uppercase;
+}
+
+.site-footer .social-navigation {
+  font-weight: 400;
 }
 
 .footer-wrap {
