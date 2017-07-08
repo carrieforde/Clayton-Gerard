@@ -12,6 +12,10 @@
 	@include modifier(call-to-action) {
 		height: auto;
 
+		img {
+			margin-bottom: 0;
+		}
+
 		.row {
 			display: flex;
 			flex-direction: column;
@@ -19,15 +23,28 @@
 			@include grid-media($tablet-portrait-up) {
 				flex-direction: row;
 
-				.hero__image,
-				.hero__content {
+				.hero__content,
+				.hero__image {
+					align-items: center;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+
+				.hero__image {
 					flex: 0 0 50%;
+				}
+			}
+
+			@include grid-media($tablet-landscape-up) {
+				.hero__image {
+					flex: 0 0 60%;
 				}
 			}
 		}
 
 		.hero__content {
-			margin-top: $size__padding;
+			margin: $size__padding 0;
 			text-align: right;
 		}
 
@@ -39,6 +56,7 @@
 		.hero__navigation {
 			@include list-reset;
 
+			align-self: flex-end;
 			margin-top: $size__padding * 2;
 			text-align: right;
 
