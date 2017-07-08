@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 .gfield_label {
 	font-weight: 700;
-	text-transform: uppercase;
+	margin-bottom: rem(5);
 }
 
 body .gform_wrapper label.gfield_label + div.ginput_container {
@@ -21,11 +21,28 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 		// The container within
 		.chosen-single {
 			background: color(white);
+			border-color: color(ship-gray);
 			border-radius: 0;
 			box-shadow: none;
 			height: auto;
 			line-height: inherit;
 			padding: rem(5) rem(4);
+
+			div {
+				padding-right: rem(5);
+
+				b {
+					background-image: url(assets/images/angle-down.svg) !important;
+					background-position: center !important;
+					background-size: contain !important;
+
+					@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+						background-image: url(assets/images/angle-down.svg) !important;
+						background-position: center !important;
+						background-size: contain !important;
+					}
+				}
+			}
 		}
 	}
 
@@ -62,6 +79,7 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 	}
 }
 
+
 // Checkboxes
 .gform_wrapper ul.gfield_checkbox li {
 
@@ -71,9 +89,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 		&:checked {
 
 			+ label:before {
-				@include size(19px 16px);
 
-				content: url(images/checked.svg);
+				content: url(assets/images/checked.svg);
 				display: inline-block;
 				margin-right: 10px;
 				vertical-align: middle;
@@ -88,7 +105,8 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 		&:before {
 			@include size(15px);
 
-			content: url(images/unchecked.svg);
+			border: 1px solid color(ship-gray);
+			content: '';
 			display: inline-block;
 			margin-right: 10px;
 			vertical-align: middle;
