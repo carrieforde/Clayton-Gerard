@@ -1,28 +1,22 @@
 //--------------------------------------------------------------
 // FORMS
 //--------------------------------------------------------------
-button,
-input[type='button'],
-input[type='submit'],
-.button {
-	// background-color: $color__background-button;
-	// border: $border__button;
-	// color: $color__text-button;
-	// display: inline-block;
-	// font-family: $font__button;
-	// font-weight: 600;
-	// letter-spacing: 0.5px;
-	// padding: em(15) em(25);
-	// text-transform: uppercase;
-	// transition: all 0.2s ease-in;
 
-	// &:visited {
-	// 	color: $color__text-button;
-	// }
 
-	// &:hover {
-	// 	border: $border__button-hover;
-	// 	background-color: $color__background-button-hover;
-	// 	color: $color__text-button-hover;
-	// }
+//-----------------------------------------
+// Search Form
+//-----------------------------------------
+.search-form {
+
+	margin-top: $size__padding;
+
+	@include grid-media($tablet-landscape-up) {
+		display: none;
+		float: right;
+		width: calc(100% - 10px);
+	}
+
+	.search-field {
+		background-color: color(white);
+	}
 }
