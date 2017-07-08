@@ -72,3 +72,18 @@
 		}
 	}
 }
+
+
+//-----------------------------------------
+// Post Navigation
+//-----------------------------------------
+.posts-navigation {
+	margin-top: $size__padding * 3;
+
+	.nav-links {
+
+		a {
+			@extend .button;
+		}
+	}
+}
