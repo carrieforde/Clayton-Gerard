@@ -49,3 +49,26 @@
 		}
 	}
 }
+
+
+//-----------------------------------------
+// Search Toggle
+//-----------------------------------------
+.menu-item {
+
+	&.search {
+		font-size: em(16, 14);
+
+		@include media(null, em(899)) {
+			display: none;
+		}
+
+		a {
+			color: color(driftwood);
+
+			&:hover {
+				color: color(metallic-gold);
+			}
+		}
+	}
+}
