@@ -1904,6 +1904,17 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-bottom: 3.125rem;
 }
 
+.project-posts::after,
+.latest-projects .block__content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.right-sidebar .site-content {
+  max-width: 75rem;
+}
+
 .content-area::after {
   clear: both;
   content: "";
@@ -1918,7 +1929,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
   margin-bottom: 0;
 }
 
-.page .entry-header > .entry-title,
+body:not(.home) .page .entry-header > .entry-title,
 .cf-portfolio .entry-header > .entry-title {
   text-align: center;
 }
@@ -1978,6 +1989,10 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .post .entry-title {
   font-size: 1.9375em;
+}
+
+.blog .post .entry-title a {
+  margin-top: 0;
 }
 
 .post .entry-title a {
@@ -2264,10 +2279,30 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     margin-right: -1.875rem;
     width: calc(100% + 3.75rem);
   }
+  @supports ((display: -ms-grid) or (display: grid)) {
+    .project-posts,
+    .latest-projects .block__content {
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 1.875rem;
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+    }
+  }
   .portfolio-card {
     width: calc(50% - 2.8125rem);
     float: left;
     margin-left: 1.875rem;
+  }
+  @supports ((display: -ms-grid) or (display: grid)) {
+    .portfolio-card {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
   }
   .footer-widget-areas-2 .footer-widget-area {
     float: none;
@@ -2509,10 +2544,33 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
   }
+  .project-posts,
+  .latest-projects .block__content {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+  }
+  @supports ((display: -ms-grid) or (display: grid)) {
+    .project-posts,
+    .latest-projects .block__content {
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+    }
+  }
   .portfolio-card {
     width: calc(33.3333333333% - 2.5rem);
     float: left;
     margin-left: 1.875rem;
+  }
+  @supports ((display: -ms-grid) or (display: grid)) {
+    .portfolio-card {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
   }
   .single-cg-portfolio .cg-project__details {
     margin-left: -20px;
