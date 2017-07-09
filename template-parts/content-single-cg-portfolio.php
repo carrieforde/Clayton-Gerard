@@ -34,6 +34,12 @@ $credits  = get_post_meta( $post_id, 'credits', true );
 					<div class="project-image"><?php echo wp_kses_post( wp_get_attachment_image( $image, 'portfolio-featured' ) ); ?></div>
 				<?php endfor; ?>
 			</div>
+		<?php else : ?>
+			<?php if ( has_post_thumbnail() ) : ?>
+				<div class="cg-project__image">
+					<?php the_post_thumbnail( 'portfolio-featured' ); ?>
+				</div>
+			<?php endif; ?>
 		<?php endif; ?>
 
 		<div class="cg-project__details">
