@@ -54,7 +54,7 @@ $credits  = get_post_meta( $post_id, 'credits', true );
 
 				<?php if ( ! empty( $web_name && $web_url ) ) : ?>
 					<h2 class="h3"><?php esc_html_e( 'Website', 'claytongerard' ); ?></h2>
-					<a href="<?php echo esc_url( $web_url ); ?>"><?php echo esc_html( $web_name ); ?></a>
+					<a href="<?php echo esc_url( $web_url ); ?>"><?php the_title(); ?></a>
 				<?php endif; ?>
 
 				<?php if ( ! empty( $credits ) ) : ?>

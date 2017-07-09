@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Use the main content area to add an overview of the project, and the featured image will serve as the thumbnail image when the project is viewed on The Studio or project landing page.",
+            "message": "Use the main content area to add an overview of the project, and the featured image will serve as the thumbnail image when the project is viewed on The Studio or project landing page, as well as the first image of the project slider. Use the Services taxonomy to add services.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -24,8 +24,8 @@
             "label": "Images",
             "name": "images",
             "type": "repeater",
-            "instructions": "Upload images that show of the work for this project.",
-            "required": 1,
+            "instructions": "Upload images that show of the work for this project. The featured image will always be the first image of the slider, so don't upload it again!",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -65,30 +65,11 @@
             ]
         },
         {
-            "key": "field_59544714e7cc8",
-            "label": "Website Name",
-            "name": "website_name",
-            "type": "text",
-            "instructions": "Enter a name to show for the website (the client name works well).",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_595447a2e7cc9",
             "label": "Website URL",
             "name": "website_url",
             "type": "url",
-            "instructions": "Add the site URL.",
+            "instructions": "Add the site URL. The link name will be the same as the Project post title.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -136,5 +117,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1498695709
+    "modified": 1499563727
 }
