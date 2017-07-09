@@ -142,3 +142,6 @@ function cf_cg_set_gravity_forms_chosen_options( $form ) {
 add_image_size( 'full-screen-image', 2560, 986, true );
 add_image_size( 'hero-half', 515, 515, true );
 add_image_size( 'portfolio-featured', 1200, 740, true );
+
+// Hide ACF in Admin.
+add_filter( 'acf/settings/show_admin', '__return_false' );
