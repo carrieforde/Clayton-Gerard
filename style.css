@@ -1794,6 +1794,7 @@ body:not(.mobile-nav-style-default).menu-open .mobile-menu-toggle {
 
 .hero--call-to-action img {
   margin-bottom: 0;
+  z-index: -1;
 }
 
 .hero--call-to-action .row {
